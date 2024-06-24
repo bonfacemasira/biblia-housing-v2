@@ -74,7 +74,7 @@ function Faq() {
         <ShopBreadCrumb
           title="Frequently asked questions"
           sectionPace=""
-          currentSlug="About UsFAQ"
+          currentSlug="FAQs"
         />
 
         {/* <!-- FAQ AREA START (faq-2) (ID > accordion_2) --> */}

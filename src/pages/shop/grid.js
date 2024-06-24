@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import ShopBreadCrumb from "@/components/breadCrumbs/shop";
-import { getSortedProducts, productSlug,getDiscountPrice } from "@/lib/product";
+import {
+  getSortedProducts,
+  productSlug,
+  getDiscountPrice,
+} from "@/lib/product";
 import { LayoutOne } from "@/layouts";
 import {
   FaThLarge,
@@ -37,7 +41,6 @@ function ShopGrid() {
     setSortValue(sortValue);
   };
 
-
   const getFilterSortParams = (sortType, sortValue) => {
     setFilterSortType(sortType);
     setFilterSortValue(sortValue);
@@ -50,7 +53,7 @@ function ShopGrid() {
       keys.some((key) => item[key].toLowerCase().includes(query))
     );
   };
-   
+
   useEffect(() => {
     let sortedProducts = getSortedProducts(products, sortType, sortValue);
 
@@ -93,11 +96,7 @@ function ShopGrid() {
     <LayoutOne topbar={true}>
       {/* <!-- BREADCRUMB AREA START --> */}
 
-      <ShopBreadCrumb
-        title="Property Grid"
-        sectionPace=""
-        currentSlug="Property Grid"
-      />
+      <ShopBreadCrumb title="Projects" sectionPace="" currentSlug="Projects" />
       {/* <!-- BREADCRUMB AREA END -->
     
     <!-- PRODUCT DETAILS AREA START --> */}
