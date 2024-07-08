@@ -1,6 +1,6 @@
 import { Fragment, useEffect } from "react";
 import Head from "next/head";
-import { Nunito_Sans,Poppins } from "next/font/google";
+import { Nunito_Sans, Poppins } from "next/font/google";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { wrapper } from "@/store";
@@ -11,7 +11,7 @@ import "animate.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import 'node_modules/react-modal-video/scss/modal-video.scss';
+import "node_modules/react-modal-video/scss/modal-video.scss";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "@/assets/sass/style.scss";
@@ -21,11 +21,13 @@ const nunito = Nunito_Sans({
   weight: ["200", "300", "400", "600", "700", "800", "900"],
   subsets: ["latin"],
   display: "swap",
+  preload: false,
 });
 const Poppin = Poppins({
   weight: ["200", "300", "400", "600", "700", "800", "900"],
   subsets: ["latin"],
   display: "swap",
+  preload: false,
 });
 
 const MyApp = ({ Component, ...rest }) => {
@@ -38,21 +40,33 @@ const MyApp = ({ Component, ...rest }) => {
     <Fragment>
       <Head>
         <title>Quarter - Real Estate NextJs Template</title>
-        <meta name="description" content="Quarter - Real Estate Nextjs Template" />
+        <meta
+          name="description"
+          content="Quarter - Real Estate Nextjs Template"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <style jsx global>{`
-        html,body {
+        html,
+        body {
           font-family: ${nunito.style.fontFamily};
         }
 
-        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-         
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6 {
           font-family: ${Poppin.style.fontFamily};
-      }
-
-
+        }
       `}</style>
       <Provider store={store}>
         <PersistGate persistor={store.__persistor} loading={<Preloader />}>
