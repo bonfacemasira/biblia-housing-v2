@@ -2,7 +2,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import Countdown from "@/components/Countdown/countdown";
 import Link from "next/link";
 const comingSoon = () => {
-
   return (
     <>
       {/* <!-- comingSoon area start --> */}

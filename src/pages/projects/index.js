@@ -1,19 +1,26 @@
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import ShopBreadCrumb from "@/components/breadCrumbs/shop";
-import { getSortedProducts, productSlug, getDiscountPrice } from "@/lib/product";
+import {
+  getSortedProducts,
+  productSlug,
+  getDiscountPrice,
+} from "@/lib/product";
 import { LayoutOne } from "@/layouts";
-import { FaThLarge, FaThList, FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
+import {
+  FaThLarge,
+  FaThList,
+  FaAngleDoubleLeft,
+  FaAngleDoubleRight,
+} from "react-icons/fa";
 import { Container, Row, Col, Nav, Tab, Form } from "react-bootstrap";
-import SideBar from "@/components/shopSideBar";
 import RelatedProduct from "@/components/product/related-product";
 import ProductList from "@/components/product/list";
 import Search from "@/components/search";
-import CallToAction from "@/components/callToAction";
 import ReactPaginate from "react-paginate";
+import CallToAction from "@/components/callToAction";
 
-
-function Shop() {
+function ProjectsGrid() {
   const { products } = useSelector((state) => state.product);
   const [sortType, setSortType] = useState("");
   const [sortValue, setSortValue] = useState("");
@@ -21,14 +28,14 @@ function Shop() {
   const [filterSortValue, setFilterSortValue] = useState("");
   const [offset, setOffset] = useState(0);
   const [sortedProducts, setSortedProducts] = useState([]);
+  const pageLimit = 6;
+  const [currentItems, setCurrentItems] = useState(products);
+  const [pageCount, setPageCount] = useState(0);
 
   const { cartItems } = useSelector((state) => state.cart);
   const { wishlistItems } = useSelector((state) => state.wishlist);
   const { compareItems } = useSelector((state) => state.compare);
 
-  const pageLimit = 6;
-  const [currentItems, setCurrentItems] = useState(products);
-  const [pageCount, setPageCount] = useState(0);
   const getSortParams = (sortType, sortValue) => {
     setSortType(sortType);
     setSortValue(sortValue);
@@ -46,6 +53,7 @@ function Shop() {
       keys.some((key) => item[key].toLowerCase().includes(query))
     );
   };
+
   useEffect(() => {
     let sortedProducts = getSortedProducts(products, sortType, sortValue);
 
@@ -56,7 +64,6 @@ function Shop() {
     );
 
     sortedProducts = filterSortedProducts;
-
     setSortedProducts(sortedProducts);
 
     setCurrentItems(sortedProducts.slice(offset, offset + pageLimit));
@@ -85,22 +92,22 @@ function Shop() {
     setOffset(newOffset);
   };
 
-
   return (
     <LayoutOne topbar={true}>
       {/* <!-- BREADCRUMB AREA START --> */}
 
-      <ShopBreadCrumb title="Property" sectionPace="" currentSlug="Property" />
+      <ShopBreadCrumb title="Projects" sectionPace="" currentSlug="Projects" />
       {/* <!-- BREADCRUMB AREA END -->
     
     <!-- PRODUCT DETAILS AREA START --> */}
+
       <div className="ltn__product-area ltn__product-gutter mb-120">
         <Container>
           <Row>
-            <Col xs={12} lg={8}>
+            <Col xs={12}>
               <Tab.Container defaultActiveKey="first">
                 <div className="ltn__shop-options">
-                  <ul className="justify-content-between">
+                  <ul>
                     <li>
                       <div className="ltn__grid-list-tab-menu">
                         <Nav className="nav">
@@ -119,27 +126,39 @@ function Shop() {
                         <Form.Select
                           className="form-control nice-select"
                           onChange={(e) =>
-
                             getFilterSortParams("filterSort", e.target.value)
                           }
                         >
                           <option value="default">Default</option>
-                          <option value="priceHighToLow">Price - High to Low</option>
-                          <option value="priceLowToHigh">Price - Low to High</option>
+                          <option value="priceHighToLow">
+                            Price - High to Low
+                          </option>
+                          <option value="priceLowToHigh">
+                            Price - Low to High
+                          </option>
                         </Form.Select>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="showing-product-number text-right">
+                        <span>
+                          {`Showing ${offset + pageLimit} of ${
+                            sortedProducts.length
+                          } results`}
+                        </span>
                       </div>
                     </li>
                   </ul>
                 </div>
 
                 <Search spaceBottom="mb-30" setQuery={setQuery} />
-
                 <Tab.Content>
                   <Tab.Pane eventKey="first">
                     <div className="ltn__product-tab-content-inner ltn__product-grid-view">
                       <Row>
                         {currentItems.map((product, key) => {
                           const slug = productSlug(product.title);
+
                           const discountedPrice = getDiscountPrice(
                             product.price,
                             product.discount
@@ -154,12 +173,14 @@ function Shop() {
                           const compareItem = compareItems.find(
                             (compareItem) => compareItem.id === product.id
                           );
+
                           return (
-                            <Col key={key} xs={12} sm={6}>
+                            <Col key={key} xs={12} sm={6} lg={4}>
                               <RelatedProduct
                                 slug={slug}
-                                baseUrl="shop"
-                                productData={product} discountedPrice={discountedPrice}
+                                baseUrl="projects"
+                                productData={product}
+                                discountedPrice={discountedPrice}
                                 productPrice={productPrice}
                                 cartItem={cartItem}
                                 wishlistItem={wishlistItem}
@@ -190,13 +211,19 @@ function Shop() {
                           const compareItem = compareItems.find(
                             (compareItem) => compareItem.id === product.id
                           );
+
                           return (
                             <Col key={key} xs={12}>
-                              <ProductList slug={slug} baseUrl="shop" productData={product} discountedPrice={discountedPrice}
+                              <ProductList
+                                slug={slug}
+                                baseUrl="projects"
+                                productData={product}
+                                discountedPrice={discountedPrice}
                                 productPrice={productPrice}
                                 cartItem={cartItem}
                                 wishlistItem={wishlistItem}
-                                compareItem={compareItem} />
+                                compareItem={compareItem}
+                              />
                             </Col>
                           );
                         })}
@@ -229,9 +256,6 @@ function Shop() {
                 />
               </div>
             </Col>
-            <Col xs={12} lg={4}>
-              <SideBar products={products} getSortParams={getSortParams} />
-            </Col>
           </Row>
         </Container>
       </div>
@@ -252,4 +276,4 @@ function Shop() {
   );
 }
 
-export default Shop;
+export default ProjectsGrid;
