@@ -40,7 +40,9 @@ const Footer = function () {
                           <FaMapMarkerAlt />
                         </div>
                         <div className="footer-address-info">
-                          <p>Brooklyn, New York, United States</p>
+                          <p>
+                            <p>Block I, Kamirembe Place, Nairobi</p>
+                          </p>
                         </div>
                       </li>
                       <li>

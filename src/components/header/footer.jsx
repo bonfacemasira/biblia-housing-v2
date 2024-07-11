@@ -10,7 +10,7 @@ import {
   FaPaperPlane,
   FaEnvelope,
   FaMapMarkerAlt,
-  FaPhoneAlt
+  FaPhoneAlt,
 } from "react-icons/fa";
 
 const Footer = function () {
@@ -36,15 +36,15 @@ const Footer = function () {
                     <ul>
                       <li>
                         <div className="footer-address-icon">
-                         <FaMapMarkerAlt/>
+                          <FaMapMarkerAlt />
                         </div>
                         <div className="footer-address-info">
-                          <p>Brooklyn, New York, United States</p>
+                          <p>Block I, Kamirembe Place, Nairobi</p>
                         </div>
                       </li>
                       <li>
                         <div className="footer-address-icon">
-                         <FaPhoneAlt/>
+                          <FaPhoneAlt />
                         </div>
                         <div className="footer-address-info">
                           <p>
@@ -54,7 +54,7 @@ const Footer = function () {
                       </li>
                       <li>
                         <div className="footer-address-icon">
-                         <FaEnvelope/>
+                          <FaEnvelope />
                         </div>
                         <div className="footer-address-info">
                           <p>
