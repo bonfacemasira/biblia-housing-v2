@@ -26,7 +26,12 @@ const Footer = function () {
                   <div className="footer-logo">
                     <div className="site-logo">
                       {/* <img src="/img/logo.png" alt="Logo" /> */}
-                      <img src="/img/logo-2.png" alt="Logo" />
+                      {/* <img src="/img/logo-2.png" alt="Logo" /> */}
+                      <img
+                        style={{ maxWidth: "35%" }}
+                        src="/img/biblia-sacco-logo.jpg"
+                        alt="Logo"
+                      />
                     </div>
                   </div>
                   <p>
