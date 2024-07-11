@@ -94,33 +94,6 @@ const MobileMenu = function ({ offCanVastoggleBtn, closeSideBar }) {
                   <li>
                     <Link href="/home/page-two">Home Style 02</Link>
                   </li>
-                  <li>
-                    <Link href="/home/page-three">Home Style 03</Link>
-                  </li>
-                  <li>
-                    <Link href="/home/page-four">Home Style 04</Link>
-                  </li>
-                  <li>
-                    <Link href="/home/page-five">Home Style 05</Link>
-                  </li>
-                  <li>
-                    <Link href="/home/page-six">Home Style 06</Link>
-                  </li>
-                  <li>
-                    <Link href="/home/page-seven">Home Style 07</Link>
-                  </li>
-                  <li>
-                    <Link href="/home/page-eight">Home Style 08</Link>
-                  </li>
-                  <li>
-                    <Link href="/home/page-nine">Home Style 09</Link>
-                  </li>
-                  <li>
-                    <Link href="/home/page-ten">Home Style 10</Link>
-                  </li>
-                  <li>
-                    <Link href="/home/page-eleven">Home Style 11</Link>
-                  </li>
                 </ul>
               </li>
               <li>
@@ -158,18 +131,18 @@ const MobileMenu = function ({ offCanVastoggleBtn, closeSideBar }) {
                 </ul>
               </li>
               <li>
-                <Link href="#">Property</Link>
-                <span
+                <Link href="#">Properties</Link>
+                {/* <span
                   className="menu-expand"
                   onClick={onClickHandler}
                   aria-hidden="true"
-                ></span>
-                <ul className="sub-menu">
+                ></span> */}
+                {/* <ul className="sub-menu">
                   <li>
-                    <Link href="/shop">Property</Link>
+                    <Link href="/properties">Property</Link>
                   </li>
                   <li>
-                    <Link href="/shop/grid">Property Grid</Link>
+                    <Link href="/properties/grid">Property Grid</Link>
                   </li>
                   <li>
                     <Link href="/shop/list">Property List</Link>
@@ -204,7 +177,7 @@ const MobileMenu = function ({ offCanVastoggleBtn, closeSideBar }) {
                   <li>
                     <Link href="/register">Register</Link>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li>
                 <Link href="#">News</Link>

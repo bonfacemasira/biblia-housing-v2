@@ -26,7 +26,12 @@ const Footer = function () {
                   <div className="footer-logo">
                     <div className="site-logo">
                       {/* <img src="/img/logo.png" alt="Logo" /> */}
-                      <img src="/img/logo-2.png" alt="Logo" />
+                      {/* <img src="/img/logo-2.png" alt="Logo" /> */}
+                      <img
+                        style={{ maxWidth: "35%" }}
+                        src="/img/biblia-sacco-logo.jpg"
+                        alt="Logo"
+                      />
                     </div>
                   </div>
                   <p>
@@ -40,7 +45,9 @@ const Footer = function () {
                           <FaMapMarkerAlt />
                         </div>
                         <div className="footer-address-info">
-                          <p>Brooklyn, New York, United States</p>
+                          <p>
+                            <p>Block I, Kamirembe Place, Nairobi</p>
+                          </p>
                         </div>
                       </li>
                       <li>

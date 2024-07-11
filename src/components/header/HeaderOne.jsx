@@ -102,7 +102,7 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
                 <div className="site-logo-wrap">
                   <div className="site-logo">
                     <Link href="/">
-                      <img src="/img/logo.png" alt="Logo" />
+                      <img src="/img/biblia-sacco-logo.jpg" alt="Logo" />
                     </Link>
                   </div>
                 </div>
@@ -179,41 +179,26 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
                         <FaRegUser />
                       </Link>
                       <ul>
-                        <li>
+                        {/* <li>
                           <Link href="/login">Sign in</Link>
                         </li>
                         <li>
                           <Link href="/register">Register</Link>
-                        </li>
+                        </li> */}
                         <li>
                           <Link href="/my-account">My Account</Link>
                         </li>
                         <li>
-                          <Link href="/wishlist">Wishlist</Link>
+                          <Link href="/my-profile">My Profile</Link>
+                        </li>
+                        <li>
+                          <Link href="/login">Logout</Link>
                         </li>
                       </ul>
                     </li>
                   </ul>
                 </div>
-                {/* <!-- mini-cart --> */}
-                <div className="mini-cart-icon">
-                  <button
-                    onClick={cartMenu}
-                    className={`ltn__utilize-toggle ${
-                      cartMenuOpener ? "close" : ""
-                    }`}
-                  >
-                    <FaCartArrowDown />
-                    {/* <sup>6</sup> */}
 
-                    {cartItems.length > 0 ? (
-                      <sup>{cartItems.length}</sup>
-                    ) : (
-                      <sup>0</sup>
-                    )}
-                  </button>
-                </div>
-                {/* <!-- mini-cart --> */}
                 {/* <!-- Mobile Menu Button --> */}
                 <div className="mobile-menu-toggle d-xl-none">
                   <button

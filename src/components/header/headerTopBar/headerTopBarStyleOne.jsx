@@ -12,7 +12,7 @@ const HeaderTopBarOne = function () {
         <Container>
           <Row>
             <Col xs={12} md={7}>
-              <HeaderTopInfo/>
+              <HeaderTopInfo />
             </Col>
             <Col xs={12} md={5}>
               <div className="top-bar-right text-end">
@@ -20,13 +20,13 @@ const HeaderTopBarOne = function () {
                   <ul>
                     <li>
                       {/* <!-- ltn__social-media --> */}
-                      <HeaderSocialLinks/>
+                      <HeaderSocialLinks />
                     </li>
                     <li>
                       {/* <!-- header-top-btn --> */}
-                      <div className="header-top-btn">
+                      {/* <div className="header-top-btn">
                         <Link href="/add-listing">Add Listing</Link>
-                      </div>
+                      </div> */}
                     </li>
                   </ul>
                 </div>

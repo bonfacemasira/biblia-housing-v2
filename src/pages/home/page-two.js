@@ -23,8 +23,7 @@ import testimonialData from "@/data/testimonial";
 import blogData from "@/data/blog";
 import BlogItem from "@/components/blog";
 import CallToAction from "@/components/callToAction";
-import heroData from '@/data/hero/index-two.json';
-
+import heroData from "@/data/hero/index-two.json";
 
 function HomeVersionTwo(props) {
   const [isOpen, setOpen] = useState(false);
@@ -33,14 +32,11 @@ function HomeVersionTwo(props) {
   const countryProducts = getProducts(products, "buying", "country", 5);
   const { data } = props;
 
-
-
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
     <button
       {...props}
       className={
-        "slick-prev slick-arrow" +
-        (currentSlide === 0 ? " slick-disabled" : "")
+        "slick-prev slick-arrow" + (currentSlide === 0 ? " slick-disabled" : "")
       }
       aria-hidden="true"
       aria-disabled={currentSlide === 0 ? true : false}
@@ -77,8 +73,8 @@ function HomeVersionTwo(props) {
         breakpoint: 1200,
         settings: {
           arrows: false,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 992,
@@ -86,8 +82,8 @@ function HomeVersionTwo(props) {
           arrows: false,
           dots: true,
           slidesToShow: 2,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
         breakpoint: 768,
@@ -95,8 +91,8 @@ function HomeVersionTwo(props) {
           arrows: false,
           dots: true,
           slidesToShow: 2,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
         breakpoint: 580,
@@ -104,18 +100,17 @@ function HomeVersionTwo(props) {
           arrows: false,
           dots: true,
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
-
 
   const testiMonialsettings = {
     arrows: true,
     dots: false,
     centerMode: false,
-    centerPadding: '80px',
+    centerPadding: "80px",
     infinite: true,
     speed: 300,
     slidesToShow: 2,
@@ -127,8 +122,8 @@ function HomeVersionTwo(props) {
         breakpoint: 1200,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
         breakpoint: 992,
@@ -136,8 +131,8 @@ function HomeVersionTwo(props) {
           arrows: false,
           dots: true,
           slidesToShow: 2,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
         breakpoint: 768,
@@ -145,8 +140,8 @@ function HomeVersionTwo(props) {
           arrows: false,
           dots: true,
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
         breakpoint: 580,
@@ -155,13 +150,11 @@ function HomeVersionTwo(props) {
           dots: true,
           centerMode: false,
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
-
-
 
   const blogSettings = {
     dots: false,
@@ -190,7 +183,6 @@ function HomeVersionTwo(props) {
   };
   return (
     <LayoutOne topbar={false}>
-
       <ModalVideo
         channel="youtube"
         autoplay
@@ -241,7 +233,7 @@ function HomeVersionTwo(props) {
             <Col xs={12}>
               <div className="section-title-area">
                 <h6 className="section-subtitle white-color">
-                  Upcoming Projects
+                  Upcoming Properties
                 </h6>
                 <h1 className="section-title  white-color">
                   Dream Living Space <br />
@@ -251,7 +243,6 @@ function HomeVersionTwo(props) {
             </Col>
           </Row>
           <UpCommingcarousel />
-
         </Container>
       </div>
       {/* <!-- UPCOMING PROJECT AREA END -->
@@ -527,11 +518,7 @@ function HomeVersionTwo(props) {
       {/* <!-- APARTMENTS PLAN AREA END -->
 
     <!-- SEARCH BY PLACE AREA START (testimonial-7) --> */}
-      <div
-        className="ltn__search-by-place-area before-bg-top pt-115 pb-70"
-
-
-      >
+      <div className="ltn__search-by-place-area before-bg-top pt-115 pb-70">
         <Container>
           <Row>
             <Col xs={12}>
@@ -566,10 +553,6 @@ function HomeVersionTwo(props) {
               })}
             </Slider>
           ) : null}
-
-
-
-
         </Container>
       </div>
       {/* <!-- SEARCH BY PLACE AREA END -->
@@ -780,15 +763,21 @@ function HomeVersionTwo(props) {
           <Row>
             <Col xs={12}>
               <div className="ltn__neighbour-tab-wrap">
-
                 <Tab.Container defaultActiveKey="first">
                   <div className="ltn__tab-menu ltn__tab-menu-4 text-center">
                     <Nav>
-                      <Nav.Link eventKey="first"> <img src="/img/neighbour/1.jpg" alt="#" /></Nav.Link>
-                      <Nav.Link eventKey="second"> <img src="/img/neighbour/2.jpg" alt="#" /></Nav.Link>
-                      <Nav.Link eventKey="third"><img src="/img/neighbour/3.jpg" alt="#" /></Nav.Link>
+                      <Nav.Link eventKey="first">
+                        {" "}
+                        <img src="/img/neighbour/1.jpg" alt="#" />
+                      </Nav.Link>
+                      <Nav.Link eventKey="second">
+                        {" "}
+                        <img src="/img/neighbour/2.jpg" alt="#" />
+                      </Nav.Link>
+                      <Nav.Link eventKey="third">
+                        <img src="/img/neighbour/3.jpg" alt="#" />
+                      </Nav.Link>
                     </Nav>
-
                   </div>
                   <Tab.Content>
                     <Tab.Pane eventKey="first">
@@ -954,15 +943,17 @@ function HomeVersionTwo(props) {
                         <Accordion.Body>
                           <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Scelerisque eleifend donec
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Scelerisque eleifend donec
                             pretium vulputate sapien nec sagittis.
                           </p>
                         </Accordion.Body>
                       </Accordion.Item>
                       {/* <!-- card --> */}
                       <Accordion.Item eventKey="2" className="card">
-                        <Accordion.Header className="ltn__card-title"><i className="flaticon-hospital"></i> Medical Hospital</Accordion.Header>
+                        <Accordion.Header className="ltn__card-title">
+                          <i className="flaticon-hospital"></i> Medical Hospital
+                        </Accordion.Header>
                         <Accordion.Body>
                           <div className="ltn__video-img alignleft">
                             <img
@@ -978,8 +969,8 @@ function HomeVersionTwo(props) {
                           </div>
                           <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Scelerisque eleifend donec
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Scelerisque eleifend donec
                             pretium vulputate sapien nec sagittis.
                           </p>
                         </Accordion.Body>
@@ -992,8 +983,8 @@ function HomeVersionTwo(props) {
                         <Accordion.Body className="card-body">
                           <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Scelerisque eleifend donec
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Scelerisque eleifend donec
                             pretium vulputate sapien nec sagittis.
                           </p>
                         </Accordion.Body>
@@ -1011,8 +1002,8 @@ function HomeVersionTwo(props) {
                         <Accordion.Body>
                           <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Scelerisque eleifend donec
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Scelerisque eleifend donec
                             pretium vulputate sapien nec sagittis.
                           </p>
                         </Accordion.Body>
@@ -1025,8 +1016,8 @@ function HomeVersionTwo(props) {
                         <Accordion.Body>
                           <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Scelerisque eleifend donec
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Scelerisque eleifend donec
                             pretium vulputate sapien nec sagittis.
                           </p>
                         </Accordion.Body>
@@ -1039,8 +1030,8 @@ function HomeVersionTwo(props) {
                         <Accordion.Body>
                           <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Scelerisque eleifend donec
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Scelerisque eleifend donec
                             pretium vulputate sapien nec sagittis.
                           </p>
                         </Accordion.Body>
@@ -1111,7 +1102,11 @@ function HomeVersionTwo(props) {
             className="row ltn__testimonial-slider-6-active slick-arrow-3"
           >
             {testimonialData.map((data, key) => {
-              return <Col xs={12} lg={4} key={key}><TestimonialCarouselItemTwo data={data} /></Col>;
+              return (
+                <Col xs={12} lg={4} key={key}>
+                  <TestimonialCarouselItemTwo data={data} />
+                </Col>
+              );
             })}
 
             {/* <!--  --> */}

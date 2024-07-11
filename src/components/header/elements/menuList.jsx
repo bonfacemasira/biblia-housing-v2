@@ -16,19 +16,8 @@ const MenuList = ({ addListing }) => {
             <Link href="/home/page-two">Home Style 02</Link>
             <img src="/img/home-demos/home-2.jpg" alt="#" />
           </li>
-          <li>
-            <Link href="/home/page-three">Home Style 03</Link>
-            <img src="/img/home-demos/home-3.jpg" alt="#" />
-          </li>
-          <li>
-            <Link href="/home/page-four">Home Style 04</Link>
-            <img src="/img/home-demos/home-4.jpg" alt="#" />
-          </li>
-          <li>
-            <Link href="/home/page-five">Home Style 05</Link>
-            <img src="/img/home-demos/home-5.jpg" alt="#" />
-          </li>
-          <li>
+
+          {/* <li>
             <Link href="/home/page-six">Home Style 06</Link>
             <img src="/img/home-demos/home-6.jpg" alt="#" />
           </li>
@@ -51,7 +40,7 @@ const MenuList = ({ addListing }) => {
           <li>
             <Link href="/home/page-eleven">Home Style 11</Link>
             <img src="/img/home-demos/home-11.jpg" alt="#" />
-          </li>
+          </li> */}
         </ul>
       </li>
       <li className="menu-icon">
@@ -63,102 +52,21 @@ const MenuList = ({ addListing }) => {
             <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="/service">Services</Link>
+            <Link href="/history">History</Link>
           </li>
 
-          <li>
-            <Link href="/portfolio">Portfolio</Link>
-          </li>
-          <li>
-              <Link href="/portfolio/page-two">Portfolio - 02</Link>
-            </li>
-
-          <li>
+          {/* <li>
             <Link href="/team">Team</Link>
-          </li>
-
-          <li>
-            <Link href="/faq">FAQ</Link>
-          </li>
-          <li>
-            <Link href="/locations">Google Map Locations</Link>
-          </li>
+          </li> */}
         </ul>
       </li>
       <li className="menu-icon">
-        <Link href="#">
-          Property <FaPlus />
-        </Link>
-        <ul>
-          <li>
-            <Link href="/shop">Property</Link>
-          </li>
-          <li>
-            <Link href="/shop/grid">Property Grid</Link>
-          </li>
-          <li>
-            <Link href="/shop/list">Property List</Link>
-          </li>
-          <li>
-            <Link href="/shop/left-sidebar">Property Left sidebar</Link>
-          </li>
-          <li>
-            <Link href="/shop/right-sidebar">Property right sidebar</Link>
-          </li>
-
-          <li>
-            <Link href="#">
-              Other Pages
-              <span className="float-end">
-                <FaAngleDoubleRight />
-              </span>
-            </Link>
-            <ul>
-              <li>
-                <Link href="/cart">Cart</Link>
-              </li>
-              <li>
-                <Link href="/wishlist">Wishlist</Link>
-              </li>
-              <li>
-                <Link href="/checkout">Checkout</Link>
-              </li>
-              <li>
-                <Link href="/order-tracking">Order Tracking</Link>
-              </li>
-              <li>
-                <Link href="/my-account">My Account</Link>
-              </li>
-              <li>
-                <Link href="/login">Sign in</Link>
-              </li>
-              <li>
-                <Link href="/register">Register</Link>
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <Link href="/properties">Properties</Link>
       </li>
       <li className="menu-icon">
-        <Link href="#">
-          News <FaPlus />
-        </Link>
-        <ul>
-          <li>
-            <Link href="/blog">News</Link>
-          </li>
-          <li>
-            <Link href="/blog/grid">News Grid</Link>
-          </li>
-          <li>
-            <Link href="/blog/left-sidebar">News Left sidebar</Link>
-          </li>
-          <li>
-            <Link href="/blog/right-sidebar">News Right sidebar</Link>
-          </li>
-        </ul>
+        <Link href="/faq">FAQs</Link>
       </li>
-      <li className="menu-icon mega-menu-parent">
+      {/* <li className="menu-icon mega-menu-parent">
         <Link href="#">
           Pages <FaPlus />
         </Link>
@@ -235,7 +143,7 @@ const MenuList = ({ addListing }) => {
             </Link>
           </li>
         </ul>
-      </li>
+      </li> */}
       <li>
         <Link href="/contact">Contact</Link>
       </li>

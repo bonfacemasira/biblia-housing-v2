@@ -39,10 +39,10 @@ const MyApp = ({ Component, ...rest }) => {
   return (
     <Fragment>
       <Head>
-        <title>Quarter - Real Estate NextJs Template</title>
+        <title>Biblia Housing Co-operative Society Ltd</title>
         <meta
           name="description"
-          content="Quarter - Real Estate Nextjs Template"
+          content="Biblia Housing Co-operative Society Ltd"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
