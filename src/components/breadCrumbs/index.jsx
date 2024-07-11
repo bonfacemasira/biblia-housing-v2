@@ -26,8 +26,8 @@ const BreadCrumb = ({ title, currentSlug, sectionPace }) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/shop">
-                        <span className="me-2">Shop</span>
+                      <Link href="/properties">
+                        <span className="me-2">Properties</span>
                         <FaAngleRight />
                       </Link>
                     </li>

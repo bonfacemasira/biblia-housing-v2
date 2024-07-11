@@ -74,7 +74,6 @@ function ProductDetails({ product }) {
     (compareItem) => compareItem.id === product.id
   );
 
-
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
     <button
       {...props}
@@ -179,7 +178,7 @@ function ProductDetails({ product }) {
         {/* <!-- BREADCRUMB AREA START --> */}
 
         <BreadCrumb
-          title="Product Details"
+          title="Project Details"
           sectionPace="mb-0"
           currentSlug={product.title}
         />
@@ -226,15 +225,15 @@ function ProductDetails({ product }) {
                         ) : (
                           ""
                         ),
-                          product.rent ? (
-                            <li className="ltn__blog-category">
-                              <Link className="bg-orange" href="#">
-                                For Rent
-                              </Link>
-                            </li>
-                          ) : (
-                            ""
-                          ))
+                        product.rent ? (
+                          <li className="ltn__blog-category">
+                            <Link className="bg-orange" href="#">
+                              For Rent
+                            </Link>
+                          </li>
+                        ) : (
+                          ""
+                        ))
                       }
 
                       <li className="ltn__blog-date">
@@ -1063,7 +1062,7 @@ function ProductDetails({ product }) {
                           <RelatedProduct
                             productData={data}
                             slug={slug}
-                            baseUrl="shop"
+                            baseUrl="properties"
                             discountedPrice={discountedPrice}
                             productPrice={productPrice}
                             cartItem={cartItem}
@@ -1207,7 +1206,7 @@ function ProductDetails({ product }) {
                           <li key={product.id}>
                             <div className="top-rated-product-item clearfix">
                               <div className="top-rated-product-img">
-                                <a href={`/shop/${slug}`}>
+                                <a href={`/properties/${slug}`}>
                                   <img
                                     src={`/img/product/${key}.png`}
                                     alt={product.title}
@@ -1245,7 +1244,9 @@ function ProductDetails({ product }) {
                                   </ul>
                                 </div>
                                 <h6>
-                                  <a href={`/shop/${slug}`}>{product.title}</a>
+                                  <a href={`/properties/${slug}`}>
+                                    {product.title}
+                                  </a>
                                 </h6>
                                 <div className="product-price">
                                   <span>${product.price}</span>
@@ -1311,7 +1312,7 @@ function ProductDetails({ product }) {
                             className="ltn__product-item ltn__product-item-4 ltn__product-item-5 text-center---"
                           >
                             <div className="product-img">
-                              <Link href={`/shop/${slug}`}>
+                              <Link href={`/properties/${slug}`}>
                                 <img
                                   src={`/img/product-3/${product.productImg}`}
                                   alt={slug}
@@ -1333,7 +1334,7 @@ function ProductDetails({ product }) {
                                 </span>
                               </div>
                               <h2 className="product-title">
-                                <Link href={`/shop/${slug}`}>
+                                <Link href={`/properties/${slug}`}>
                                   {product.title}
                                 </Link>
                               </h2>
@@ -1440,7 +1441,6 @@ function ProductDetails({ product }) {
         </div>
         {/* <!-- CALL TO ACTION END --> */}
       </LayoutOne>
-
     </>
   );
 }

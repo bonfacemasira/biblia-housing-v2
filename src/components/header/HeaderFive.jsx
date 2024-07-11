@@ -99,7 +99,7 @@ const HeaderStyleFive = function ({ SetToggleClassName }) {
                 <div className="site-logo-wrap">
                   <div className="site-logo">
                     <Link href="/">
-                      <img src="/img/logo.png" alt="Logo" />
+                      <img src="/img/biblia-sacco-logo.png" alt="Logo" />
                     </Link>
                   </div>
                 </div>
@@ -192,29 +192,28 @@ const HeaderStyleFive = function ({ SetToggleClassName }) {
                       </div>
                     </li>
                   </ul>
-
                 </div>
                 <div className="mobile-menu-toggle me-0 ms-3 d-lg-none">
-                    <button
-                      onClick={offcanVasToggler}
-                      className={`ltn__utilize-toggle ${
-                        offCanVastoggleBtn ? "close" : ""
-                      }`}
-                    >
-                      <svg viewBox="0 0 800 600">
-                        <path
-                          d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
-                          id="top"
-                        ></path>
-                        <path d="M300,320 L540,320" id="middle"></path>
-                        <path
-                          d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
-                          id="bottom"
-                          transform="translate(480, 320) scale(1, -1) translate(-480, -318) "
-                        ></path>
-                      </svg>
-                    </button>
-                  </div>
+                  <button
+                    onClick={offcanVasToggler}
+                    className={`ltn__utilize-toggle ${
+                      offCanVastoggleBtn ? "close" : ""
+                    }`}
+                  >
+                    <svg viewBox="0 0 800 600">
+                      <path
+                        d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                        id="top"
+                      ></path>
+                      <path d="M300,320 L540,320" id="middle"></path>
+                      <path
+                        d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                        id="bottom"
+                        transform="translate(480, 320) scale(1, -1) translate(-480, -318) "
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
               </Col>
               <Col className="d-sm-none">
                 <div className="ltn__header-options">
@@ -235,7 +234,6 @@ const HeaderStyleFive = function ({ SetToggleClassName }) {
                               <sup>0</sup>
                             )}
                           </span>
-        
                         </button>
                       </div>
                     </li>
@@ -290,7 +288,7 @@ const HeaderStyleFive = function ({ SetToggleClassName }) {
                 <div className="header-menu header-menu-2">
                   <nav>
                     <div className="ltn__main-menu">
-                    <MenuList addListing={true} />
+                      <MenuList addListing={true} />
                     </div>
                   </nav>
                 </div>

@@ -160,14 +160,6 @@ function HomePage(props) {
         <AboutUsStyleOne sectionSpace="pt-120 pb-90" />
         {/* <!-- ABOUT US AREA END -->
 
-      <!-- COUNTER UP AREA START --> */}
-        <CounterUp />
-        {/* <!-- COUNTER UP AREA END -->
-
-      <!-- ABOUT US AREA START --> */}
-        <AboutUsStyleTwo sectionSpace="pt-120 pb-90" />
-        {/* <!-- ABOUT US AREA END -->
-
       <!-- FEATURE AREA START ( Feature - 6) --> */}
         <Feature
           classes="section-bg-1"
@@ -242,308 +234,13 @@ function HomePage(props) {
             </Row>
           </Container>
         </div>
-        {/* PRODUCT SLIDER AREA END */}
-
-        <div className="ltn__apartments-plan-area pb-70">
-          <Container>
-            <Row>
-              <Col>
-                <TitleSection
-                  sectionClasses="text-center"
-                  headingClasses="section-subtitle-2"
-                  titleSectionData={{
-                    subTitle: "Apartment Sketch",
-                    title: "Apartments Plan",
-                    additionalClassName: "",
-                  }}
-                />
-
-                <Tab.Container defaultActiveKey="first">
-                  <div className="ltn__tab-menu ltn__tab-menu-3 text-center">
-                    <Nav className="nav justify-content-center">
-                      <Nav.Link eventKey="first">The Studio</Nav.Link>
-                      <Nav.Link eventKey="second">Deluxe Portion</Nav.Link>
-                      <Nav.Link eventKey="third">Penthouse</Nav.Link>
-                      <Nav.Link eventKey="fourth">Top Garden</Nav.Link>
-                      <Nav.Link eventKey="five"> Double Height</Nav.Link>
-                    </Nav>
-                  </div>
-                  <Tab.Content>
-                    <Tab.Pane eventKey="first">
-                      <div className="ltn__apartments-tab-content-inner">
-                        <Row>
-                          <Col xs={12} lg={6}>
-                            <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-                              <h2>The Studio</h2>
-                              <p>
-                                Enimad minim veniam quis nostrud exercitation
-                                ullamco laboris. Lorem ipsum dolor sit amet cons
-                                aetetur adipisicing elit sedo eiusmod
-                                tempor.Incididunt labore et dolore magna aliqua.
-                                sed ayd minim veniam.
-                              </p>
-                              <div className="apartments-info-list apartments-info-list-color mt-40">
-                                <ul>
-                                  <li>
-                                    <label>Total Area</label>
-                                    <span>2800 Sq. Ft</span>
-                                  </li>
-                                  <li>
-                                    <label>Bedroom</label>
-                                    <span>150 Sq. Ft</span>
-                                  </li>
-                                  <li>
-                                    <label>Bathroom</label>
-                                    <span>45 Sq. Ft</span>
-                                  </li>
-                                  <li>
-                                    <label>Belcony/Pets</label>
-                                    <span>Allowed</span>
-                                  </li>
-                                  <li>
-                                    <label>Lounge</label>
-                                    <span>650 Sq. Ft</span>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </Col>
-                          <Col xs={12} lg={6}>
-                            <div className="apartments-plan-img">
-                              <img src="/img/others/10.png" alt="#" />
-                            </div>
-                          </Col>
-                        </Row>
-                      </div>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                      <div className="ltn__product-tab-content-inner">
-                        <Row>
-                          <Col xs={12} lg={6}>
-                            <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-                              <h2>Deluxe Portion</h2>
-                              <p>
-                                Enimad minim veniam quis nostrud exercitation
-                                ullamco laboris. Lorem ipsum dolor sit amet cons
-                                aetetur adipisicing elit sedo eiusmod
-                                tempor.Incididunt labore et dolore magna aliqua.
-                                sed ayd minim veniam.
-                              </p>
-                              <div className="apartments-info-list apartments-info-list-color mt-40">
-                                <ul>
-                                  <li>
-                                    <label>Total Area</label>
-                                    <span>2800 Sq. Ft</span>
-                                  </li>
-                                  <li>
-                                    <label>Bedroom</label>
-                                    <span>150 Sq. Ft</span>
-                                  </li>
-                                  <li>
-                                    <label>Bathroom</label>
-                                    <span>45 Sq. Ft</span>
-                                  </li>
-                                  <li>
-                                    <label>Belcony/Pets</label>
-                                    <span>Allowed</span>
-                                  </li>
-                                  <li>
-                                    <label>Lounge</label>
-                                    <span>650 Sq. Ft</span>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </Col>
-                          <Col xs={12} lg={6}>
-                            <div className="apartments-plan-img">
-                              <img src="/img/others/10.png" alt="#" />
-                            </div>
-                          </Col>
-                        </Row>
-                      </div>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <div className="ltn__product-tab-content-inner">
-                        <Row>
-                          <Col xs={12} lg={6}>
-                            <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-                              <h2>Penthouse</h2>
-                              <p>
-                                Enimad minim veniam quis nostrud exercitation
-                                ullamco laboris. Lorem ipsum dolor sit amet cons
-                                aetetur adipisicing elit sedo eiusmod
-                                tempor.Incididunt labore et dolore magna aliqua.
-                                sed ayd minim veniam.
-                              </p>
-                              <div className="apartments-info-list apartments-info-list-color mt-40">
-                                <ul>
-                                  <li>
-                                    <label>Total Area</label>
-                                    <span>2800 Sq. Ft</span>
-                                  </li>
-                                  <li>
-                                    <label>Bedroom</label>
-                                    <span>150 Sq. Ft</span>
-                                  </li>
-                                  <li>
-                                    <label>Bathroom</label>
-                                    <span>45 Sq. Ft</span>
-                                  </li>
-                                  <li>
-                                    <label>Belcony/Pets</label>
-                                    <span>Allowed</span>
-                                  </li>
-                                  <li>
-                                    <label>Lounge</label>
-                                    <span>650 Sq. Ft</span>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </Col>
-                          <Col xs={12} lg={6}>
-                            <div className="apartments-plan-img">
-                              <img src="/img/others/10.png" alt="#" />
-                            </div>
-                          </Col>
-                        </Row>
-                      </div>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="fourth">
-                      <div className="ltn__product-tab-content-inner">
-                        <Row>
-                          <Col xs={12} lg={6}>
-                            <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-                              <h2>Top Garden</h2>
-                              <p>
-                                Enimad minim veniam quis nostrud exercitation
-                                ullamco laboris. Lorem ipsum dolor sit amet cons
-                                aetetur adipisicing elit sedo eiusmod
-                                tempor.Incididunt labore et dolore magna aliqua.
-                                sed ayd minim veniam.
-                              </p>
-                              <div className="apartments-info-list apartments-info-list-color mt-40">
-                                <ul>
-                                  <li>
-                                    <label>Total Area</label>
-                                    <span>2800 Sq. Ft</span>
-                                  </li>
-                                  <li>
-                                    <label>Bedroom</label>
-                                    <span>150 Sq. Ft</span>
-                                  </li>
-                                  <li>
-                                    <label>Bathroom</label>
-                                    <span>45 Sq. Ft</span>
-                                  </li>
-                                  <li>
-                                    <label>Belcony/Pets</label>
-                                    <span>Allowed</span>
-                                  </li>
-                                  <li>
-                                    <label>Lounge</label>
-                                    <span>650 Sq. Ft</span>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </Col>
-                          <Col xs={12} lg={6}>
-                            <div className="apartments-plan-img">
-                              <img src="/img/others/10.png" alt="#" />
-                            </div>
-                          </Col>
-                        </Row>
-                      </div>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="five">
-                      <div className="ltn__product-tab-content-inner">
-                        <Row>
-                          <Col xs={12} lg={6}>
-                            <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-                              <h2>Double Height</h2>
-                              <p>
-                                Enimad minim veniam quis nostrud exercitation
-                                ullamco laboris. Lorem ipsum dolor sit amet cons
-                                aetetur adipisicing elit sedo eiusmod
-                                tempor.Incididunt labore et dolore magna aliqua.
-                                sed ayd minim veniam.
-                              </p>
-                              <div className="apartments-info-list apartments-info-list-color mt-40">
-                                <ul>
-                                  <li>
-                                    <label>Total Area</label>
-                                    <span>2800 Sq. Ft</span>
-                                  </li>
-                                  <li>
-                                    <label>Bedroom</label>
-                                    <span>150 Sq. Ft</span>
-                                  </li>
-                                  <li>
-                                    <label>Bathroom</label>
-                                    <span>45 Sq. Ft</span>
-                                  </li>
-                                  <li>
-                                    <label>Belcony/Pets</label>
-                                    <span>Allowed</span>
-                                  </li>
-                                  <li>
-                                    <label>Lounge</label>
-                                    <span>650 Sq. Ft</span>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </Col>
-                          <Col xs={12} lg={6}>
-                            <div className="apartments-plan-img">
-                              <img src="/img/others/10.png" alt="#" />
-                            </div>
-                          </Col>
-                        </Row>
-                      </div>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-              </Col>
-            </Row>
-          </Container>
-        </div>
 
         {/* <!-- VIDEO AREA START --> */}
         <div className="ltn__video-popup-area">
           <VideoBanner />
         </div>
+
         {/* <!-- VIDEO AREA END --> */}
-        {/* <!-- CATEGORY AREA START -->  */}
-        <div className="ltn__category-area ltn__product-gutter pt-115 pb-90">
-          <Container>
-            <Row>
-              <Col xs={12}>
-                <TitleSection
-                  sectionClasses="text-center"
-                  headingClasses="section-subtitle-2"
-                  titleSectionData={{
-                    subTitle: "Our Aminities",
-                    title: "Building Aminities",
-                    additionalClassName: "",
-                  }}
-                />
-              </Col>
-            </Row>
-            <Row className="slick-arrow-1 justify-content-center">
-              {aminitiesData.map((data, key) => {
-                return (
-                  <Col key={key} xs={12} sm={6} md={4} lg={3}>
-                    <AminitiesItem data={data} />
-                  </Col>
-                );
-              })}
-            </Row>
-          </Container>
-        </div>
-        {/* <!-- CATEGORY AREA END --> */}
 
         {/* <!-- TESTIMONIAL AREA START (testimonial-7) -->  */}
         <div
@@ -577,7 +274,7 @@ function HomePage(props) {
         {/* <!-- TESTIMONIAL AREA END --> */}
 
         {/* <!-- BLOG AREA START (blog-3) -->  */}
-        <div className="ltn__blog-area pb-70">
+        {/* <div className="ltn__blog-area pb-70">
           <Container>
             <Row>
               <Col lg={12}>
@@ -603,7 +300,7 @@ function HomePage(props) {
               })}
             </Slider>
           </Container>
-        </div>
+        </div> */}
         {/* <!-- BLOG AREA END --> */}
 
         <div className="ltn__call-to-action-area call-to-action-6 before-bg-bottom">
