@@ -39,6 +39,11 @@ async function createUserHandler(req, res) {
   let errors = [];
   const { firstName, lastName, email, password } = req.body;
 
+  if (!firstName || lastName || !email || !password) {
+    errors.push("invalid inputs");
+    return res.status(400).json({ status: 400, errors });
+  }
+
   if (password.length < 6) {
     errors.push("password length should be more than 6 characters");
     return res.status(400).json({ errors });
