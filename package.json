@@ -17,6 +17,7 @@
     "animate.css": "^3.7.0",
     "bootstrap": "^5.2.3",
     "clsx": "^2.0.0",
+    "cors": "^2.8.5",
     "crypto-js": "^4.2.0",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
@@ -50,6 +51,8 @@
     "yet-another-react-lightbox": "^3.12.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/crypto-js": "^4.2.2",
     "prisma": "^5.16.2",
     "sass": "^1.59.2"
   }

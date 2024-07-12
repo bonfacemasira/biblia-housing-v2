@@ -3,7 +3,26 @@ import { SHA256 as sha256 } from "crypto-js";
 import prisma from "../../../lib/prisma";
 // Prisma will help handle and catch errors
 import { Prisma } from "@prisma/client";
+
 export default async function handle(req, res) {
+  // Set CORS headers manually
+  res.setHeader("Access-Control-Allow-Credentials", true);
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET,PUT,POST,DELETE,PATCH,OPTIONS"
+  );
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+  );
+
+  if (req.method === "OPTIONS") {
+    // Preflight request response
+    res.status(200).end();
+    return;
+  }
+
   if (req.method === "POST") {
     // create user
     await createUserHandler(req, res);
@@ -32,9 +51,10 @@ async function createUserHandler(req, res) {
   } catch (e) {
     if (e instanceof Prisma.PrismaClientKnownRequestError) {
       if (e.code === "P2002") {
-        return res.status(400).json({ message: e.message });
+        return res.status(400).json({ message: e.message }); // Send specific error message
       }
-      return res.status(400).json({ message: e.message });
+      return res.status(400).json({ message: e.message }); // Send generic error message
     }
+    return res.status(500).json({ message: "Internal Server Error" }); // Handle unexpected errors
   }
 }
