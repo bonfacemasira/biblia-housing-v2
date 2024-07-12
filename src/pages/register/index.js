@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { LayoutOne } from "@/layouts";
 import { Container, Row, Col } from "react-bootstrap";
 import {
@@ -14,12 +14,91 @@ import ShopBreadCrumb from "@/components/breadCrumbs/shop";
 
 import CallToAction from "@/components/callToAction";
 import Link from "next/link";
+import { validate } from "uuid";
 
 function Register() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [passError, setPassError] = useState(false);
+  const [checkbox1, setCheckbox1] = useState(false);
+  const [checkbox2, setCheckbox2] = useState(false);
+  const [isFormValid, setIsFormValid] = useState(false);
+  const [isValid, setIsValid] = useState(false);
+
+  useEffect(() => {
+    validatePassword(password, confirmPassword);
+    checkFormValidity();
+  }, [
+    firstName,
+    lastName,
+    email,
+    password,
+    confirmPassword,
+    checkbox1,
+    checkbox2,
+    isValid,
+  ]);
+
+  function validatePassword(pass, confirmPass) {
+    let isValid = confirmPass === pass;
+    // console.log(isValid);
+    setIsValid(isValid);
+    setPassError(!isValid);
+  }
+
+  function checkFormValidity() {
+    const isFormValid =
+      firstName &&
+      lastName &&
+      email &&
+      password &&
+      confirmPassword &&
+      isValid &&
+      checkbox1 &&
+      checkbox2;
+    setIsFormValid(isFormValid);
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    if (isFormValid) {
+      console.log({
+        firstName,
+        lastName,
+        email,
+        password,
+        confirmPassword,
+      });
+      let userData = { firstName, lastName, email, password };
+      // Make call to backend to create user
+      const res = await fetch("http://localhost:3000/api/user/create", {
+        method: "POST",
+        body: JSON.stringify(userData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      console.log(res);
+
+      if (res.ok) {
+        const data = await res.json();
+        console.log(data);
+        // registration success
+      } else {
+        //registration faled
+        console.error("Registration failed");
+      }
+    }
+  }
+
   return (
     <>
       <LayoutOne topbar={true}>
-        <ShopBreadCrumb title="Account" sectionPace="" currentSlug="Register" />
+        {/* <ShopBreadCrumb title="Account" sectionPace="" currentSlug="Register" /> */}
 
         {/* <!-- LOGIN AREA START (Register) --> */}
         <div className="ltn__login-area pb-110">
@@ -42,36 +121,63 @@ function Register() {
             <Row>
               <Col xs={12} lg={{ span: 6, offset: 3 }}>
                 <div className="account-login-inner">
-                  <form action="#" className="ltn__form-box contact-form-box">
+                  <form
+                    onSubmit={handleSubmit}
+                    className="ltn__form-box contact-form-box"
+                  >
                     <input
                       type="text"
                       name="firstname"
                       placeholder="First Name"
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
                     />
                     <input
                       type="text"
                       name="lastname"
                       placeholder="Last Name"
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
                     />
-                    <input type="text" name="email" placeholder="Email*" />
+                    <input
+                      type="text"
+                      name="email"
+                      placeholder="Email*"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
                     <input
                       type="password"
                       name="password"
                       placeholder="Password*"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
                     />
                     <input
                       type="password"
                       name="confirmpassword"
                       placeholder="Confirm Password*"
+                      value={confirmPassword}
+                      onChange={(e) => setConfirmPassword(e.target.value)}
                     />
                     <label className="checkbox-inline">
-                      <input type="checkbox" value="" />I consent to Herboil
-                      processing my personal data in order to send personalized
-                      marketing material in accordance with the consent form and
-                      the privacy policy.
+                      <input
+                        type="checkbox"
+                        checked={checkbox1}
+                        onChange={(e) => setCheckbox1(e.target.checked)}
+                        style={{ marginRight: 5 }}
+                      />
+                      I consent to Herboil processing my personal data in order
+                      to send personalized marketing material in accordance with
+                      the consent form and the privacy policy.
                     </label>
                     <label className="checkbox-inline">
-                      <input type="checkbox" value="" />
+                      <input
+                        type="checkbox"
+                        checked={checkbox2}
+                        onChange={(e) => setCheckbox2(e.target.checked)}
+                        style={{ marginRight: 5 }}
+                      />
                       By clicking create account, I consent to the privacy
                       policy.
                     </label>
@@ -79,6 +185,7 @@ function Register() {
                       <button
                         className="theme-btn-1 btn reverse-color btn-block"
                         type="submit"
+                        disabled={!isFormValid}
                       >
                         CREATE ACCOUNT
                       </button>
