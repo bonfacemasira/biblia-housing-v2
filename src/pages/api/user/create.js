@@ -39,7 +39,7 @@ async function createUserHandler(req, res) {
   let errors = [];
   const { firstName, lastName, email, password } = req.body;
 
-  if (!firstName || lastName || !email || !password) {
+  if (!firstName || !lastName || !email || !password) {
     errors.push("invalid inputs");
     return res.status(400).json({ status: 400, errors });
   }

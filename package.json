@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth/prisma-adapter": "^2.4.1",
     "@hasanm95/cogo-toast": "https://github.com/hasanm95/cogo-toast",
     "@next/font": "^13.2.4",
     "@prisma/client": "^5.16.2",
@@ -27,6 +28,7 @@
     "isotope-layout": "^3.0.6",
     "isotope-masonry-horizontal": "^2.0.1",
     "next": "13.2.3",
+    "next-auth": "^4.24.7",
     "next-redux-wrapper": "^8.0.0",
     "prop-types": "^15.8.1",
     "react": "18.2.0",

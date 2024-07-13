@@ -65,13 +65,13 @@ function Register() {
   async function handleSubmit(e) {
     e.preventDefault();
     if (isFormValid) {
-      console.log({
-        firstName,
-        lastName,
-        email,
-        password,
-        confirmPassword,
-      });
+      // console.log({
+      //   firstName,
+      //   lastName,
+      //   email,
+      //   password,
+      //   confirmPassword,
+      // });
       let userData = { firstName, lastName, email, password };
       // Make call to backend to create user
       const res = await fetch("http://localhost:3000/api/user/create", {

@@ -8,7 +8,8 @@ export default async function handle(req, res) {
     //login uer
     await loginUserHandler(req, res);
   } else {
-    return res.status(405);
+    res.setHeader("Allow", ["POST"]);
+    return res.status(405).end(`Method ${req.method} Not Allowed`);
   }
 }
 
