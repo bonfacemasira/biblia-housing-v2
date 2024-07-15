@@ -186,10 +186,10 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
                           <Link href="/register">Register</Link>
                         </li> */}
                         <li>
-                          <Link href="/my-account">My Account</Link>
+                          <Link href="/my-profile">My Profile</Link>
                         </li>
                         <li>
-                          <Link href="/my-profile">My Profile</Link>
+                          <Link href="/my-account">My Account</Link>
                         </li>
                         <li>
                           <Link href="/login">Logout</Link>

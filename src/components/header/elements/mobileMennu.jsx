@@ -258,6 +258,14 @@ const MobileMenu = function ({ offCanVastoggleBtn, closeSideBar }) {
           <div className="ltn__utilize-buttons ltn__utilize-buttons-2">
             <ul>
               <li>
+                <Link href="/my-profile" title="My Profile">
+                  <span className="utilize-btn-icon">
+                    <FaRegUser />
+                  </span>
+                  My Profile
+                </Link>
+              </li>
+              <li>
                 <Link href="/my-account" title="My Account">
                   <span className="utilize-btn-icon">
                     <FaRegUser />
