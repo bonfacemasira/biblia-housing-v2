@@ -8,28 +8,38 @@ const options = {
     CredentialsProvider({
       id: "credentials",
       name: "Credentials",
-      async authorize(credentials, req) {
-        const userCredentials = {
-          email: credentials.email,
-          password: credentials.password,
-        };
-
-        const res = await fetch(
-          `${process.env.NEXT_PUBLIC_NEXTAUTH_URL}/api/user/login`,
-          {
-            method: "POST",
-            body: JSON.stringify(userCredentials),
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }
-        );
-        const user = await res.json();
-
-        if (res.ok && user) {
-          return user;
-        } else {
+      credentials: {
+        email: {
+          label: "Email",
+          type: "email",
+          placeholder: "example@example.com",
+        },
+        password: { label: "Password", type: "password" },
+      },
+      async authorize(credentials) {
+        console.log(credentials);
+        if (!credentials?.email || !credentials.password) {
           return null;
+        }
+
+        try {
+          const user = await prisma.user.findUnique({
+            where: { email: credentials.email },
+          });
+
+          if (!user || !(await compare(credentials.password, user.password))) {
+            return null;
+          }
+          return {
+            id: user.id,
+            email: user.email,
+            firstName: user.firstName,
+            lastName: user.lastName,
+            // randomKey: "Hey cool",
+          };
+        } catch (error) {
+          console.log(error);
+          throw new Error(error);
         }
       },
     }),
@@ -52,15 +62,24 @@ const options = {
   },
 
   callbacks: {
-    async session(session, user, token) {
-      if (user !== null) {
-        session.user = user;
-      }
-      return await session;
+    session: ({ session, token }) => {
+      return {
+        ...session,
+        user: {
+          ...session.user,
+          id: token.id,
+        },
+      };
     },
-
-    async jwt({ token, user }) {
-      return await token;
+    jwt: ({ token, user }) => {
+      if (user) {
+        const u = user;
+        return {
+          ...token,
+          id: u.id,
+        };
+      }
+      return token;
     },
   },
 };

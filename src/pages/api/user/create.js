@@ -48,12 +48,16 @@ async function createUserHandler(req, res) {
     errors.push("password length should be more than 6 characters");
     return res.status(400).json({ errors });
   }
+
   try {
     const user = await prisma.user.create({
       data: { ...req.body, password: hashPassword(req.body.password) },
     });
-    return res.status(201).json({ user });
+    // console.log(user);
+    // return res.status(201).json({ user });
+    return user ? { ...user } : null;
   } catch (e) {
+    console.log(e);
     if (e instanceof Prisma.PrismaClientKnownRequestError) {
       if (e.code === "P2002") {
         return res.status(400).json({ message: e.message }); // Send specific error message

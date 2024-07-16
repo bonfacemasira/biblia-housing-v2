@@ -36,7 +36,7 @@ function Login() {
     let res = await signIn("credentials", {
       email,
       password,
-      callbackUrl: `${process.env.NEXT_PUBLIC_NEXTAUTH_URL}`,
+      // callbackUrl: `${process.env.NEXT_PUBLIC_NEXTAUTH_URL}`,
       redirect: false,
     });
     setIsLoading(false);
