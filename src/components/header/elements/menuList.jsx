@@ -16,31 +16,6 @@ const MenuList = ({ addListing }) => {
             <Link href="/home/page-two">Home Style 02</Link>
             <img src="/img/home-demos/home-2.jpg" alt="#" />
           </li>
-
-          {/* <li>
-            <Link href="/home/page-six">Home Style 06</Link>
-            <img src="/img/home-demos/home-6.jpg" alt="#" />
-          </li>
-          <li>
-            <Link href="/home/page-seven">Home Style 07</Link>
-            <img src="/img/home-demos/home-7.jpg" alt="#" />
-          </li>
-          <li>
-            <Link href="/home/page-eight">Home Style 08</Link>
-            <img src="/img/home-demos/home-8.jpg" alt="#" />
-          </li>
-          <li>
-            <Link href="/home/page-nine">Home Style 09</Link>
-            <img src="/img/home-demos/home-9.jpg" alt="#" />
-          </li>
-          <li>
-            <Link href="/home/page-ten">Home Style 10</Link>
-            <img src="/img/home-demos/home-10.jpg" alt="#" />
-          </li>
-          <li>
-            <Link href="/home/page-eleven">Home Style 11</Link>
-            <img src="/img/home-demos/home-11.jpg" alt="#" />
-          </li> */}
         </ul>
       </li>
       <li className="menu-icon">

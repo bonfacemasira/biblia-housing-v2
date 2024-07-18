@@ -44,7 +44,6 @@ function Register() {
 
   function validatePassword(pass, confirmPass) {
     let isValid = confirmPass === pass;
-    // console.log(isValid);
     setIsValid(isValid);
     setPassError(!isValid);
   }
@@ -65,16 +64,9 @@ function Register() {
   async function handleSubmit(e) {
     e.preventDefault();
     if (isFormValid) {
-      // console.log({
-      //   firstName,
-      //   lastName,
-      //   email,
-      //   password,
-      //   confirmPassword,
-      // });
       let userData = { firstName, lastName, email, password };
       // Make call to backend to create user
-      const res = await fetch("http://localhost:3000/api/user/create", {
+      const res = await fetch("/api/user/create", {
         method: "POST",
         body: JSON.stringify(userData),
         headers: {
@@ -87,9 +79,7 @@ function Register() {
       if (res.ok) {
         const data = await res.json();
         console.log(data);
-        // registration success
       } else {
-        //registration faled
         console.error("Registration failed");
       }
     }

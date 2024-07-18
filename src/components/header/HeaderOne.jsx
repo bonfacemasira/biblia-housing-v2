@@ -11,7 +11,9 @@ import Col from "react-bootstrap/Col";
 import clsx from "clsx";
 import { FaCartArrowDown, FaRegUser, FaSearch, FaTimes } from "react-icons/fa";
 import MenuList from "@/components/header/elements/menuList";
+
 const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
+  const [user, setUser] = useState(null);
   const [searchFormOpener, searchFormOpenerSet] = useState(false);
 
   const [cartMenuOpener, cartMenuOpenerSet] = useState(false);
@@ -81,6 +83,24 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
     setCurrentItems(updatedProducts);
   }, [products, query]);
 
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const response = await fetch("/api/fetchUser");
+        if (response.ok) {
+          const data = await response.json();
+          setUser(data);
+        } else {
+          console.error("Error fetching user:", response.statusText);
+        }
+      } catch (error) {
+        console.error("Error fetching user:", error);
+      }
+    };
+
+    fetchUser();
+  }, []);
+
   return (
     <>
       <header className="ltn__header-area ltn__header-5">
@@ -116,6 +136,10 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
                   </nav>
                 </div>
               </Col>
+              <Col className="justify-content-center align-items-center">
+                <h5 className="text-center">Hello, {user?.firstName}</h5>
+              </Col>
+
               <Col className="ltn__header-options ltn__header-options-2 mb-sm-20">
                 {/* <!-- header-search-1 --> */}
                 <div className="header-search-wrap">
