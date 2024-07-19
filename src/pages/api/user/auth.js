@@ -1,7 +1,7 @@
 import { SHA256 as sha256 } from "crypto-js";
 // import prisma client
-import prisma from "./lib/prisma";
-import hashPassword from "./create"
+import hashPassword from "./create";
+import prisma from "@/lib/prisma";
 export default async function handle(req, res) {
   if (req.method === "POST") {
     //login uer
@@ -28,7 +28,7 @@ async function loginUserHandler(req, res) {
     });
     if (user && user.password === hashPassword(password)) {
       // exclude password from json response
-      console.log("login",user);
+      console.log("login", user);
       return res.status(200).json(exclude(user, ["password"]));
     } else {
       return res.status(401).json({ message: "invalid credentials" });
