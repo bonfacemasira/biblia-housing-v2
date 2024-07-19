@@ -54,8 +54,7 @@ async function createUserHandler(req, res) {
       data: { ...req.body, password: hashPassword(req.body.password) },
     });
     // console.log(user);
-    // return res.status(201).json({ user });
-    return user ? { ...user } : null;
+    return res.status(201).json({ user });
   } catch (e) {
     console.log(e);
     if (e instanceof Prisma.PrismaClientKnownRequestError) {

@@ -136,9 +136,13 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
                   </nav>
                 </div>
               </Col>
-              <Col className="justify-content-center align-items-center">
-                <h5 className="text-center">Hello, {user?.firstName}</h5>
-              </Col>
+              {user && (
+                <Col className="d-flex align-items-center justify-content-center">
+                  <div className="p-2">
+                    <strong>Hello, {user?.firstName}</strong>
+                  </div>
+                </Col>
+              )}
 
               <Col className="ltn__header-options ltn__header-options-2 mb-sm-20">
                 {/* <!-- header-search-1 --> */}

@@ -76,12 +76,12 @@ function Register() {
 
       console.log(res);
 
-      if (res.ok) {
-        const data = await res.json();
-        console.log(data);
-      } else {
-        console.error("Registration failed");
-      }
+      // if (res.ok) {
+      //   const data = await res.json();
+      //   console.log(data);
+      // } else {
+      //   console.error("Registration failed");
+      // }
     }
   }
 
@@ -190,7 +190,15 @@ function Register() {
                       </Link>
                     </p>
                     <div className="go-to-btn mt-50">
-                      <Link href="/login">ALREADY HAVE AN ACCOUNT ?</Link>
+                      <p>ALREADY HAVE AN ACCOUNT ?</p>
+                      <div className="btn-wrapper mt-0">
+                        <Link
+                          href="/login"
+                          className="theme-btn-1 btn black-btn"
+                        >
+                          SIGN IN
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
