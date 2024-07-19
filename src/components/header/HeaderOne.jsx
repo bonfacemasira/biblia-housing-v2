@@ -11,7 +11,9 @@ import Col from "react-bootstrap/Col";
 import clsx from "clsx";
 import { FaCartArrowDown, FaRegUser, FaSearch, FaTimes } from "react-icons/fa";
 import MenuList from "@/components/header/elements/menuList";
+
 const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
+  const [user, setUser] = useState(null);
   const [searchFormOpener, searchFormOpenerSet] = useState(false);
 
   const [cartMenuOpener, cartMenuOpenerSet] = useState(false);
@@ -81,6 +83,24 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
     setCurrentItems(updatedProducts);
   }, [products, query]);
 
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const response = await fetch("/api/fetchUser");
+        if (response.ok) {
+          const data = await response.json();
+          setUser(data);
+        } else {
+          console.error("Error fetching user:", response.statusText);
+        }
+      } catch (error) {
+        console.error("Error fetching user:", error);
+      }
+    };
+
+    fetchUser();
+  }, []);
+
   return (
     <>
       <header className="ltn__header-area ltn__header-5">
@@ -116,6 +136,14 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
                   </nav>
                 </div>
               </Col>
+              {user && (
+                <Col className="d-flex align-items-center justify-content-center">
+                  <div className="p-2">
+                    <strong>Hello, {user?.firstName}</strong>
+                  </div>
+                </Col>
+              )}
+
               <Col className="ltn__header-options ltn__header-options-2 mb-sm-20">
                 {/* <!-- header-search-1 --> */}
                 <div className="header-search-wrap">
@@ -186,10 +214,10 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
                           <Link href="/register">Register</Link>
                         </li> */}
                         <li>
-                          <Link href="/my-account">My Account</Link>
+                          <Link href="/my-profile">My Profile</Link>
                         </li>
                         <li>
-                          <Link href="/my-profile">My Profile</Link>
+                          <Link href="/my-account">My Account</Link>
                         </li>
                         <li>
                           <Link href="/login">Logout</Link>

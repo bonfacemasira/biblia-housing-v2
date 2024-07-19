@@ -52,17 +52,17 @@ function MyAccount() {
                           <Nav variant="pills" className="flex-column">
                             <Nav.Item>
                               <Nav.Link eventKey="ltn_tab_1_1">
-                                Dashboard <FaHome />
+                                Savings Accounts <FaHome />
                               </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                               <Nav.Link eventKey="ltn_tab_1_2">
-                                Profiles <FaUserAlt />
+                                Projects <FaUserAlt />
                               </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                               <Nav.Link eventKey="ltn_tab_1_3">
-                                address <FaMapMarkerAlt />
+                              Statements or Reports <FaMapMarkerAlt />
                               </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
