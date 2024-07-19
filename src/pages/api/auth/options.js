@@ -15,33 +15,29 @@ export const options = {
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-
         if (!credentials?.email || !credentials.password) {
           return null;
         }
 
-         const userCredentials = {
+        const userCredentials = {
           email: credentials.email,
           password: credentials.password,
         };
 
         try {
-
           const user = await prisma.user.findUnique({
             where: { email: credentials.email },
           });
 
-
           if (!user || !(await compare(credentials.password, user.password))) {
             return null;
           }
-          console.log("user",user)
+          console.log("user", user);
           return {
             id: user.id,
             email: user.email,
             firstName: user.firstName,
             lastName: user.lastName,
-
           };
         } catch (error) {
           throw new Error("Invalid credentials");
@@ -59,8 +55,6 @@ export const options = {
     maxAge: 60 * 60 * 24 * 30,
     encryption: true,
   },
-
-
 
   callbacks: {
     session: ({ session, token }) => {
@@ -85,7 +79,7 @@ export const options = {
       return token;
     },
   },
-    pages: {
+  pages: {
     signIn: "/login",
     signOut: "/login",
     error: "/login",
