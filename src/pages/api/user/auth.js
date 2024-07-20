@@ -1,7 +1,7 @@
-import { SHA256 as sha256 } from "crypto-js";
 // import prisma client
-import hashPassword from "./create";
 import prisma from "@/lib/prisma";
+import hashPassword from "./create";
+
 export default async function handle(req, res) {
   if (req.method === "POST") {
     //login uer

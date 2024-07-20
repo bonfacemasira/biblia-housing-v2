@@ -6,10 +6,10 @@ import Modal from "react-bootstrap/Modal";
 import ShopBreadCrumb from "@/components/breadCrumbs/shop";
 import CallToAction from "@/components/callToAction";
 import Link from "next/link";
-import { validateEmail } from "../../lib/utils";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/router";
-import AuthLayout from "../../layouts/AuthLayout";
+import { validateEmail } from "@/lib/utils";
+import AuthLayout from "@/layouts/AuthLayout";
 
 function Login() {
   const [show, setShow] = useState(false);
@@ -39,35 +39,35 @@ function Login() {
       // callbackUrl: `${process.env.NEXT_PUBLIC_NEXTAUTH_URL}`,
       redirect: false,
     });
+    console.log(res);
     setIsLoading(false);
 
     if (res?.ok) {
-      // toastsuccess
       console.log("success");
       router.push("/");
       return;
     } else {
-      // Toast failed
       setError("Failed! Check you input and try again.");
-      // return;
       console.log("Failed", res);
     }
-    return res;
   }
 
   function validate() {
     let emailIsValid = validateEmail(email);
 
-    if (!emailIsValid) {
-      setEmailInputError(true);
-      return;
-    }
-    if (password.length < 6) {
-      setPasswordInputError(true);
-    } else {
-      setEmailInputError(false);
-      setPasswordInputError(false);
-    }
+    // if (!emailIsValid) {
+    //   setEmailInputError(true);
+    //   return;
+    // }
+    // if (password.length < 6) {
+    //   setPasswordInputError(true);
+    // } else {
+    //   setEmailInputError(false);
+    //   setPasswordInputError(false);
+    // }
+
+    setEmailInputError(!emailIsValid);
+    setPasswordInputError(password.length < 6);
   }
 
   if (isLoading) {
@@ -111,7 +111,7 @@ function Login() {
                       </div>
                     )}
                     <input
-                      type="text"
+                      type="email"
                       name="email"
                       placeholder="Email*"
                       value={email}
@@ -132,7 +132,7 @@ function Login() {
                       <button
                         className="theme-btn-1 btn btn-block"
                         type="submit"
-                        disabled={isLoading ? true : false}
+                        disabled={isLoading}
                       >
                         {isLoading ? "Loading..." : "SIGN IN"}
                       </button>

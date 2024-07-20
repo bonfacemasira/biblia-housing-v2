@@ -5,9 +5,10 @@ const MenuList = ({ addListing }) => {
     <ul>
       <li className="menu-icon">
         <Link href="/">
-          Home <FaPlus />
+          Home
+          {/* <FaPlus /> */}
         </Link>
-        <ul className="sub-menu menu-pages-img-show">
+        {/* <ul className="sub-menu menu-pages-img-show">
           <li>
             <Link href="/">Home Style 01</Link>
             <img src="/img/home-demos/home-1.jpg" alt="#" />
@@ -16,7 +17,7 @@ const MenuList = ({ addListing }) => {
             <Link href="/home/page-two">Home Style 02</Link>
             <img src="/img/home-demos/home-2.jpg" alt="#" />
           </li>
-        </ul>
+        </ul> */}
       </li>
       <li className="menu-icon">
         <Link href="/about">

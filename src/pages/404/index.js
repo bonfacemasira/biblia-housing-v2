@@ -9,7 +9,7 @@ const comingSoon = () => {
   return (
     <>
       <LayoutOne topbar={true}>
-        <ShopBreadCrumb title="404 Page" sectionPace="" currentSlug="404" />
+        {/* <ShopBreadCrumb title="404 Page" sectionPace="" currentSlug="404" /> */}
 
         {/* <!-- 404 area start --> */}
         <div className="ltn__404-area ltn__404-area-1 mb-120">

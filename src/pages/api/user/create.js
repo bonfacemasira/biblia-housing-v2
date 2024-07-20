@@ -30,10 +30,12 @@ export default async function handle(req, res) {
     return res.status(405).json({ message: "Method Not allowed" });
   }
 }
+
 // We hash the user entered password using crypto.js
 export const hashPassword = (string) => {
   return sha256(string).toString();
 };
+
 // function to create user in our database
 async function createUserHandler(req, res) {
   let errors = [];

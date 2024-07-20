@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 import { productSlug } from "@/lib/product";
 import Link from "next/link";
@@ -15,10 +16,10 @@ import MenuList from "@/components/header/elements/menuList";
 const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
   const [user, setUser] = useState(null);
   const [searchFormOpener, searchFormOpenerSet] = useState(false);
-
   const [cartMenuOpener, cartMenuOpenerSet] = useState(false);
   const [overlayBtn, SetoverlayBtn] = useState(false);
   const [offCanVastoggleBtn, SetOffCanVastoggleBtn] = useState(false);
+  const router = useRouter();
 
   function offcanVasToggler() {
     SetToggleClassName(true);
@@ -83,6 +84,8 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
     setCurrentItems(updatedProducts);
   }, [products, query]);
 
+  console.log(router);
+
   useEffect(() => {
     const fetchUser = async () => {
       try {
@@ -99,7 +102,7 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
     };
 
     fetchUser();
-  }, []);
+  }, [router.events]);
 
   return (
     <>

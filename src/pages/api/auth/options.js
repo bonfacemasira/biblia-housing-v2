@@ -1,6 +1,7 @@
 import prisma from "@/lib/prisma";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import CredentialsProvider from "next-auth/providers/credentials";
+import { SHA256 as sha256 } from "crypto-js";
 
 export const options = {
   providers: [
@@ -14,25 +15,29 @@ export const options = {
         },
         password: { label: "Password", type: "password" },
       },
+
       async authorize(credentials) {
         if (!credentials?.email || !credentials.password) {
+          console.error("Missing email or password");
           return null;
         }
-
-        const userCredentials = {
-          email: credentials.email,
-          password: credentials.password,
-        };
 
         try {
           const user = await prisma.user.findUnique({
             where: { email: credentials.email },
           });
 
-          if (!user || !(await compare(credentials.password, user.password))) {
+          if (!user) {
+            console.error("No user found with this email");
             return null;
           }
-          console.log("user", user);
+
+          const hashedPassword = sha256(credentials.password).toString();
+          if (user.password !== hashedPassword) {
+            console.error("Invalid password");
+            return null;
+          }
+
           return {
             id: user.id,
             email: user.email,
@@ -40,7 +45,8 @@ export const options = {
             lastName: user.lastName,
           };
         } catch (error) {
-          throw new Error("Invalid credentials");
+          console.error("Authorization error:", error);
+          return null;
         }
       },
     }),
@@ -57,24 +63,13 @@ export const options = {
   },
 
   callbacks: {
-    session: ({ session, token }) => {
-      console.log("session", session);
-      console.log("token", token);
-      return {
-        ...session,
-        user: {
-          ...session.user,
-          id: token.id,
-        },
-      };
+    async session({ session, token }) {
+      session.user.id = token.id;
+      return session;
     },
-    jwt: ({ token, user }) => {
+    async jwt({ token, user }) {
       if (user) {
-        const u = user;
-        return {
-          ...token,
-          id: u.id,
-        };
+        token.id = user.id;
       }
       return token;
     },

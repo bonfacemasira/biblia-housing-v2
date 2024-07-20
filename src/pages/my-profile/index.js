@@ -65,7 +65,7 @@ function MyAccount() {
                                 Change OTP Phone <FaPhoneAlt />
                               </Nav.Link>
                             </Nav.Item>
-                            <Nav.Item style={{ marginBottom: "10px" }}>
+                            <Nav.Item>
                               <Nav.Link eventKey="ltn_tab_1_4">
                                 Edit Profile Details <FaUserAlt />
                               </Nav.Link>
