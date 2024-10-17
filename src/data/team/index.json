@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "image": "4.jpg",
+    "image": "/public/img/house1.jpg",
     "name": "Rosalina D. William",
     "designation": "PROPERTY SELLER",
     "category": ["buying", "women"],
@@ -44,7 +44,7 @@
   },
   {
     "id": "2",
-    "image": "2.jpg",
+    "image": "/public/img/house3.jpg",
     "name": "Kelian Anderson",
     "designation": "selling Agents",
     "category": ["buying", "women"],
@@ -84,7 +84,7 @@
   },
   {
     "id": "3",
-    "image": "3.jpg",
+    "image": "/public/img/house4.jpg",
     "name": "Miranda H. Halim",
     "designation": "Property Seller",
     "category": ["buying", "women"],
@@ -124,7 +124,7 @@
   },
   {
     "id": "4",
-    "image": "1.jpg",
+    "image": "/public/img/house5.jpg",
     "name": "Damble D. Browni.",
     "designation": "PROPERTY SELLER",
     "category": ["buying", "women"],
@@ -164,7 +164,7 @@
   },
   {
     "id": "5",
-    "image": "5.jpg",
+    "image": "public/img/house6.jpg",
     "name": "RosaAiden Benjamin",
     "designation": "Real Estate Broker",
     "category": ["buying", "women"],
@@ -204,7 +204,7 @@
   },
   {
     "id": "6",
-    "image": "6.jpg",
+    "image": "/public/img/house3.jpg",
     "name": "James Carter",
     "designation": "selling Agents",
     "category": ["buying", "women"],

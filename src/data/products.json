@@ -2,10 +2,10 @@
   {
     "id": "1",
     "carousel": [
-      { "img": "35.jpg" },
-      { "img": "31.jpg" },
-      { "img": "32.jpg" },
-      { "img": "33.jpg" }
+      { "img": "house1.jpg" },
+      { "img": "house3.jpg" },
+      { "img": "house4.jpg" },
+      { "img": "house4.jpg" }
     ],
     "title": "Luxury villa in Rego Park",
     "productImg": "1.jpg",
@@ -104,19 +104,19 @@
     },
 
     "gallery": {
-      "img1": "14.jpg",
-      "img2": "15.jpg",
-      "img3": "16.jpg"
+      "img1": "house1.jpg",
+      "img2": "house.3jpg",
+      "img3": "house4.jpg"
     },
     "propertyTypes": ["House", "Office Villa", "Luxary Home"]
   },
   {
     "id": "2",
     "carousel": [
-      { "img": "35.jpg" },
-      { "img": "31.jpg" },
-      { "img": "32.jpg" },
-      { "img": "33.jpg" }
+      { "img": "house3.jpg" },
+      { "img": "house3.jpg" },
+      { "img": "house3.jpg" },
+      { "img": "house3.jpg" }
     ],
     "title": "New Apartment Nice View",
     "productImg": "2.jpg",
@@ -156,7 +156,7 @@
       {
         "color": "brown",
         "colorCode": "#87554b",
-        "image": "1.jpg",
+        "image": "house3.jpg",
         "size": [
           {
             "name": "x",
@@ -175,7 +175,7 @@
       {
         "color": "black",
         "colorCode": "#333333",
-        "image": "2.jpg",
+        "image": "house4.jpg",
         "size": [
           {
             "name": "x",
@@ -198,7 +198,7 @@
       {
         "color": "red",
         "colorCode": "#da323f",
-        "image": "3.jpg",
+        "image": "house5.jpg",
         "size": [
           {
             "name": "x",
@@ -282,19 +282,19 @@
     },
 
     "gallery": {
-      "img1": "14.jpg",
-      "img2": "15.jpg",
-      "img3": "16.jpg"
+      "img1": "house4.jpg",
+      "img2": "house5.jpg",
+      "img3": "house6.jpg"
     },
     "propertyTypes": ["Apartment", "Office Villa", "Luxary Home", "Studio"]
   },
   {
     "id": "3",
     "carousel": [
-      { "img": "35.jpg" },
-      { "img": "31.jpg" },
-      { "img": "32.jpg" },
-      { "img": "33.jpg" }
+      { "img": "house.jpg" },
+      { "img": "house.jpg" },
+      { "img": "house.jpg" },
+      { "img": "house.jpg" }
     ],
     "title": "Citra Puri California Living",
     "productImg": "3.jpg",

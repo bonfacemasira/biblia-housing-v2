@@ -30,9 +30,9 @@ function MyAccount() {
     <>
       <LayoutOne topbar={true}>
         <ShopBreadCrumb
-          title="My Account"
+          title="My Profile"
           sectionPace=""
-          currentSlug="My Account"
+          currentSlug="My Profile"
         />
 
         {/* <!-- LOGIN AREA START --> */}

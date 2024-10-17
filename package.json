@@ -24,6 +24,7 @@
     "eslint-config-next": "13.2.3",
     "framer-motion": "^10.16.4",
     "gray-matter": "^4.0.3",
+    "html2pdf.js": "^0.10.2",
     "imagesloaded": "^4.1.4",
     "isotope-layout": "^3.0.6",
     "isotope-masonry-horizontal": "^2.0.1",

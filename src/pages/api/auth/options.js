@@ -65,11 +65,17 @@ export const options = {
   callbacks: {
     async session({ session, token }) {
       session.user.id = token.id;
+      session.user.email = token.email;
+      session.user.firstName = token.firstName;
+      session.user.lastName = token.lastName;
       return session;
     },
     async jwt({ token, user }) {
       if (user) {
         token.id = user.id;
+        token.email = user.email;
+        token.firstName = user.firstName;
+        token.lastName = user.lastName;
       }
       return token;
     },

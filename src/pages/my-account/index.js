@@ -24,8 +24,11 @@ import {
   FaGlobe,
 } from "react-icons/fa";
 import Link from "next/link";
+import AccountTable from "@/components/accountsTable/AccountsTable";
+import { useSession } from "next-auth/react";
 
 function MyAccount() {
+  const { data: session, status } = useSession();
   return (
     <>
       <LayoutOne topbar={true}>
@@ -52,20 +55,20 @@ function MyAccount() {
                           <Nav variant="pills" className="flex-column">
                             <Nav.Item>
                               <Nav.Link eventKey="ltn_tab_1_1">
-                                Savings Accounts <FaHome />
+                                Statements or Reports <FaHome />
                               </Nav.Link>
                             </Nav.Item>
-                            <Nav.Item>
+                            {/* <Nav.Item>
                               <Nav.Link eventKey="ltn_tab_1_2">
                                 Projects <FaUserAlt />
                               </Nav.Link>
-                            </Nav.Item>
+                            </Nav.Item> */}
                             <Nav.Item>
                               <Nav.Link eventKey="ltn_tab_1_3">
-                              Statements or Reports <FaMapMarkerAlt />
+                                Transactions <FaMapMarkerAlt />
                               </Nav.Link>
                             </Nav.Item>
-                            <Nav.Item>
+                            {/* <Nav.Item>
                               <Nav.Link eventKey="ltn_tab_1_4">
                                 Account Details <FaUserAlt />
                               </Nav.Link>
@@ -95,11 +98,11 @@ function MyAccount() {
                                 Change Password <FaLock />
                               </Nav.Link>
                             </Nav.Item>
-                            <Nav.Item>
-                              <Nav.Link href="/login">
+                            <Nav.Item> */}
+                            {/* <Nav.Link href="/login">
                                 Logout <FaSignOutAlt />
                               </Nav.Link>
-                            </Nav.Item>
+                            </Nav.Item> */}
                           </Nav>
                         </div>
                       </Col>
@@ -107,23 +110,15 @@ function MyAccount() {
                         <Tab.Content>
                           <Tab.Pane eventKey="ltn_tab_1_1">
                             <div className="ltn__myaccount-tab-content-inner">
-                              <p>
-                                Hello <strong>UserName</strong> (not
-                                <strong>UserName</strong>?
-                                <small>
-                                  <Link href="/login">Log out</Link>
-                                </small>
-                                )
-                              </p>
-                              <p>
-                                From your account dashboard you can view your
-                                <span>recent orders</span>, manage your
-                                <span>shipping and billing addresses</span>, and
-                                <span>
-                                  edit your password and account details
-                                </span>
-                                .
-                              </p>
+                              {session && (
+                                <p>
+                                  Hello <strong>{session.user.firstName} {session.user.lastName}</strong> 
+                                  
+                                 
+                                </p>
+                              )}
+
+                              <AccountTable />
                             </div>
                           </Tab.Pane>
                           <Tab.Pane eventKey="ltn_tab_1_2">

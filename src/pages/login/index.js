@@ -25,6 +25,7 @@ function Login() {
   const handleShow = () => setShow(true);
 
   const router = useRouter();
+  
 
   useEffect(() => {
     validate();
@@ -43,8 +44,8 @@ function Login() {
     setIsLoading(false);
 
     if (res?.ok) {
-      console.log("success");
-      router.push("/");
+      console.log("login succesiful");
+      router.push("/my-profile");
       return;
     } else {
       setError("Failed! Check you input and try again.");

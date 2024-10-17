@@ -16,6 +16,7 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "@/assets/sass/style.scss";
 import "@/assets/responsive.css";
+import { SessionProvider } from "next-auth/react";
 
 const nunito = Nunito_Sans({
   weight: ["200", "300", "400", "600", "700", "800", "900"],
@@ -30,7 +31,7 @@ const Poppin = Poppins({
   preload: false,
 });
 
-const MyApp = ({ Component, ...rest }) => {
+const MyApp = ({ Component,pageProps, ...rest }) => {
   const { store, props } = wrapper.useWrappedStore(rest);
   useEffect(() => {
     store.dispatch(setProducts(products));
@@ -68,11 +69,14 @@ const MyApp = ({ Component, ...rest }) => {
           font-family: ${Poppin.style.fontFamily};
         }
       `}</style>
+      <SessionProvider session={pageProps.session}>
       <Provider store={store}>
         <PersistGate persistor={store.__persistor} loading={<Preloader />}>
           <Component {...props.pageProps} />
         </PersistGate>
       </Provider>
+      </SessionProvider>
+     
     </Fragment>
   );
 };

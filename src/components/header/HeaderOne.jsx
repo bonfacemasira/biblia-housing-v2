@@ -12,6 +12,7 @@ import Col from "react-bootstrap/Col";
 import clsx from "clsx";
 import { FaCartArrowDown, FaRegUser, FaSearch, FaTimes } from "react-icons/fa";
 import MenuList from "@/components/header/elements/menuList";
+import { signOut, useSession } from "next-auth/react";
 
 const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
   const [user, setUser] = useState(null);
@@ -30,6 +31,10 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
   function searchForm() {
     searchFormOpenerSet((searchFormOpener) => !searchFormOpener);
   }
+
+  const handleSignOut = () => {
+    signOut({ callbackUrl: "/" });
+  };
 
   function cartMenu() {
     SetoverlayBtn(true);
@@ -93,6 +98,7 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
         if (response.ok) {
           const data = await response.json();
           setUser(data);
+          console.log("USER DATA", data);
         } else {
           console.error("Error fetching user:", response.statusText);
         }
@@ -104,6 +110,9 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
     fetchUser();
   }, [router.events]);
 
+  const { data: session, status } = useSession();
+
+  console.log("SESSION DATA", session, "STATUS", status);
   return (
     <>
       <header className="ltn__header-area ltn__header-5">
@@ -139,23 +148,43 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
                   </nav>
                 </div>
               </Col>
-              {user && (
+              {status === "authenticated" && (
                 <Col className="d-flex align-items-center justify-content-center">
                   <div className="p-2">
-                    <strong>Hello, {user?.firstName}</strong>
+                    {/* <strong>Hello, {user?.firstName} </strong> */}
+                    <li>Welcome, {session?.user.firstName}</li>
                   </div>
                 </Col>
               )}
 
               <Col className="ltn__header-options ltn__header-options-2 mb-sm-20">
-                {/* <!-- header-search-1 --> */}
-                <div className="header-search-wrap">
+                <div
+                  style={{ display: "flex", alignItems: "center", gap: "3px" }}
+                >
+                  {status === "unauthenticated" && (
+                    <Link
+                      href="/login"
+                      className="theme-btn-1 btn btn-effect-1"
+                    >
+                      Login
+                    </Link>
+                  )}
+
+                  <Link
+                    href="/register"
+                    className="theme-btn-1 btn btn-effect-1"
+                  >
+                    Register
+                  </Link>
+                </div>
+
+                {/* <div className="header-search-wrap">
                   <div
                     className={`header-search-1 ${
                       searchFormOpener ? "search-open" : ""
                     }`}
                   >
-                    {/* search-open */}
+              
                     <div className="search-icon">
                       <span onClick={searchForm}>
                         <FaSearch className="icon-search for-search-show" />
@@ -182,6 +211,8 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
                           <FaSearch />
                         </span>
                       </button>
+
+                      
                     </form>
 
                     <ul className="searched-product-lists list-group">
@@ -201,34 +232,34 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
                       )}
                     </ul>
                   </div>
-                </div>
+
+
+
+                </div> */}
+
                 {/* <!-- user-menu --> */}
-                <div className="ltn__drop-menu user-menu">
-                  <ul>
-                    <li>
-                      <Link href="#">
-                        <FaRegUser />
-                      </Link>
-                      <ul>
-                        {/* <li>
-                          <Link href="/login">Sign in</Link>
-                        </li>
-                        <li>
-                          <Link href="/register">Register</Link>
-                        </li> */}
-                        <li>
-                          <Link href="/my-profile">My Profile</Link>
-                        </li>
-                        <li>
-                          <Link href="/my-account">My Account</Link>
-                        </li>
-                        <li>
-                          <Link href="/login">Logout</Link>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
+                {status === "authenticated" && (
+                  <div className="ltn__drop-menu user-menu">
+                    <ul>
+                      <li>
+                        <Link href="#">
+                          <FaRegUser />
+                        </Link>
+                        <ul>
+                          <li>
+                            <Link href="/my-profile">My Profile</Link>
+                          </li>
+                          <li>
+                            <Link href="/my-account">My Account</Link>
+                          </li>
+                          <li>
+                            <div role='button' onClick={handleSignOut}>Logout</div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                )}
 
                 {/* <!-- Mobile Menu Button --> */}
                 <div className="mobile-menu-toggle d-xl-none">

@@ -3,8 +3,12 @@ import Link from "next/link";
 import Slider from "react-slick";
 import ModalVideo from "react-modal-video";
 import { FaPlay, FaHome, FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { heroData } from "./heroData";
 
-function HeroSectionStyleOne({ data }) {
+function HeroSectionStyleOne() {
+
+
+
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
     <button
       {...props}
@@ -62,7 +66,7 @@ function HeroSectionStyleOne({ data }) {
           {...Herosettings}
           className="ltn__slide-one-active slick-slide-arrow-1 slick-slide-dots-1"
         >
-          {data.map((item, key) => {
+          {heroData.map((item, key) => {
             return (
               <div
                 className="ltn__slide-item ltn__slide-item-2 ltn__slide-item-3-normal ltn__slide-item-3 position-relative"
@@ -122,7 +126,7 @@ function HeroSectionStyleOne({ data }) {
                             item.variationLeft ? "slide-img-left" : ""
                           }`}
                         >
-                          <img src="img/slider/21.png" alt="#" />
+                          <img src="img/house1.jpg" alt="#" />
                         </div>
                       </div>
                     </div>

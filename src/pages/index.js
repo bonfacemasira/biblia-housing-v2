@@ -151,7 +151,7 @@ function HomePage(props) {
   return (
     <>
       <LayoutOne topbar={true}>
-        <HeroSectionStyleOne data={Herodata} />
+        <HeroSectionStyleOne hero={Herodata} />
 
         <CarDealerSearchForm navMenuClass="d-none" customClasses="" />
         {/* <!-- CAR DEALER FORM AREA END -->
