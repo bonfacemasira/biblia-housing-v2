@@ -1,40 +1,11 @@
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
 import { Container, Row, Col, Table } from "react-bootstrap";
+import { reports } from "./reports";
 
 const AccountTable = () => {
-  const accountDetails = {
-    memberName: "PATRICK CHERUIYOT TUM",
-    accountNumber: "100-00-IND02280",
-    postalAdress: "0100",
-    statementDate: "21 Aug 2024 09:21",
-    statementPeriod: " 01 Jan 2000 to 21 Aug 2024",
-    transactions: [
-      {
-        date: "22 May 2024",
-        transNo: "RCPT:00907",
-        description: "REG FEE & SHARE CAPITAL",
-        moneyOut: 0,
-        moneyIn: 50000,
-        balance: 50000,
-      },
-    ],
-    parcelDetails: [
-      {
-        parcelId: "PRJ:00012\\7",
-        status: "Booked",
-        description: "PREMIER GARDENS UTAWALA",
-        plotPrice: 1800000,
-        amountPaid: 661000,
-        balance: 1139000,
-      },
-    ],
 
 
-  };
-
-
-  
 
   return (
     <Container>
@@ -61,14 +32,14 @@ const AccountTable = () => {
               </tr>
             </thead>
             <tbody>
-              {accountDetails.transactions.map((trans, index) => (
+              {reports.map((trans, index) => (
                 <tr key={index} colspan="6">
-                  <td>{trans.date}</td>
-                  <td>{trans.transNo}</td>
-                  <td colSpan={2}>{trans.description}</td>
+                  <td>{trans.memberName}</td>
+                  <td>{trans.accountNumber}</td>
+                  <td colSpan={2}>{trans.statementDate}</td>
               
-                  <td className="text-right"><span className="">download</span></td>
-                  <td className="text-right"><span className="">view</span></td>
+                  <td className="text-right"><span type="button" >download</span></td>
+                  <td className="text-right"><span className=""><Link href={`/account-report/${trans.id}`}>view</Link></span></td>
                 </tr>
               ))}
             </tbody>
