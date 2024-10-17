@@ -1,48 +1,33 @@
+import dynamic from "next/dynamic";
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
 import { Container, Row, Col, Table, Button } from "react-bootstrap";
 
+
+
+
 const AccountStatement = () => {
+  const statementRef = useRef();
 
 
-  // const url = 'Account Report.pdf';
-  // try {
-  //     const response = await fetch(url);
-  //     const blob = await response.blob();
-  //     const downloadUrl = URL.createObjectURL(blob);
+  const handleDownloadPDF = () => {
 
-  //     const link = document.createElement('a');
-  //     link.href = downloadUrl;
-  //     link.download = ''; // You can change the filename here
-  //     document.body.appendChild(link);
-  //     link.click();
-  //     document.body.removeChild(link);
-
-  //     URL.revokeObjectURL(downloadUrl);
-  // } catch (error) {
-  //     console.error('Error downloading the file', error);
-  // }
-
-
-  const downloadPDF = async () => {
-    const url = 'Account Report.pdf'; 
-    try {
-      const response = await fetch(url);
-      const blob = await response.blob();
-      const downloadUrl = URL.createObjectURL(blob);
-
-      const link = document.createElement('a');
-      link.href = downloadUrl;
-      link.download = 'Account_Report.pdf'; 
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-
-      URL.revokeObjectURL(downloadUrl);
-    } catch (error) {
-      console.error('Error downloading the file', error);
+    if (typeof window !== "undefined") {
+      import("html2pdf.js").then((html2pdf) => {
+        const element = statementRef.current;
+        html2pdf.default()
+          .from(element)
+          .set({
+            margin: 1,
+            filename: 'account-statement.pdf',
+            html2canvas: { scale: 2 },
+            jsPDF: { orientation: 'portrait' },
+          })
+          .save();
+      });
     }
   };
+
 
 
 
@@ -198,6 +183,8 @@ const AccountStatement = () => {
   return (
     <Container>
       {/* Header Information */}
+      <Button variant="primary" onClick={handleDownloadPDF} className="mb-4">Download PDF</Button>
+      <div ref={statementRef}>
       <Row className="text-center my-4">
         <Col>
           <div className="site-logo-wrap">
@@ -534,9 +521,7 @@ const AccountStatement = () => {
         </Col>
       </Row>
 
-      <Button onClick={downloadPDF} variant="primary" className="mb-4">
-        Download PDF
-      </Button>
+     </div>
     </Container>
   );
 };
