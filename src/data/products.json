@@ -2,13 +2,13 @@
   {
     "id": "1",
     "carousel": [
-      { "img": "house1.jpg" },
-      { "img": "house3.jpg" },
-      { "img": "house4.jpg" },
-      { "img": "house4.jpg" }
+      { "img": "/img/house1.jpg" },
+      { "img": "/img/house4" },
+      { "img": "/img/house4.jpg" },
+      { "img": "/img/house4.jpg" }
     ],
     "title": "Luxury villa in Rego Park",
-    "productImg": "1.jpg",
+    "productImg": "house1.jpg",
     "price": 69,
     "priceRange": ["Low Budget"],
     "discount": 5,
@@ -113,13 +113,13 @@
   {
     "id": "2",
     "carousel": [
-      { "img": "house3.jpg" },
-      { "img": "house3.jpg" },
-      { "img": "house3.jpg" },
-      { "img": "house3.jpg" }
+      { "img": "house4" },
+      { "img": "house4" },
+      { "img": "house4" },
+      { "img": "house4" }
     ],
     "title": "New Apartment Nice View",
-    "productImg": "2.jpg",
+    "productImg": "house1.jpg",
     "price": 159,
     "priceRange": ["Medium"],
     "discount": 5,
@@ -156,7 +156,7 @@
       {
         "color": "brown",
         "colorCode": "#87554b",
-        "image": "house3.jpg",
+        "image": "house4",
         "size": [
           {
             "name": "x",
@@ -297,7 +297,7 @@
       { "img": "house.jpg" }
     ],
     "title": "Citra Puri California Living",
-    "productImg": "3.jpg",
+    "productImg": "house1.jpg",
     "price": 49,
     "priceRange": ["High Budget"],
     "discount": 15,
@@ -408,7 +408,7 @@
       { "img": "33.jpg" }
     ],
     "title": "Get Best Property On Our",
-    "productImg": "4.jpg",
+    "productImg": "house1.jpg",
     "price": 19,
     "priceRange": ["Medium"],
     "discount": 10,
@@ -525,7 +525,7 @@
       { "img": "33.jpg" }
     ],
     "title": "New Apartment Nice View",
-    "productImg": "5.jpg",
+    "productImg": "house1.jpg",
     "price": 149,
     "priceRange": ["Low Budget"],
     "discount": 5,
@@ -636,7 +636,7 @@
       { "img": "33.jpg" }
     ],
     "title": "Citra Puri Los Angles Living",
-    "productImg": "6.jpg",
+    "productImg": "house1.jpg",
     "price": 215,
     "priceRange": ["Low"],
     "discount": 5,
@@ -747,7 +747,7 @@
       { "img": "33.jpg" }
     ],
     "title": "Citra Puri Los Angles Living",
-    "productImg": "1.jpg",
+    "productImg": "house1.jpg",
     "price": 225,
     "priceRange": ["Low Budget", "Medium"],
     "discount": 5,
@@ -858,7 +858,7 @@
       { "img": "33.jpg" }
     ],
     "title": "New Apartment Nice View",
-    "productImg": "2.jpg",
+    "productImg": "house1.jpg",
     "price": 500,
     "priceRange": ["Low Budget", "Medium"],
     "discount": 5,
@@ -969,7 +969,7 @@
       { "img": "33.jpg" }
     ],
     "title": "Citra Puri Los Angles Living",
-    "productImg": "4.jpg",
+    "productImg": "house1.jpg",
     "price": 270,
     "priceRange": ["Low Budget"],
     "discount": 5,
