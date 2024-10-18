@@ -6,35 +6,7 @@ import { useRouter } from "next/router";
 import { reports } from "@/components/accountsTable/reports";
 import { useRef } from "react";
 
-function Report() {
-  const router = useRouter();
-  const { id } = router.query;
-
-  const report = reports.find((r) => r.id === parseInt(id));
-
-  if (!report) return <p>Report not found.</p>;
-
-
-  const statementRef = useRef();
-
-
-  const handleDownloadPDF = () => {
-
-    if (typeof window !== "undefined") {
-      import("html2pdf.js").then((html2pdf) => {
-        const element = statementRef.current;
-        html2pdf.default()
-          .from(element)
-          .set({
-            margin: 1,
-            filename: 'account-statement.pdf',
-            html2canvas: { scale: 2 },
-            jsPDF: { orientation: 'portrait' },
-          })
-          .save();
-      });
-    }
-  };
+function Report({report, statementRef}) {
 
 
   return (
@@ -48,7 +20,7 @@ function Report() {
              
          
       {/* Header Information */}
-      <Button variant="primary" onClick={handleDownloadPDF} className="mb-4">Download PDF</Button>
+      {/* <Button variant="primary" onClick={handleDownloadPDF} className="mb-4">Download PDF</Button> */}
       <div ref={statementRef}>
       <Row className="text-center my-4">
         <Col>

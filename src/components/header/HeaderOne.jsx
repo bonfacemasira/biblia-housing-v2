@@ -162,13 +162,14 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
                   style={{ display: "flex", alignItems: "center", gap: "3px" }}
                 >
                   {status === "unauthenticated" && (
+                    <>
                     <Link
                       href="/login"
                       className="theme-btn-1 btn btn-effect-1"
                     >
                       Login
                     </Link>
-                  )}
+                 
 
                   <Link
                     href="/register"
@@ -176,6 +177,9 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
                   >
                     Register
                   </Link>
+                  </>
+                 )}
+
                 </div>
 
                 {/* <div className="header-search-wrap">

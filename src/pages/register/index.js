@@ -15,6 +15,7 @@ import ShopBreadCrumb from "@/components/breadCrumbs/shop";
 import CallToAction from "@/components/callToAction";
 import Link from "next/link";
 import { validate } from "uuid";
+import { useRouter } from "next/router";
 
 function Register() {
   const [firstName, setFirstName] = useState("");
@@ -27,6 +28,10 @@ function Register() {
   const [checkbox2, setCheckbox2] = useState(false);
   const [isFormValid, setIsFormValid] = useState(false);
   const [isValid, setIsValid] = useState(false);
+  const [isLoading, setIsLoading] = useState(false)
+
+
+  const router = useRouter()
 
   useEffect(() => {
     validatePassword(password, confirmPassword);
@@ -62,6 +67,7 @@ function Register() {
   }
 
   async function handleSubmit(e) {
+    setIsLoading(true)
     e.preventDefault();
     if (isFormValid) {
       let userData = { firstName, lastName, email, password };
@@ -74,7 +80,13 @@ function Register() {
         },
       });
 
+      if(res.ok) {
+        router.push('/login')
+      
+      }
+
       console.log(res);
+      setIsLoading(false);
 
       // if (res.ok) {
       //   const data = await res.json();
