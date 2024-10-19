@@ -64,13 +64,7 @@ function Faq() {
   return (
     <>
       <LayoutOne topbar={true}>
-        <ModalVideo
-          channel="youtube"
-          autoplay
-          isOpen={isOpen}
-          videoId="LjCzPp-MK48"
-          onClose={() => setOpen(false)}
-        />
+     
         <ShopBreadCrumb
           title="Frequently asked questions"
           sectionPace=""
@@ -85,152 +79,58 @@ function Faq() {
                 <div className="ltn__faq-inner ltn__faq-inner-2">
                   <Accordion defaultActiveKey="2">
                     <Accordion.Item eventKey="1">
-                      <Accordion.Header>How to buy a product?</Accordion.Header>
+                      <Accordion.Header>What types of land do you offer for sale?</Accordion.Header>
                       <Accordion.Body>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Scelerisque eleifend donec
-                          pretium vulputate sapien nec sagittis. Proin libero
-                          nunc consequat interdum. Condimentum lacinia quis vel
-                          eros donec ac. Mauris sit amet massa vitae tortor.
-                          Quisque id diam vel quam elementum pulvinar. Gravida
-                          in fermentum et sollicitudin ac orci phasellus.
-                          Facilisis gravida neque convallis a cras semper. Non
-                          arcu risus quis varius quam quisque id.
+                        We offer a wide variety of land types, including residential plots, commercial land, agricultural land, and investment properties. Each is located in prime areas to suit different needs, whether you're looking to build, farm, or invest.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
 
                     <Accordion.Item eventKey="2">
                       <Accordion.Header>
-                        How can i make refund from your website?
+                      Are the plots serviced with utilities like water and electricity?
                       </Accordion.Header>
                       <Accordion.Body>
-                        <div className="ltn__video-img alignleft">
-                          <img
-                            src="/img/bg/17.jpg"
-                            alt="video popup bg image"
-                          />
-                          <button
-                            className="ltn__video-icon-2 ltn__video-icon-2-small"
-                            onClick={() => setOpen(true)}
-                          >
-                            <FaPlay />
-                          </button>
-                        </div>
+                       
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Scelerisque eleifend donec
-                          pretium vulputate sapien nec sagittis. Proin libero
-                          nunc consequat interdum. Condimentum lacinia quis vel
-                          eros donec ac. Mauris sit amet massa vitae tortor.
-                          Quisque id diam vel quam elementum pulvinar. Gravida
-                          in fermentum et sollicitudin ac orci phasellus.
-                          Facilisis gravida neque convallis a cras semper. Non
-                          arcu risus quis varius quam quisque id.
+                        Yes, many of our plots come fully serviced with essential utilities such as water, electricity, and road access. For specific plot details, we recommend checking the listing or contacting our team for more information.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
 
                     <Accordion.Item eventKey="3">
                       <Accordion.Header>
-                        I am a new user. How should I start?
+                      Do you offer financing or payment plans for land purchases?
                       </Accordion.Header>
                       <Accordion.Body>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Scelerisque eleifend donec
-                          pretium vulputate sapien nec sagittis. Proin libero
-                          nunc consequat interdum. Condimentum lacinia quis vel
-                          eros donec ac. Mauris sit amet massa vitae tortor.
-                          Quisque id diam vel quam elementum pulvinar. Gravida
-                          in fermentum et sollicitudin ac orci phasellus.
-                          Facilisis gravida neque convallis a cras semper. Non
-                          arcu risus quis varius quam quisque id.
+                        Yes, we provide flexible financing options and payment plans for buyers. Our goal is to make land ownership accessible, so you can discuss custom payment options with our sales team.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
 
                     <Accordion.Item eventKey="4">
-                      <Accordion.Header>Returns and refunds</Accordion.Header>
+                      <Accordion.Header>How can I verify the ownership and legal status of the land?</Accordion.Header>
                       <Accordion.Body>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Scelerisque eleifend donec
-                          pretium vulputate sapien nec sagittis. Proin libero
-                          nunc consequat interdum. Condimentum lacinia quis vel
-                          eros donec ac. Mauris sit amet massa vitae tortor.
-                          Quisque id diam vel quam elementum pulvinar. Gravida
-                          in fermentum et sollicitudin ac orci phasellus.
-                          Facilisis gravida neque convallis a cras semper. Non
-                          arcu risus quis varius quam quisque id.
+                        We ensure all our listed properties have clear titles and are legally verified. You will receive all necessary documentation, including title deeds and ownership certificates, to confirm the authenticity and legality of your purchase.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
 
                     <Accordion.Item eventKey="5">
                       <Accordion.Header>
-                        Are my details secured?
+                      Can I visit the land before making a purchase?
                       </Accordion.Header>
                       <Accordion.Body>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Scelerisque eleifend donec
-                          pretium vulputate sapien nec sagittis. Proin libero
-                          nunc consequat interdum. Condimentum lacinia quis vel
-                          eros donec ac. Mauris sit amet massa vitae tortor.
-                          Quisque id diam vel quam elementum pulvinar. Gravida
-                          in fermentum et sollicitudin ac orci phasellus.
-                          Facilisis gravida neque convallis a cras semper. Non
-                          arcu risus quis varius quam quisque id.
+                        Absolutely! We encourage buyers to visit the property before making a decision. Our team can arrange guided site visits so you can explore the land and assess the surroundings firsthand.
                         </p>
                       </Accordion.Body>
                     </Accordion.Item>
 
-                    <Accordion.Item eventKey="6">
-                      <Accordion.Header>
-                        Sale code is not working
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Scelerisque eleifend donec
-                          pretium vulputate sapien nec sagittis. Proin libero
-                          nunc consequat interdum. Condimentum lacinia quis vel
-                          eros donec ac. Mauris sit amet massa vitae tortor.
-                          Quisque id diam vel quam elementum pulvinar. Gravida
-                          in fermentum et sollicitudin ac orci phasellus.
-                          Facilisis gravida neque convallis a cras semper. Non
-                          arcu risus quis varius quam quisque id.
-                        </p>
-                      </Accordion.Body>
-                    </Accordion.Item>
-
-                    <Accordion.Item eventKey="7">
-                      <Accordion.Header>
-                        How do I make payment by my credit card
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Scelerisque eleifend donec
-                          pretium vulputate sapien nec sagittis. Proin libero
-                          nunc consequat interdum. Condimentum lacinia quis vel
-                          eros donec ac. Mauris sit amet massa vitae tortor.
-                          Quisque id diam vel quam elementum pulvinar. Gravida
-                          in fermentum et sollicitudin ac orci phasellus.
-                          Facilisis gravida neque convallis a cras semper. Non
-                          arcu risus quis varius quam quisque id.
-                        </p>
-                      </Accordion.Body>
-                    </Accordion.Item>
+                   
                   </Accordion>
 
                   <div className="need-support text-center mt-100">
@@ -266,7 +166,7 @@ function Faq() {
                   {/* <!-- Banner Widget --> */}
                   <div className="widget ltn__banner-widget">
                     <Link href="/shop">
-                      <img src="/img/banner/banner-3.jpg" alt="Banner Image" />
+                      <img src="/img/img1.jpg" alt="Banner Image" />
                     </Link>
                   </div>
                 </aside>

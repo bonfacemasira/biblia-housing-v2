@@ -107,8 +107,8 @@ const ProductItem = ({
         <div className="product-info">
           <div className="product-price">
             <span>
-              {`$ ${productData.price}`}
-              <label>/Month</label>
+              {`Kshs ${productData.price}`}
+              <label></label>
             </span>
           </div>
           <h2 className="product-title">
@@ -117,7 +117,7 @@ const ProductItem = ({
           <div className="product-description">
             <p>{productData.fullDescription}</p>
           </div>
-          <ul className="ltn__list-item-2 ltn__list-item-2-before">
+          {/* <ul className="ltn__list-item-2 ltn__list-item-2-before">
             <li>
               <span>
                 {productData.propertyDetails.bedrooms}
@@ -139,7 +139,7 @@ const ProductItem = ({
               </span>
               square Ft
             </li>
-          </ul>
+          </ul> */}
         </div>
         <div className="product-info-bottom">
           <div className="real-estate-agent">

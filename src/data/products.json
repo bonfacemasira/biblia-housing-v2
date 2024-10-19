@@ -7,81 +7,67 @@
       { "img": "/img/house4.jpg" },
       { "img": "/img/house4.jpg" }
     ],
-    "title": "Luxury villa in Rego Park",
-    "productImg": "house1.jpg",
-    "price": 69,
-    "priceRange": ["Low Budget"],
-    "discount": 5,
-    "country": true,
-    "district": "Mission District Area",
-    "properties": 2,
+    "title": "Prime 5-Acre Plot in Naivasha",
+    "productImg": "img2.jpg",
+   "price": 2000000,
+   "priceRange": ["Affordable", "Premium"],
+   "discount": 10,
+    "country": "Kenya",
+    "district": "Naivasha Area",
+    "properties": 1,
     "featured": true,
     "new": true,
     "rent": false,
-    "photo": ["buying", "women", "women"],
-    "video": ["buying", "women"],
-    "bedBath": ["Single", "renting", "selling"],
-    "ratingCount": 5,
-    "rating": 3,
-    "saleCount": 5,
-    "category": ["buying", "renting"],
+    "photo": ["land", "acreage", "scenery"],
+    "video": ["land", "tour"],
+    "bedBath": ["Acreage", "buying", "investing"],
+    "ratingCount": 4,
+    "rating": 5,
+    "saleCount": 15,
+    "category": ["buying", "investing"],
     "tag": [
-      "Popular",
-      "desgin",
-      "ux",
-      "usability",
-      "develop",
-      "icon",
-      "Car",
-      "Service",
-      "Repairs",
-      "Auto Parts",
-      "Oil",
-      "Dealer",
-      "Oil Change",
-      "Body Color"
+      "Land",
+      "Acreage",
+      "Prime Location",
+      "Investment",
+      "Kenya",
+      "Naivasha",
+      "Real Estate"
     ],
-    "date": "May 19, 2021",
-    "comments": 35,
-    "locantion": "Belmont Gardens, Chicago",
+    "date": "October 15, 2023",
+    "comments": 50,
+    "location": "Naivasha, Rift Valley, Kenya",
     "description": {
-      "title": "Description",
-      "fullDescription": "Massa tempor nec feugiat nisl pretium. Egestas fringilla phasellus faucibus scelerisque eleifend donec Porta nibh venenatis cras sed felis eget velit aliquet. Neque volutpat ac tincidunt vitae semper quis lectus. Turpis in eu mi bibendum neque egestas congue quisque. Sed elementum tempus egestas sed sed risus pretium quam. Dignissim sodales ut eu sem. Nibh mauris cursus mattis molestee iaculis at erat pellentesque. Id interdum velit laoreet id donec ultrices tincidunt.",
-      "shortDescription": "To the left is the modern kitchen with central island, leading through to the unique breakfast family room which feature glass walls and doors out onto the garden and access to the separate utility room."
+      "title": "Land Description",
+      "fullDescription": "This prime 5-acre plot in Naivasha offers stunning views and is ideal for residential development, farming, or commercial projects. Located in a serene environment, it is easily accessible and close to essential amenities. The land is fertile and flat, with access to water and electricity, making it a great investment for future growth. Ideal for developers looking to create eco-friendly resorts or anyone interested in land banking.",
+      "shortDescription": "A 5-acre prime plot located in Naivasha, perfect for residential, farming, or commercial use. Accessible, flat terrain with scenic views."
     },
     "propertyDetails": {
-      "propertyId": "HZ29",
-      "area": 3450,
+      "propertyId": "KEN29",
+      "area": 5, 
       "propertyStatus": "For Sale",
-      "rooms": 7,
-      "bedrooms": 3,
-      "baths": 2,
-      "createdYear": 1992
+      "createdYear": null 
     },
     "factsAndFeatures": {
-      "livingRoom": "20 x 16 sq feet",
-      "garage": "20 x 16 sq feet",
-      "diningArea": "20 x 16 sq feet",
-      "bedroom": "20 x 16 sq feet",
-      "bathroom": "20 x 16 sq feet",
-      "gymArea": "20 x 16 sq feet",
-      "garden": "20 x 16 sq feet",
-      "parking": "20 x 16 sq feet"
+      "plotSize": "5 acres",
+      "waterAccess": "Available",
+      "electricity": "Nearby connection available",
+      "soilType": "Fertile soil",
+      "accessRoad": "All-weather road access",
+      "landTitle": "Freehold title"
     },
 
     "amenities1": [
-      "Air Conditioning",
-      "Gym",
-      "Microwave",
-      "Swimming Pool",
-      "WiFi"
+      "Water Access",
+      "Electricity",
+      "All-Weather Road",
+      "Fertile Soil"
     ],
     "amenities2": [
-      "Barbeque",
-      "Recreation",
-      "Microwave",
-      "Basketball Cout",
-      "Fireplace"
+      "Scenic Views",
+      "Farming Potential",
+      "Near Tourist Attractions",
+      "Close to Naivasha Town"
     ],
     "amenities3": [
       "Refrigerator",
@@ -92,15 +78,15 @@
     ],
     "AmenitiesList": ["Dishwasher"],
     "agent": {
-      "firstName": "Rosalina D.",
+      "firstName": "Mary Delius",
       "lastName": "Willaimson",
-      "fullName": "Rosalina D. Willaimson",
+      "fullName": "Mary Delius",
       "type": "Property Seller",
       "img": "author.jpg",
       "designation": "Traveller/Photographer",
       "raiting": 3,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.",
-      "social": ["FaPlay", "FaHome", "FaArrowRight", "FaArrowLeft"]
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque."
+     
     },
 
     "gallery": {
@@ -110,184 +96,16 @@
     },
     "propertyTypes": ["House", "Office Villa", "Luxary Home"]
   },
-  {
-    "id": "2",
-    "carousel": [
-      { "img": "house4" },
-      { "img": "house4" },
-      { "img": "house4" },
-      { "img": "house4" }
-    ],
-    "title": "New Apartment Nice View",
-    "productImg": "house1.jpg",
-    "price": 159,
-    "priceRange": ["Medium"],
-    "discount": 5,
-    "country": true,
-    "district": "Pacific Heights Area",
-    "properties": 2,
-    "featured": false,
-    "new": false,
-    "rent": true,
-    "photo": ["buying", "women", "women"],
-    "video": ["buying", "women"],
-    "bedBath": ["Single", "renting", "selling"],
-    "ratingCount": 3,
-    "rating": 4,
-    "saleCount": 10,
-    "category": ["buying"],
-    "tag": [
-      "Popular",
-      "desgin",
-      "ux",
-      "usability",
-      "develop",
-      "icon",
-      "Car",
-      "Service",
-      "Repairs",
-      "Auto Parts",
-      "Oil",
-      "Dealer",
-      "Oil Change",
-      "Body Color"
-    ],
-    "variation": [
-      {
-        "color": "brown",
-        "colorCode": "#87554b",
-        "image": "house4",
-        "size": [
-          {
-            "name": "x",
-            "stock": 3
-          },
-          {
-            "name": "m",
-            "stock": 2
-          },
-          {
-            "name": "xl",
-            "stock": 5
-          }
-        ]
-      },
-      {
-        "color": "black",
-        "colorCode": "#333333",
-        "image": "house4.jpg",
-        "size": [
-          {
-            "name": "x",
-            "stock": 4
-          },
-          {
-            "name": "m",
-            "stock": 7
-          },
-          {
-            "name": "xl",
-            "stock": 9
-          },
-          {
-            "name": "xxl",
-            "stock": 1
-          }
-        ]
-      },
-      {
-        "color": "red",
-        "colorCode": "#da323f",
-        "image": "house5.jpg",
-        "size": [
-          {
-            "name": "x",
-            "stock": 1
-          },
-          {
-            "name": "m",
-            "stock": 2
-          },
-          {
-            "name": "xl",
-            "stock": 4
-          },
-          {
-            "name": "xxl",
-            "stock": 0
-          }
-        ]
-      }
-    ],
-    "date": "May 19, 2021",
-    "comments": 35,
-    "locantion": "Belmont Gardens",
-    "description": {
-      "title": "Description",
-      "fullDescription": "Massa tempor nec feugiat nisl pretium. Egestas fringilla phasellus faucibus scelerisque eleifend donec Porta nibh venenatis cras sed felis eget velit aliquet. Neque volutpat ac tincidunt vitae semper quis lectus. Turpis in eu mi bibendum neque egestas congue quisque. Sed elementum tempus egestas sed sed risus pretium quam. Dignissim sodales ut eu sem. Nibh mauris cursus mattis molestee iaculis at erat pellentesque. Id interdum velit laoreet id donec ultrices tincidunt.",
-      "shortDescription": "To the left is the modern kitchen with central island, leading through to the unique breakfast family room which feature glass walls and doors out onto the garden and access to the separate utility room."
-    },
-    "propertyDetails": {
-      "propertyId": "HZ29",
-      "area": 3450,
-      "propertyStatus": "For Sale",
-      "rooms": 7,
-      "bedrooms": 3,
-      "baths": 2,
-      "createdYear": 1992
-    },
-    "factsAndFeatures": {
-      "livingRoom": "20 x 16 sq feet",
-      "garage": "20 x 16 sq feet",
-      "diningArea": "20 x 16 sq feet",
-      "bedroom": "20 x 16 sq feet",
-      "bathroom": "20 x 16 sq feet",
-      "gymArea": "20 x 16 sq feet",
-      "garden": "20 x 16 sq feet",
-      "parking": "20 x 16 sq feet"
-    },
 
-    "amenities1": [
-      "Air Conditioning",
-      "Gym",
-      "Microwave",
-      "Swimming Pool",
-      "WiFi"
-    ],
-    "amenities2": [
-      "Barbeque",
-      "Recreation",
-      "Microwave",
-      "Basketball Cout",
-      "Fireplace"
-    ],
-    "amenities3": [
-      "Refrigerator",
-      "Window Coverings",
-      "Washer",
-      "24x7 Security",
-      "Indoor Game"
-    ],
-    "AmenitiesList": ["Kids Zone"],
-    "agent": {
-      "firstName": "Rosalina D.",
-      "lastName": "Willaimson",
-      "fullName": "Rosalina D. Willaimson",
-      "type": "Property Seller",
-      "img": "author.jpg",
-      "designation": "Traveller/Photographer",
-      "raiting": 3,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.",
-      "social": ["FaPlay", "FaHome", "FaArrowRight", "FaArrowLeft"]
-    },
 
-    "gallery": {
-      "img1": "house4.jpg",
-      "img2": "house5.jpg",
-      "img3": "house6.jpg"
-    },
-    "propertyTypes": ["Apartment", "Office Villa", "Luxary Home", "Studio"]
-  },
+
+
+
+ 
+
+
+
+
   {
     "id": "3",
     "carousel": [
@@ -296,100 +114,82 @@
       { "img": "house.jpg" },
       { "img": "house.jpg" }
     ],
-    "title": "Citra Puri California Living",
-    "productImg": "house1.jpg",
-    "price": 49,
-    "priceRange": ["High Budget"],
-    "discount": 15,
-    "country": false,
-    "district": "Noe Valley Zones",
-    "properties": 3,
-    "featured": false,
+    "title": "50-Acre  Land for Development in Athi River",
+    "productImg": "img4.jpg",
+    "price": 15000000,
+    "priceRange": ["High-End"],
+    "discount": 5,
+    "country": "Kenya",
+    "district": "Athi River",
+    "properties": 1,
+    "featured": true,
     "new": true,
     "rent": false,
-    "photo": ["buying", "women", "women"],
-    "video": ["buying", "women"],
-    "bedBath": ["Single", "renting", "selling"],
-    "ratingCount": 2,
-    "rating": 3,
-    "saleCount": 15,
-    "category": ["buying", "selling"],
+    "photo": ["land", "commercial", "acreage"],
+    "video": ["land", "tour"],
+    "bedBath": ["Acreage", "buying", "developing"],
+    "ratingCount": 3,
+    "rating": 4,
+    "saleCount": 8,
+    "category": ["buying", "development", "commercial"],
     "tag": [
-      "Popular",
-      "desgin",
-      "ux",
-      "usability",
-      "develop",
-      "icon",
-      "Car",
-      "Service",
-      "Repairs",
-      "Auto Parts",
-      "Oil",
-      "Dealer",
-      "Oil Change",
-      "Body Color"
+      "Commercial Land",
+      "Development Land",
+      "Prime Location",
+      "Kenya",
+      "Athi River",
+      "Real Estate"
     ],
-    "date": "May 19, 2021",
-    "comments": 35,
-    "locantion": "Chicago",
+
+    "date": "October 1, 2023",
+    "comments": 30,
+    "location": "Athi River, Machakos County, Kenya",
     "description": {
-      "title": "Description",
-      "fullDescription": "Massa tempor nec feugiat nisl pretium. Egestas fringilla phasellus faucibus scelerisque eleifend donec Porta nibh venenatis cras sed felis eget velit aliquet. Neque volutpat ac tincidunt vitae semper quis lectus. Turpis in eu mi bibendum neque egestas congue quisque. Sed elementum tempus egestas sed sed risus pretium quam. Dignissim sodales ut eu sem. Nibh mauris cursus mattis molestee iaculis at erat pellentesque. Id interdum velit laoreet id donec ultrices tincidunt.",
-      "shortDescription": "To the left is the modern kitchen with central island, leading through to the unique breakfast family room which feature glass walls and doors out onto the garden and access to the separate utility room."
+      "title": "Land Description",
+      "fullDescription": "This expansive 50-acre plot in Athi River offers a strategic location for commercial and industrial development. With easy access to the Mombasa Road and proximity to Nairobi, it is an ideal site for factories, warehouses, or large-scale residential projects. The flat terrain and existing infrastructure make it a highly sought-after investment opportunity.",
+      "shortDescription": "50-acre commercial land in Athi River, perfect for industrial or commercial development. Close to Nairobi with excellent infrastructure."
     },
     "propertyDetails": {
-      "propertyId": "HZ29",
-      "area": 3450,
+      "propertyId": "KEN50",
+      "area": 50, 
       "propertyStatus": "For Sale",
-      "rooms": 7,
-      "bedrooms": 3,
-      "baths": 2,
-      "createdYear": 1992
+     
+      "createdYear": null 
     },
     "factsAndFeatures": {
-      "livingRoom": "20 x 16 sq feet",
-      "garage": "20 x 16 sq feet",
-      "diningArea": "20 x 16 sq feet",
-      "bedroom": "20 x 16 sq feet",
-      "bathroom": "20 x 16 sq feet",
-      "gymArea": "20 x 16 sq feet",
-      "garden": "20 x 16 sq feet",
-      "parking": "20 x 16 sq feet"
+      "plotSize": "50 acres",
+      "waterAccess": "Available",
+      "electricity": "Available",
+      "accessRoad": "Tarmac road access",
+      "landTitle": "Freehold title"
     },
 
     "amenities1": [
-      "Air Conditioning",
-      "Gym",
-      "Microwave",
-      "Swimming Pool",
-      "WiFi"
+      "Water Access",
+      "Electricity",
+      "Road Access"
     ],
     "amenities2": [
-      "Barbeque",
-      "Recreation",
-      "Microwave",
-      "Basketball Cout",
-      "Fireplace"
+      "Strategic Location",
+      "Near Nairobi",
+      "Commercial Potential"
     ],
     "amenities3": [
-      "Refrigerator",
-      "Window Coverings",
-      "Washer",
-      "24x7 Security",
-      "Indoor Game"
+      "Flat Terrain",
+      "Infrastructure Ready",
+      "Great for Industrial Projects"
     ],
-    "AmenitiesList": ["Floor Coverings"],
+    "AmenitiesList": ["Investment Opportunity"],
     "agent": {
-      "firstName": "Rosalina D.",
-      "lastName": "Willaimson",
-      "fullName": "Rosalina D. Willaimson",
-      "type": "Property Seller",
+      "firstName": "Alice",
+      "lastName": "Mwangi",
+      "fullName": "Alice Mwangi",
+      "type": "Land Consultant",
       "img": "author.jpg",
-      "designation": "Traveller/Photographer",
-      "raiting": 3,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.",
-      "social": ["FaPlay", "FaHome", "FaArrowRight", "FaArrowLeft"]
+      "designation": "Commercial Property Specialist",
+      "rating": 4,
+      "description": "Specialist in commercial land and development opportunities in Machakos and Nairobi regions.",
+      "social": ["FaTwitter", "FaFacebook", "FaLinkedIn"]
     },
 
     "gallery": {
@@ -397,8 +197,11 @@
       "img2": "15.jpg",
       "img3": "16.jpg"
     },
-    "propertyTypes": ["House", "Single Family", "Luxary Home", "Studio"]
+    "propertyTypes": ["Commercial Land", "Industrial Land"]
   },
+
+
+
   {
     "id": "4",
     "carousel": [
@@ -407,100 +210,80 @@
       { "img": "32.jpg" },
       { "img": "33.jpg" }
     ],
-    "title": "Get Best Property On Our",
-    "productImg": "house1.jpg",
-    "price": 19,
-    "priceRange": ["Medium"],
-    "discount": 10,
-    "country": false,
-    "district": "Mission District Area",
+    "title": "20-Acre Mixed-Use Land in Naivasha",
+    "productImg": "img5.jpg",
+    "price": 12000000, 
+    "priceRange": ["High-End"],
+    "discount": 6,
+    "country": "Kenya",
+    "district": "Naivasha",
     "properties": 1,
     "featured": true,
-    "new": false,
-    "rent": true,
-    "photo": ["buying", "women", "men"],
-    "video": ["buying", "women", "children"],
-    "bedBath": ["Single", "renting", "selling"],
+    "new": true,
+    "rent": false,
+    "photo": ["land", "mixed-use", "acreage"],
+    "video": ["land", "tour"],
+    "bedBath": ["Acreage", "buying", "developing"],
     "ratingCount": 5,
-    "rating": 5,
-    "saleCount": 20,
-    "category": ["buying", "renting"],
-    "tag": [
-      "Popular",
-      "desgin",
-      "ux",
-      "usability",
-      "develop",
-      "icon",
-      "Car",
-      "Service",
-      "Repairs",
-      "Auto Parts",
-      "Oil",
-      "Dealer",
-      "Oil Change",
-      "Body Color"
+    "rating": 4.7,
+    "saleCount": 6,
+    "category": ["buying", "development", "mixed-use"],
+   "tag": [
+      "Mixed-Use Land",
+      "Development Land",
+      "Prime Location",
+      "Kenya",
+      "Naivasha",
+      "Real Estate"
     ],
-    "date": "May 19, 2021",
-    "comments": 35,
-    "locantion": "New York",
+    "date": "July 15, 2023",
+    "comments": 55,
+    "location": "Naivasha, Nakuru County, Kenya",
     "description": {
-      "title": "Description",
-      "fullDescription": "Massa tempor nec feugiat nisl pretium. Egestas fringilla phasellus faucibus scelerisque eleifend donec Porta nibh venenatis cras sed felis eget velit aliquet. Neque volutpat ac tincidunt vitae semper quis lectus. Turpis in eu mi bibendum neque egestas congue quisque. Sed elementum tempus egestas sed sed risus pretium quam. Dignissim sodales ut eu sem. Nibh mauris cursus mattis molestee iaculis at erat pellentesque. Id interdum velit laoreet id donec ultrices tincidunt.",
-      "shortDescription": "To the left is the modern kitchen with central island, leading through to the unique breakfast family room which feature glass walls and doors out onto the garden and access to the separate utility room."
+      "title": "Land Description",
+      "fullDescription": "This 20-acre mixed-use plot in Naivasha offers opportunities for commercial, residential, or agricultural development. Located near the Nairobi-Nakuru Highway, this land is perfect for real estate projects or farming. The proximity to Lake Naivasha and tourism spots makes it ideal for both investment and leisure purposes.",
+      "shortDescription": "A 20-acre plot in Naivasha, suitable for commercial, residential, or agricultural use. Prime location near the Nairobi-Nakuru Highway."
     },
     "propertyDetails": {
-      "propertyId": "HZ29",
-      "area": 3450,
+      "propertyId": "KEN60",
+      "area": 20, 
       "propertyStatus": "For Sale",
-      "rooms": 7,
-      "bedrooms": 3,
-      "baths": 2,
-      "createdYear": 1992
+  
+      "createdYear": null 
     },
     "factsAndFeatures": {
-      "livingRoom": "20 x 16 sq feet",
-      "garage": "20 x 16 sq feet",
-      "diningArea": "20 x 16 sq feet",
-      "bedroom": "20 x 16 sq feet",
-      "bathroom": "20 x 16 sq feet",
-      "gymArea": "20 x 16 sq feet",
-      "garden": "20 x 16 sq feet",
-      "parking": "20 x 16 sq feet"
+      "plotSize": "20 acres",
+      "waterAccess": "Nearby borehole",
+      "electricity": "Available",
+      "accessRoad": "Gravel road access",
+      "landTitle": "Freehold title"
     },
-
     "amenities1": [
-      "Air Conditioning",
-      "Gym",
-      "Microwave",
-      "Swimming Pool",
-      "WiFi"
+      "Water Access",
+      "Electricity",
+      "Fertile Soil"
     ],
     "amenities2": [
-      "Barbeque",
-      "Recreation",
-      "Microwave",
-      "Basketball Cout",
-      "Fireplace"
+      "Near Lake Naivasha",
+      "Tourist Attractions",
+      "Major Road Access"
     ],
     "amenities3": [
-      "Refrigerator",
-      "Window Coverings",
-      "Washer",
-      "24x7 Security",
-      "Indoor Game"
+      "Ideal for Farming",
+      "Great for Residential Development",
+      "Potential for Tourism Projects"
     ],
-    "AmenitiesList": ["Floor Coverings"],
+    "AmenitiesList": ["Investment Opportunity"],
     "agent": {
-      "firstName": "Rosalina D.",
-      "lastName": "Willaimson",
-      "fullName": "Rosalina D. Willaimson",
-      "type": "Property Seller",
+      "firstName": "Victor",
+      "lastName": "Mutua",
+      "fullName": "Victor Mutua",
+      "type": "Land Agent",
       "img": "author.jpg",
-      "designation": "Traveller/Photographer",
-      "raiting": 3,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.",
-      "social": ["FaPlay", "FaHome", "FaArrowRight", "FaArrowLeft"]
+      "designation": "Mixed-Use Property Expert",
+      "rating": 4.7,
+      "description": "Specializing in mixed-use properties and development projects across Kenya.",
+      "social": ["FaFacebook", "FaLinkedIn", "FaInstagram"]
     },
 
     "gallery": {
@@ -508,14 +291,14 @@
       "img2": "15.jpg",
       "img3": "16.jpg"
     },
-    "propertyTypes": [
-      "House",
-      "Single Family",
-      "Apartment",
-      "Luxary Home",
-      "Studio"
-    ]
+    "propertyTypes": ["Mixed-Use Land", "Agricultural Land"]
   },
+
+
+
+
+
+
   {
     "id": "5",
     "carousel": [
@@ -524,100 +307,82 @@
       { "img": "32.jpg" },
       { "img": "33.jpg" }
     ],
-    "title": "New Apartment Nice View",
-    "productImg": "house1.jpg",
-    "price": 149,
-    "priceRange": ["Low Budget"],
-    "discount": 5,
-    "country": true,
-    "district": "Mission District Area",
-    "properties": 2,
+    "title": "30-Acre Industrial Land in Mlolongo",
+    "productImg": "img6.jpg",
+    "price": 35000000, 
+    "priceRange": ["High-End"],
+    "discount": 3,
+    "country": "Kenya",
+    "district": "Mlolongo",
+    "properties": 1,
     "featured": true,
     "new": true,
-    "rent": true,
-    "photo": ["buying", "women", "women"],
-    "video": ["buying", "women"],
-    "bedBath": ["Single", "renting", "selling"],
-    "ratingCount": 5,
-    "rating": 5,
-    "saleCount": 90,
-    "category": ["buying", "renting"],
+    "rent": false,
+    "photo": ["land", "industrial", "acreage"],
+    "video": ["land", "tour"],
+    "bedBath": ["Acreage", "buying", "industrial"],
+    "ratingCount": 4.3,
+    "rating": 4.8,
+    "saleCount": 12,
+    "category": ["buying", "industrial", "development"],
+ 
     "tag": [
-      "Popular",
-      "desgin",
-      "ux",
-      "usability",
-      "develop",
-      "icon",
-      "Car",
-      "Service",
-      "Repairs",
-      "Auto Parts",
-      "Oil",
-      "Dealer",
-      "Oil Change",
-      "Body Color"
+      "Industrial Land",
+      "Development Land",
+      "Prime Location",
+      "Kenya",
+      "Mlolongo",
+      "Real Estate"
     ],
-    "date": "May 19, 2021",
-    "comments": 35,
-    "locantion": "Chicago",
+    "date": "September 2, 2023",
+    "comments": 40,
+    "location": "Mlolongo, Machakos County, Kenya",
     "description": {
-      "title": "Description",
-      "fullDescription": "Massa tempor nec feugiat nisl pretium. Egestas fringilla phasellus faucibus scelerisque eleifend donec Porta nibh venenatis cras sed felis eget velit aliquet. Neque volutpat ac tincidunt vitae semper quis lectus. Turpis in eu mi bibendum neque egestas congue quisque. Sed elementum tempus egestas sed sed risus pretium quam. Dignissim sodales ut eu sem. Nibh mauris cursus mattis molestee iaculis at erat pellentesque. Id interdum velit laoreet id donec ultrices tincidunt.",
-      "shortDescription": "To the left is the modern kitchen with central island, leading through to the unique breakfast family room which feature glass walls and doors out onto the garden and access to the separate utility room."
+      "title": "Land Description",
+      "fullDescription": "Strategically located in the Mlolongo area, this 30-acre parcel is ideal for industrial development, warehouses, and factories. Close to the main highway and airport, it offers excellent accessibility and is perfect for investors looking to expand industrial operations. The flat terrain and developed infrastructure make it a top choice for large-scale industries.",
+      "shortDescription": "30-acre industrial land in Mlolongo, perfect for setting up factories, warehouses, or logistics centers. Excellent highway access."
     },
     "propertyDetails": {
-      "propertyId": "HZ29",
-      "area": 3450,
+      "propertyId": "KEN90",
+      "area": 30, 
       "propertyStatus": "For Sale",
-      "rooms": 7,
-      "bedrooms": 3,
-      "baths": 2,
-      "createdYear": 1992
+      
+      "createdYear": null
     },
     "factsAndFeatures": {
-      "livingRoom": "20 x 16 sq feet",
-      "garage": "20 x 16 sq feet",
-      "diningArea": "20 x 16 sq feet",
-      "bedroom": "20 x 16 sq feet",
-      "bathroom": "20 x 16 sq feet",
-      "gymArea": "20 x 16 sq feet",
-      "garden": "20 x 16 sq feet",
-      "parking": "20 x 16 sq feet"
+      "plotSize": "30 acres",
+      "waterAccess": "Available",
+      "electricity": "Available",
+      "accessRoad": "Tarmac road access",
+      "landTitle": "Freehold title"
     },
 
     "amenities1": [
-      "Air Conditioning",
-      "Gym",
-      "Microwave",
-      "Swimming Pool",
-      "WiFi"
+      "Water Access",
+      "Electricity",
+      "Flat Terrain"
     ],
     "amenities2": [
-      "Barbeque",
-      "Recreation",
-      "Microwave",
-      "Basketball Cout",
-      "Fireplace"
+      "Near Main Highway",
+      "Close to Airport",
+      "Developed Infrastructure"
     ],
     "amenities3": [
-      "Refrigerator",
-      "Window Coverings",
-      "Washer",
-      "24x7 Security",
-      "Indoor Game"
+      "Ideal for Large-Scale Industries",
+      "Top Choice for Warehousing",
+      "Investment Potential"
     ],
-    "AmenitiesList": ["Supermarket"],
+    "AmenitiesList": ["Industrial Growth Opportunity"],
     "agent": {
-      "firstName": "Rosalina D.",
-      "lastName": "Willaimson",
-      "fullName": "Rosalina D. Willaimson",
-      "type": "Property Seller",
+      "firstName": "John",
+      "lastName": "Kamau",
+      "fullName": "John Kamau",
+      "type": "Industrial Land Agent",
       "img": "author.jpg",
-      "designation": "Traveller/Photographer",
-      "raiting": 3,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.",
-      "social": ["FaPlay", "FaHome", "FaArrowRight", "FaArrowLeft"]
+      "designation": "Industrial Property Consultant",
+      "rating": 4.8,
+      "description": "Specialist in industrial land and large-scale property development.",
+      "social": ["FaFacebook", "FaLinkedIn", "FaInstagram"]
     },
 
     "gallery": {
@@ -625,8 +390,12 @@
       "img2": "15.jpg",
       "img3": "16.jpg"
     },
-    "propertyTypes": ["House", "Single Family", "Apartment", "Office Villa"]
+   "propertyTypes": ["Industrial Land", "Development Land"]
   },
+
+
+
+  
   {
     "id": "6",
     "carousel": [
@@ -635,100 +404,81 @@
       { "img": "32.jpg" },
       { "img": "33.jpg" }
     ],
-    "title": "Citra Puri Los Angles Living",
-    "productImg": "house1.jpg",
-    "price": 215,
-    "priceRange": ["Low"],
-    "discount": 5,
-    "country": true,
-    "district": "Mission District Area",
-    "properties": 2,
+    "title": "15-Acre Residential Plot in Karen, Nairobi",
+    "productImg": "img7.jpg",
+    "price": 25000000, 
+    "priceRange": ["Luxury"],
+    "discount": 4,
+    "country": "Kenya",
+    "district": "Karen, Nairobi",
+    "properties": 1,
     "featured": true,
-    "new": false,
-    "rent": true,
-    "photo": ["buying", "women", "women"],
-    "video": ["buying", "women"],
-    "bedBath": ["Single", "renting", "selling"],
-    "ratingCount": 2,
-    "rating": 3,
-    "saleCount": 25,
-    "category": ["buying", "selling", "renting"],
+    "new": true,
+    "rent": false,
+    "photo": ["land", "residential", "acreage"],
+    "video": ["land", "tour"],
+    "bedBath": ["Acreage", "buying", "residential"],
+    "ratingCount": 4.5,
+    "rating": 5,
+    "saleCount": 3,
+    "category": ["buying", "residential", "luxury"],
     "tag": [
-      "Popular",
-      "desgin",
-      "ux",
-      "usability",
-      "develop",
-      "icon",
-      "Car",
-      "Service",
-      "Repairs",
-      "Auto Parts",
-      "Oil",
-      "Dealer",
-      "Oil Change",
-      "Body Color"
+      "Residential Land",
+      "Luxury Land",
+      "Prime Location",
+      "Kenya",
+      "Karen",
+      "Real Estate"
     ],
-    "date": "May 19, 2021",
-    "comments": 35,
-    "locantion": "Chicago",
+    "date": "August 12, 2023",
+    "comments": 50,
+    "location": "Karen, Nairobi County, Kenya",
     "description": {
-      "title": "Description",
-      "fullDescription": "Massa tempor nec feugiat nisl pretium. Egestas fringilla phasellus faucibus scelerisque eleifend donec Porta nibh venenatis cras sed felis eget velit aliquet. Neque volutpat ac tincidunt vitae semper quis lectus. Turpis in eu mi bibendum neque egestas congue quisque. Sed elementum tempus egestas sed sed risus pretium quam. Dignissim sodales ut eu sem. Nibh mauris cursus mattis molestee iaculis at erat pellentesque. Id interdum velit laoreet id donec ultrices tincidunt.",
-      "shortDescription": "To the left is the modern kitchen with central island, leading through to the unique breakfast family room which feature glass walls and doors out onto the garden and access to the separate utility room."
+      "title": "Land Description",
+      "fullDescription": "A rare opportunity to own a prime 15-acre residential plot in Karen, Nairobi. This land is perfect for building high-end homes or gated communities. Located in one of Nairobi's most prestigious neighborhoods, it offers serenity, security, and proximity to major amenities like schools, malls, and hospitals.",
+      "shortDescription": "15-acre residential plot in the upscale Karen neighborhood. Ideal for luxury homes or gated communities, with excellent amenities nearby."
     },
     "propertyDetails": {
-      "propertyId": "HZ29",
-      "area": 3450,
+      "propertyId": "KEN75",
+      "area": 15, 
       "propertyStatus": "For Sale",
-      "rooms": 7,
-      "bedrooms": 3,
-      "baths": 2,
-      "createdYear": 1992
+   
+      "createdYear": null 
     },
     "factsAndFeatures": {
-      "livingRoom": "20 x 16 sq feet",
-      "garage": "20 x 16 sq feet",
-      "diningArea": "20 x 16 sq feet",
-      "bedroom": "20 x 16 sq feet",
-      "bathroom": "20 x 16 sq feet",
-      "gymArea": "20 x 16 sq feet",
-      "garden": "20 x 16 sq feet",
-      "parking": "20 x 16 sq feet"
+      "plotSize": "15 acres",
+      "waterAccess": "Connected to city water supply",
+      "electricity": "Available",
+      "accessRoad": "Tarmac road access",
+      "landTitle": "Freehold title"
     },
 
     "amenities1": [
-      "Air Conditioning",
-      "Gym",
-      "Microwave",
-      "Swimming Pool",
-      "WiFi"
+      "Water Access",
+      "Electricity",
+      "Serene Environment"
     ],
     "amenities2": [
-      "Barbeque",
-      "Recreation",
-      "Microwave",
-      "Basketball Cout",
-      "Fireplace"
+      "Near Malls and Schools",
+      "High-End Neighborhood",
+      "Security"
     ],
     "amenities3": [
-      "Refrigerator",
-      "Window Coverings",
-      "Washer",
-      "24x7 Security",
-      "Indoor Game"
+      "Suitable for Gated Community",
+      "Prime for Luxury Development",
+      "Prestigious Location"
     ],
-    "AmenitiesList": ["Kids Zone"],
+    "AmenitiesList": ["Investment Opportunity"],
     "agent": {
-      "firstName": "Rosalina D.",
-      "lastName": "Willaimson",
-      "fullName": "Rosalina D. Willaimson",
-      "type": "Property Seller",
-      "img": "author.jpg",
-      "designation": "Traveller/Photographer",
-      "raiting": 3,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.",
-      "social": ["FaPlay", "FaHome", "FaArrowRight", "FaArrowLeft"]
+      "firstName": "Emily",
+      "lastName": "Wanjiru",
+      "fullName": "Emily Wanjiru",
+      "type": "Land Consultant",
+      "img": "agent_emily.jpg",
+      "designation": "Residential Land Specialist",
+      "rating": 4.9,
+      "description": "Expert in luxury residential land and high-end real estate in Nairobi.",
+      "social": ["FaFacebook", "FaLinkedIn", "FaInstagram"]
     },
 
     "gallery": {
@@ -736,8 +486,10 @@
       "img2": "15.jpg",
       "img3": "16.jpg"
     },
-    "propertyTypes": ["House", "Single Family", "Apartment", "Office Villa"]
+    "propertyTypes": ["Residential Land", "Luxury Property"]
   },
+
+
   {
     "id": "7",
     "carousel": [
@@ -746,8 +498,8 @@
       { "img": "32.jpg" },
       { "img": "33.jpg" }
     ],
-    "title": "Citra Puri Los Angles Living",
-    "productImg": "house1.jpg",
+    "title": "50-Acre Agricultural Land in Eldoret",
+    "productImg": "img3.jpg",
     "price": 225,
     "priceRange": ["Low Budget", "Medium"],
     "discount": 5,
@@ -765,81 +517,63 @@
     "saleCount": 30,
     "category": ["buying", "renting", "selling"],
     "tag": [
-      "Popular",
-      "desgin",
-      "ux",
-      "usability",
-      "develop",
-      "icon",
-      "Car",
-      "Service",
-      "Repairs",
-      "Auto Parts",
-      "Oil",
-      "Dealer",
-      "Oil Change",
-      "Body Color"
+      "Agricultural Land",
+      "Farming Land",
+      "Prime Location",
+      "Kenya",
+      "Eldoret",
+      "Real Estate"
     ],
-    "date": "May 19, 2021",
-    "comments": 35,
-    "locantion": "Chicago",
+    "date": "August 20, 2023",
+    "comments": 60,
+    "location": "Eldoret, Uasin Gishu County, Kenya",
     "description": {
-      "title": "Description",
-      "fullDescription": "Massa tempor nec feugiat nisl pretium. Egestas fringilla phasellus faucibus scelerisque eleifend donec Porta nibh venenatis cras sed felis eget velit aliquet. Neque volutpat ac tincidunt vitae semper quis lectus. Turpis in eu mi bibendum neque egestas congue quisque. Sed elementum tempus egestas sed sed risus pretium quam. Dignissim sodales ut eu sem. Nibh mauris cursus mattis molestee iaculis at erat pellentesque. Id interdum velit laoreet id donec ultrices tincidunt.",
-      "shortDescription": "To the left is the modern kitchen with central island, leading through to the unique breakfast family room which feature glass walls and doors out onto the garden and access to the separate utility room."
+      "title": "Land Description",
+      "fullDescription": "This 50-acre parcel in Eldoret is perfect for large-scale farming. The fertile soil and adequate rainfall make it ideal for crop cultivation or dairy farming. With good road access and proximity to Eldoret town, it offers a prime investment opportunity for agricultural development.",
+      "shortDescription": "50-acre agricultural land in Eldoret, ideal for farming. Fertile soil and close to major transport routes."
     },
     "propertyDetails": {
-      "propertyId": "HZ29",
-      "area": 3450,
+      "propertyId": "KEN100",
+      "area": 50, 
       "propertyStatus": "For Sale",
-      "rooms": 7,
-      "bedrooms": 3,
-      "baths": 2,
-      "createdYear": 1992
+      
+      "createdYear": null
     },
     "factsAndFeatures": {
-      "livingRoom": "20 x 16 sq feet",
-      "garage": "20 x 16 sq feet",
-      "diningArea": "20 x 16 sq feet",
-      "bedroom": "20 x 16 sq feet",
-      "bathroom": "20 x 16 sq feet",
-      "gymArea": "20 x 16 sq feet",
-      "garden": "20 x 16 sq feet",
-      "parking": "20 x 16 sq feet"
+      "plotSize": "50 acres",
+      "waterAccess": "Nearby river",
+      "electricity": "Available",
+      "accessRoad": "All-weather road",
+      "landTitle": "Freehold title"
     },
 
     "amenities1": [
-      "Air Conditioning",
-      "Gym",
-      "Microwave",
-      "Swimming Pool",
-      "WiFi"
+      "Water Access",
+      "Electricity",
+      "Flat Terrain"
     ],
     "amenities2": [
-      "Barbeque",
-      "Recreation",
-      "Microwave",
-      "Basketball Cout",
-      "Fireplace"
+      "Near Main Highway",
+      "Close to Airport",
+      "Developed Infrastructure"
     ],
     "amenities3": [
-      "Refrigerator",
-      "Window Coverings",
-      "Washer",
-      "24x7 Security",
-      "Indoor Game"
+      "Ideal for Large-Scale Industries",
+      "Top Choice for Warehousing",
+      "Investment Potential"
     ],
-    "AmenitiesList": ["Supermarket"],
+  
+ "AmenitiesList": ["Prime Farming Land"],
     "agent": {
-      "firstName": "Rosalina D.",
-      "lastName": "Willaimson",
-      "fullName": "Rosalina D. Willaimson",
-      "type": "Property Seller",
+      "firstName": "David",
+      "lastName": "Ochieng",
+      "fullName": "David Ochieng",
+      "type": "Agricultural Land Consultant",
       "img": "author.jpg",
-      "designation": "Traveller/Photographer",
-      "raiting": 3,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.",
-      "social": ["FaPlay", "FaHome", "FaArrowRight", "FaArrowLeft"]
+      "designation": "Farming Land Specialist",
+      "rating": 4.9,
+      "description": "Expert in agricultural properties and farming investments.",
+      "social": ["FaFacebook", "FaLinkedIn", "FaInstagram"]
     },
 
     "gallery": {
@@ -847,119 +581,12 @@
       "img2": "15.jpg",
       "img3": "16.jpg"
     },
-    "propertyTypes": ["Office Villa"]
+   "propertyTypes": ["Agricultural Land", "Farming Land"]
   },
-  {
-    "id": "8",
-    "carousel": [
-      { "img": "35.jpg" },
-      { "img": "31.jpg" },
-      { "img": "32.jpg" },
-      { "img": "33.jpg" }
-    ],
-    "title": "New Apartment Nice View",
-    "productImg": "house1.jpg",
-    "price": 500,
-    "priceRange": ["Low Budget", "Medium"],
-    "discount": 5,
-    "country": false,
-    "district": "Mission District Area",
-    "properties": 2,
-    "featured": false,
-    "new": true,
-    "rent": true,
-    "photo": ["buying", "women", "women"],
-    "video": ["buying", "women"],
-    "bedBath": ["Single", "renting", "selling"],
-    "ratingCount": 5,
-    "rating": 5,
-    "saleCount": 35,
-    "category": ["buying", "renting", "selling"],
-    "tag": [
-      "Popular",
-      "desgin",
-      "ux",
-      "usability",
-      "develop",
-      "icon",
-      "Car",
-      "Service",
-      "Repairs",
-      "Auto Parts",
-      "Oil",
-      "Dealer",
-      "Oil Change",
-      "Body Color"
-    ],
-    "date": "May 19, 2021",
-    "comments": 35,
-    "locantion": "Chicago",
-    "description": {
-      "title": "Description",
-      "fullDescription": "Massa tempor nec feugiat nisl pretium. Egestas fringilla phasellus faucibus scelerisque eleifend donec Porta nibh venenatis cras sed felis eget velit aliquet. Neque volutpat ac tincidunt vitae semper quis lectus. Turpis in eu mi bibendum neque egestas congue quisque. Sed elementum tempus egestas sed sed risus pretium quam. Dignissim sodales ut eu sem. Nibh mauris cursus mattis molestee iaculis at erat pellentesque. Id interdum velit laoreet id donec ultrices tincidunt.",
-      "shortDescription": "To the left is the modern kitchen with central island, leading through to the unique breakfast family room which feature glass walls and doors out onto the garden and access to the separate utility room."
-    },
-    "propertyDetails": {
-      "propertyId": "HZ29",
-      "area": 3450,
-      "propertyStatus": "For Sale",
-      "rooms": 7,
-      "bedrooms": 3,
-      "baths": 2,
-      "createdYear": 1992
-    },
-    "factsAndFeatures": {
-      "livingRoom": "20 x 16 sq feet",
-      "garage": "20 x 16 sq feet",
-      "diningArea": "20 x 16 sq feet",
-      "bedroom": "20 x 16 sq feet",
-      "bathroom": "20 x 16 sq feet",
-      "gymArea": "20 x 16 sq feet",
-      "garden": "20 x 16 sq feet",
-      "parking": "20 x 16 sq feet"
-    },
 
-    "amenities1": [
-      "Air Conditioning",
-      "Gym",
-      "Microwave",
-      "Swimming Pool",
-      "WiFi"
-    ],
-    "amenities2": [
-      "Barbeque",
-      "Recreation",
-      "Microwave",
-      "Basketball Cout",
-      "Fireplace"
-    ],
-    "amenities3": [
-      "Refrigerator",
-      "Window Coverings",
-      "Washer",
-      "24x7 Security",
-      "Indoor Game"
-    ],
-    "AmenitiesList": ["Supermarket"],
-    "agent": {
-      "firstName": "Rosalina D.",
-      "lastName": "Willaimson",
-      "fullName": "Rosalina D. Willaimson",
-      "type": "Property Seller",
-      "img": "author.jpg",
-      "designation": "Traveller/Photographer",
-      "raiting": 3,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.",
-      "social": ["FaPlay", "FaHome", "FaArrowRight", "FaArrowLeft"]
-    },
 
-    "gallery": {
-      "img1": "14.jpg",
-      "img2": "15.jpg",
-      "img3": "16.jpg"
-    },
-    "propertyTypes": ["Single Family"]
-  },
+
+
   {
     "id": "9",
     "carousel": [
@@ -968,100 +595,80 @@
       { "img": "32.jpg" },
       { "img": "33.jpg" }
     ],
-    "title": "Citra Puri Los Angles Living",
-    "productImg": "house1.jpg",
-    "price": 270,
-    "priceRange": ["Low Budget"],
-    "discount": 5,
-    "country": true,
-    "district": "Mission District Area",
-    "properties": 2,
-    "featured": false,
+    "title": "10-Acre Beachfront Plot in Diani",
+    "productImg": "img10.jpg",
+    "price": 75000000, 
+    "priceRange": ["Luxury"],
+    "discount": 7,
+    "country": "Kenya",
+    "district": "Diani",
+    "properties": 1,
+    "featured": true,
     "new": true,
     "rent": false,
-    "photo": ["buying", "women", "women"],
-    "video": ["buying", "women"],
-    "bedBath": ["Single", "renting", "selling"],
-    "ratingCount": 5,
+    "photo": ["land", "beachfront", "acreage"],
+    "video": ["land", "tour"],
+    "bedBath": ["Acreage", "buying", "luxury"],
+    "ratingCount": 4.9,
     "rating": 5,
-    "saleCount": 90,
-    "category": ["buying", "selling"],
-    "tag": [
-      "Popular",
-      "desgin",
-      "ux",
-      "usability",
-      "develop",
-      "icon",
-      "Car",
-      "Service",
-      "Repairs",
-      "Auto Parts",
-      "Oil",
-      "Dealer",
-      "Oil Change",
-      "Body Color"
+    "saleCount": 5,
+    "category": ["buying", "beachfront", "luxury"],
+   "tag": [
+      "Beachfront Land",
+      "Luxury Land",
+      "Prime Location",
+      "Kenya",
+      "Diani",
+      "Real Estate"
     ],
-    "date": "May 19, 2021",
-    "comments": 35,
-    "locantion": "Chicago",
+    "date": "September 10, 2023",
+    "comments": 45,
+    "location": "Diani, Kwale County, Kenya",
     "description": {
-      "title": "Description",
-      "fullDescription": "Massa tempor nec feugiat nisl pretium. Egestas fringilla phasellus faucibus scelerisque eleifend donec Porta nibh venenatis cras sed felis eget velit aliquet. Neque volutpat ac tincidunt vitae semper quis lectus. Turpis in eu mi bibendum neque egestas congue quisque. Sed elementum tempus egestas sed sed risus pretium quam. Dignissim sodales ut eu sem. Nibh mauris cursus mattis molestee iaculis at erat pellentesque. Id interdum velit laoreet id donec ultrices tincidunt.",
-      "shortDescription": "To the left is the modern kitchen with central island, leading through to the unique breakfast family room which feature glass walls and doors out onto the garden and access to the separate utility room."
+      "title": "Land Description",
+      "fullDescription": "This exquisite 10-acre beachfront plot is located in the serene Diani area. It offers white sandy beaches and crystal-clear ocean views, making it perfect for luxury resort development or high-end residential villas. With its prime location and easy access to Diani town, this is a once-in-a-lifetime investment opportunity.",
+      "shortDescription": "10-acre beachfront plot in Diani, ideal for luxury resorts or high-end residential villas. Prime location with ocean views."
     },
     "propertyDetails": {
-      "propertyId": "HZ29",
-      "area": 3450,
+      "propertyId": "KEN120",
+      "area": 10, 
       "propertyStatus": "For Sale",
-      "rooms": 7,
-      "bedrooms": 3,
-      "baths": 2,
-      "createdYear": 1992
+    
+      "createdYear": null 
     },
     "factsAndFeatures": {
-      "livingRoom": "20 x 16 sq feet",
-      "garage": "20 x 16 sq feet",
-      "diningArea": "20 x 16 sq feet",
-      "bedroom": "20 x 16 sq feet",
-      "bathroom": "20 x 16 sq feet",
-      "gymArea": "20 x 16 sq feet",
-      "garden": "20 x 16 sq feet",
-      "parking": "20 x 16 sq feet"
+      "plotSize": "10 acres",
+      "waterAccess": "Beachfront",
+      "electricity": "Available",
+      "accessRoad": "Tarmac road",
+      "landTitle": "Freehold title"
     },
-
     "amenities1": [
-      "Air Conditioning",
-      "Gym",
-      "Microwave",
-      "Swimming Pool",
-      "WiFi"
+      "Beachfront",
+      "Water Access",
+      "Electricity"
     ],
     "amenities2": [
-      "Barbeque",
-      "Recreation",
-      "Microwave",
-      "Basketball Cout",
-      "Fireplace"
+      "White Sandy Beaches",
+      "Prime for Resort Development",
+      "Near Diani Town"
     ],
     "amenities3": [
-      "Refrigerator",
-      "Window Coverings",
-      "Washer",
-      "24x7 Security",
-      "Indoor Game"
+      "Luxury Residential Potential",
+      "Great Ocean Views",
+      "Serene Environment"
     ],
-    "AmenitiesList": ["Supermarket"],
+    "AmenitiesList": ["Prime Beachfront Property"],
     "agent": {
-      "firstName": "Rosalina D.",
-      "lastName": "Willaimson",
-      "fullName": "Rosalina D. Willaimson",
-      "type": "Property Seller",
-      "img": "author.jpg",
-      "designation": "Traveller/Photographer",
-      "raiting": 3,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.",
-      "social": ["FaPlay", "FaHome", "FaArrowRight", "FaArrowLeft"]
+      "firstName": "Grace",
+      "lastName": "Mutiso",
+      "fullName": "Grace Mutiso",
+      "type": "Luxury Property Consultant",
+      "img": "img10.jpg",
+      "designation": "Beachfront and Luxury Specialist",
+      "rating": 5,
+      "description": "Specializing in luxury beachfront properties and high-end real estate.",
+      "social": ["FaFacebook", "FaLinkedIn", "FaInstagram"]
     },
 
     "gallery": {

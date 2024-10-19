@@ -45,7 +45,7 @@ function Login() {
 
     if (res?.ok) {
       console.log("login succesiful");
-      router.push("/my-profile");
+      router.push("/my-account");
       return;
     } else {
       setError("Failed! Check you input and try again.");

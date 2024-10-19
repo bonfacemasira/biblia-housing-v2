@@ -21,18 +21,8 @@ function AboutUsStyleOne({ sectionSpace }) {
           <Row>
             <Col xs={12} lg={6} className="align-self-center">
               <div className="about-us-img-wrap about-img-left">
-                <img src="/img/house3.jpg" alt="About Us Image" />
-                <div className="about-us-img-info about-us-img-info-2 about-us-img-info-3">
-                  <div className="ltn__video-img ltn__animation-pulse1">
-                    <img src="/img/house4.jpg" alt="video popup bg image" />
-                    <button
-                      onClick={() => setOpen(true)}
-                      className="ltn__video-icon-2"
-                    >
-                      <FaPlay />
-                    </button>
-                  </div>
-                </div>
+                <img src="/img/img1.jpg" alt="About Us Image" />
+                
               </div>
             </Col>
             <Col xs={12} lg={6} className="align-self-center">
@@ -42,36 +32,33 @@ function AboutUsStyleOne({ sectionSpace }) {
                     About Us
                   </h6>
                   <h1 className="section-title">
-                    The Leading Real Estate Rental Marketplace<span>.</span>
+                  The Leading Marketplace for Premium Land Sales<span>.</span>
                   </h1>
                   <p>
-                    Over 39,000 people work for us in more than 70 countries all
-                    over the This breadth of global coverage, combined with
-                    specialist services
+                  Your gateway to premium land deals in prime locations. Explore a wide range of plots perfect for investment or building your dream property. Secure your ideal land with ease today!
                   </p>
                 </div>
                 <ul className="ltn__list-item-half clearfix">
                   <li>
                     <i className="flaticon-home-2"></i>
-                    Smart Home Design
+                    Residential Plots
                   </li>
                   <li>
                     <i className="flaticon-mountain"></i>
-                    Beautiful Scene Around
+                    Commercial Land
                   </li>
                   <li>
                     <i className="flaticon-heart"></i>
-                    Exceptional Lifestyle
+                    Agricultural Land 
                   </li>
                   <li>
                     <i className="flaticon-secure"></i>
-                    Complete 24/7 Security
+                    Investment Property
                   </li>
                 </ul>
                 <div className="ltn__callout bg-overlay-theme-05  mt-30">
                   <p>
-                    Enimad minim veniam quis nostrud exercitation <br />
-                    llamco laboris. Lorem ipsum dolor sit amet
+                  Whether you're looking for agricultural, residential, or commercial land, our platform provides detailed listings and expert guidance to help you find the perfect property. 
                   </p>
                 </div>
                 <div className="btn-wrapper animated">

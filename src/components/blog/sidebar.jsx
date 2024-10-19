@@ -286,20 +286,7 @@ const BlogSideBar = ({ popularProducts, topRatedProducts, latestdBlogs }) => {
                         </li>
                       </ul>
                     </div>
-                    <ul className="ltn__list-item-2--- ltn__list-item-2-before--- ltn__plot-brief">
-                      <li>
-                        <span>{product.propertyDetails.bedrooms}</span>
-                        <span className="ms-1">Bedrooms</span>
-                      </li>
-                      <li>
-                        <span>{product.propertyDetails.baths}</span>
-                        <span className="ms-1">Bathrooms</span>
-                      </li>
-                      <li>
-                        <span>{product.propertyDetails.area}</span>
-                        <span className="ms-1">square Ft</span>
-                      </li>
-                    </ul>
+                    
                   </div>
                 </div>
               );

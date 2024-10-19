@@ -130,7 +130,7 @@ function AboutUs() {
         {/* <!-- TESTIMONIAL AREA START (testimonial-7) -->  */}
         <div
           className="ltn__testimonial-area bg-image-top pt-115 pb-70"
-          style={{ backgroundImage: `url("../img/bg/20.jpg")` }}
+          style={{ backgroundImage: `url("../img/land1.jpg")` }}
         >
           <Container>
             <Row>
