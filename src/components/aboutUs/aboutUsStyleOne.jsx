@@ -22,7 +22,6 @@ function AboutUsStyleOne({ sectionSpace }) {
             <Col xs={12} lg={6} className="align-self-center">
               <div className="about-us-img-wrap about-img-left">
                 <img src="/img/img1.jpg" alt="About Us Image" />
-                
               </div>
             </Col>
             <Col xs={12} lg={6} className="align-self-center">
@@ -32,10 +31,13 @@ function AboutUsStyleOne({ sectionSpace }) {
                     About Us
                   </h6>
                   <h1 className="section-title">
-                  The Leading Marketplace for Premium Land Sales<span>.</span>
+                    The Leading Marketplace for Premium Land Sales<span>.</span>
                   </h1>
                   <p>
-                  Your gateway to premium land deals in prime locations. Explore a wide range of plots perfect for investment or building your dream property. Secure your ideal land with ease today!
+                    Your gateway to premium land deals in prime locations.
+                    Explore a wide range of plots perfect for investment or
+                    building your dream property. Secure your ideal land with
+                    ease today!
                   </p>
                 </div>
                 <ul className="ltn__list-item-half clearfix">
@@ -49,7 +51,7 @@ function AboutUsStyleOne({ sectionSpace }) {
                   </li>
                   <li>
                     <i className="flaticon-heart"></i>
-                    Agricultural Land 
+                    Agricultural Land
                   </li>
                   <li>
                     <i className="flaticon-secure"></i>
@@ -58,7 +60,9 @@ function AboutUsStyleOne({ sectionSpace }) {
                 </ul>
                 <div className="ltn__callout bg-overlay-theme-05  mt-30">
                   <p>
-                  Whether you're looking for agricultural, residential, or commercial land, our platform provides detailed listings and expert guidance to help you find the perfect property. 
+                    Whether you&#39;re looking for agricultural, residential, or
+                    commercial land, our platform provides detailed listings and
+                    expert guidance to help you find the perfect property.
                   </p>
                 </div>
                 <div className="btn-wrapper animated">
