@@ -10,12 +10,14 @@ function Report() {
   const router = useRouter();
   const { id } = router.query;
 
+  const statementRef = useRef();
+
   const report = reports.find((r) => r.id === parseInt(id));
 
   if (!report) return <p>Report not found.</p>;
 
 
-  const statementRef = useRef();
+
 
 
   const handleDownloadPDF = () => {

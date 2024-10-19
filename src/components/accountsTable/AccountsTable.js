@@ -14,14 +14,13 @@ const AccountTable = () => {
     const statementRef = useRef();
 
     const handleDownloadPDF = (id) => {
-      
         const reportToDownload = reports.find((report) => report.id === id);
         if (!reportToDownload) {
             return;
         }
 
         setSelectedReport(reportToDownload);
-        setViewReport(false)
+        setViewReport(false);
 
         if (typeof window !== "undefined") {
             import("html2pdf.js").then((html2pdf) => {
@@ -41,7 +40,6 @@ const AccountTable = () => {
 
     return (
         <Container>
-       
             <Row className="mb-4">
                 <Col>
                     <div
@@ -87,12 +85,11 @@ const AccountTable = () => {
                 </Col>
             </Row>
 
-            <div style={{display: "none"}}>
-            { selectedReport && (
-                <Report report={selectedReport} statementRef={statementRef} />
-            )}
+            <div style={{ position: 'absolute', left: '-9999px' }}>
+                {selectedReport && (
+                    <Report report={selectedReport} statementRef={statementRef} />
+                )}
             </div>
-           
         </Container>
     );
 };
