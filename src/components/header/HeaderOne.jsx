@@ -152,7 +152,7 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
                 <Col className="d-flex align-items-center justify-content-center">
                   <div className="p-2">
                     {/* <strong>Hello, {user?.firstName} </strong> */}
-                    <li>Welcome, {session?.user.firstName}</li>
+                    <li style={{listStyle: 'none'}}>Welcome, {session?.user.firstName}</li>
                   </div>
                 </Col>
               )}

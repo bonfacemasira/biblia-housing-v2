@@ -514,9 +514,7 @@ function HomePage(props) {
 
 
                 {/* <!-- VIDEO AREA START --> */}
-                <div className="ltn__video-popup-area">
-                    <VideoBanner />
-                </div>
+              
                 {/* <!-- VIDEO AREA END --> */}
                 {/* <!-- CATEGORY AREA START -->  */}
                 <div className="ltn__category-area ltn__product-gutter pt-115 pb-90">
@@ -550,7 +548,7 @@ function HomePage(props) {
                 {/* <!-- TESTIMONIAL AREA START (testimonial-7) -->  */}
                 <div
                     className="ltn__testimonial-area bg-image-top pt-115 pb-70"
-                    style={{ backgroundImage: `url("../img/bg/20.jpg")` }}
+                    style={{ backgroundImage: `url("../img/land10.jpg")` }}
                 >
                     <Container>
                         <Row>

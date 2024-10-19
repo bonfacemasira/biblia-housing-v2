@@ -88,7 +88,7 @@ const RelatedProduct = ({
               </li>
             </ul>
           </div>
-          <ul className="ltn__plot-brief">
+          {/* <ul className="ltn__plot-brief">
             <li>
               <span>{productData.propertyDetails.bedrooms}</span>
               <span className="ms-1">Bedrooms</span>
@@ -101,7 +101,7 @@ const RelatedProduct = ({
               <span>{productData.propertyDetails.area}</span>
               <span className="ms-1">square Ft</span>
             </li>
-          </ul>
+          </ul> */}
           <div className="product-hover-action">
             <ul>
               <li>
@@ -149,8 +149,8 @@ const RelatedProduct = ({
         <div className="product-info-bottom">
           <div className="product-price">
             <span>
-              {`$ ${productData.price}`}
-              <label>/Month</label>
+              {`Kshs  ${productData.price}`}
+             
             </span>
           </div>
         </div>

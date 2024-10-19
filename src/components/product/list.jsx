@@ -70,7 +70,7 @@ const ProductList = ({
 
             <div className="product-price">
               <span>
-                {`$ ${productData.price}`}
+                {`Kshs -- ${productData.price}`}
                 <label>/Month</label>
               </span>
             </div>
@@ -91,7 +91,7 @@ const ProductList = ({
             </ul>
           </div>
 
-          <ul className="ltn__plot-brief">
+          {/* <ul className="ltn__plot-brief">
             <li>
               <span>{productData.propertyDetails.bedrooms}</span>
               <span className="ms-1">Bedrooms</span>
@@ -104,7 +104,7 @@ const ProductList = ({
               <span>{productData.propertyDetails.area}</span>
               <span className="ms-1">square Ft</span>
             </li>
-          </ul>
+          </ul> */}
         </div>
         <div className="product-info-bottom">
           <div className="real-estate-agent">

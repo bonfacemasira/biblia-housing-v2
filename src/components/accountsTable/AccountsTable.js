@@ -4,6 +4,7 @@ import { Container, Row, Col, Table } from "react-bootstrap";
 import { reports } from "./reports";
 import Report from "../Report/Report";
 import { useRouter } from "next/router";
+import { FaEye } from "react-icons/fa";
 
 const AccountTable = () => {
     const [viewReport, setViewReport] = useState(false);
@@ -20,7 +21,7 @@ const AccountTable = () => {
         }
 
         setSelectedReport(reportToDownload);
-        setViewReport(true); 
+        setViewReport(false)
 
         if (typeof window !== "undefined") {
             import("html2pdf.js").then((html2pdf) => {
@@ -76,7 +77,7 @@ const AccountTable = () => {
                                     </td>
                                     <td className="text-right">
                                         <span>
-                                            <Link href={`/account-report/${trans.id}`}>View</Link>
+                                            <Link href={`/account-report/${trans.id}`}><FaEye /></Link>
                                         </span>
                                     </td>
                                 </tr>
@@ -86,10 +87,12 @@ const AccountTable = () => {
                 </Col>
             </Row>
 
-            
-            {viewReport && selectedReport && (
+            <div style={{display: "none"}}>
+            { selectedReport && (
                 <Report report={selectedReport} statementRef={statementRef} />
             )}
+            </div>
+           
         </Container>
     );
 };

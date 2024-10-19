@@ -88,9 +88,9 @@ function HeroSectionStyleOne() {
                               </span>
                               {item.subtitle}
                             </h6>
-                            <h1 className="slide-title animated">
+                            <h2 className="slide-title animated">
                               {item.Title}
-                            </h1>
+                            </h2>
                             <div className="slide-brief animated">
                               <p>{item.Desc}</p>
                             </div>
@@ -126,7 +126,7 @@ function HeroSectionStyleOne() {
                             item.variationLeft ? "slide-img-left" : ""
                           }`}
                         >
-                          <img src="img/house1.jpg" alt="#" />
+                          <img src="img/land2.jpg" alt="#" />
                         </div>
                       </div>
                     </div>

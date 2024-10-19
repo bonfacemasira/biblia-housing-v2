@@ -1329,7 +1329,7 @@ function ProductDetails({ product }) {
                             <div className="product-info">
                               <div className="product-price">
                                 <span>
-                                  ${product.price}
+                                  Kshs -- {product.price}
                                   <label>/Month</label>
                                 </span>
                               </div>

@@ -84,7 +84,7 @@ function Register() {
         router.push('/login')
       
       }
-
+      
       console.log(res);
       setIsLoading(false);
 
