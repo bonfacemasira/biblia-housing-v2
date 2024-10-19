@@ -21,7 +21,7 @@ function Report({report, statementRef}) {
          
       {/* Header Information */}
       {/* <Button variant="primary" onClick={handleDownloadPDF} className="mb-4">Download PDF</Button> */}
-      <div ref={statementRef}>
+      <div className=" px-4" ref={statementRef}>
       <Row className="text-center my-4">
         <Col>
           <div className="site-logo-wrap">
