@@ -1,0 +1,681 @@
+[
+  {
+    "id": "1",
+    "carousel": [
+      { "img": "/img/house1.jpg" },
+      { "img": "/img/house4" },
+      { "img": "/img/house4.jpg" },
+      { "img": "/img/house4.jpg" }
+    ],
+    "title": "Prime 5-Acre Plot in Naivasha",
+    "productImg": "img4.jpg",
+   "price": 2000000,
+   "priceRange": ["Affordable", "Premium"],
+   "discount": 10,
+    "country": "Kenya",
+    "district": "Naivasha Area",
+    "properties": 1,
+    "featured": true,
+    "new": true,
+    "rent": false,
+    "photo": ["land", "acreage", "scenery"],
+    "video": ["land", "tour"],
+    "bedBath": ["Acreage", "buying", "investing"],
+    "ratingCount": 4,
+    "rating": 5,
+    "saleCount": 15,
+    "category": ["buying", "investing"],
+    "tag": [
+      "Land",
+      "Acreage",
+      "Prime Location",
+      "Investment",
+      "Kenya",
+      "Naivasha",
+      "Real Estate"
+    ],
+    "date": "October 15, 2023",
+    "comments": 50,
+    "location": "Naivasha, Rift Valley, Kenya",
+    "description": {
+      "title": "Land Description",
+      "fullDescription": "This prime 5-acre plot in Naivasha offers stunning views and is ideal for residential development, farming, or commercial projects. Located in a serene environment, it is easily accessible and close to essential amenities. The land is fertile and flat, with access to water and electricity, making it a great investment for future growth. Ideal for developers looking to create eco-friendly resorts or anyone interested in land banking.",
+      "shortDescription": "A 5-acre prime plot located in Naivasha, perfect for residential, farming, or commercial use. Accessible, flat terrain with scenic views."
+    },
+    "propertyDetails": {
+      "propertyId": "KEN29",
+      "area": 5, 
+      "propertyStatus": "For Sale",
+      "createdYear": null 
+    },
+    "factsAndFeatures": {
+      "plotSize": "5 acres",
+      "waterAccess": "Available",
+      "electricity": "Nearby connection available",
+      "soilType": "Fertile soil",
+      "accessRoad": "All-weather road access",
+      "landTitle": "Freehold title"
+    },
+
+    "amenities1": [
+      "Water Access",
+      "Electricity",
+      "All-Weather Road",
+      "Fertile Soil"
+    ],
+    "amenities2": [
+      "Scenic Views",
+      "Farming Potential",
+      "Near Tourist Attractions",
+      "Close to Naivasha Town"
+    ],
+    "amenities3": [
+      "Refrigerator",
+      "Window Coverings",
+      "Washer",
+      "24x7 Security",
+      "Indoor Game"
+    ],
+    "AmenitiesList": ["Dishwasher"],
+    "agent": {
+      "firstName": "Mary Delius",
+      "lastName": "Willaimson",
+      "fullName": "Mary Delius",
+      "type": "Property Seller",
+      "img": "author.jpg",
+      "designation": "Traveller/Photographer",
+      "raiting": 3,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque."
+     
+    },
+
+    "gallery": {
+      "img1": "house1.jpg",
+      "img2": "house.3jpg",
+      "img3": "house4.jpg"
+    },
+    "propertyTypes": ["House", "Office Villa", "Luxary Home"]
+  },
+
+
+
+
+
+ 
+
+
+
+
+  {
+    "id": "3",
+    "carousel": [
+      { "img": "house.jpg" },
+      { "img": "house.jpg" },
+      { "img": "house.jpg" },
+      { "img": "house.jpg" }
+    ],
+    "title": "50-Acre  Land for Development in Athi River",
+    "productImg": "img4.jpg",
+    "price": 15000000,
+    "priceRange": ["High-End"],
+    "discount": 5,
+    "country": "Kenya",
+    "district": "Athi River",
+    "properties": 1,
+    "featured": true,
+    "new": true,
+    "rent": false,
+    "photo": ["land", "commercial", "acreage"],
+    "video": ["land", "tour"],
+    "bedBath": ["Acreage", "buying", "developing"],
+    "ratingCount": 3,
+    "rating": 4,
+    "saleCount": 8,
+    "category": ["buying", "development", "commercial"],
+    "tag": [
+      "Commercial Land",
+      "Development Land",
+      "Prime Location",
+      "Kenya",
+      "Athi River",
+      "Real Estate"
+    ],
+
+    "date": "October 1, 2023",
+    "comments": 30,
+    "location": "Athi River, Machakos County, Kenya",
+    "description": {
+      "title": "Land Description",
+      "fullDescription": "This expansive 50-acre plot in Athi River offers a strategic location for commercial and industrial development. With easy access to the Mombasa Road and proximity to Nairobi, it is an ideal site for factories, warehouses, or large-scale residential projects. The flat terrain and existing infrastructure make it a highly sought-after investment opportunity.",
+      "shortDescription": "50-acre commercial land in Athi River, perfect for industrial or commercial development. Close to Nairobi with excellent infrastructure."
+    },
+    "propertyDetails": {
+      "propertyId": "KEN50",
+      "area": 50, 
+      "propertyStatus": "For Sale",
+     
+      "createdYear": null 
+    },
+    "factsAndFeatures": {
+      "plotSize": "50 acres",
+      "waterAccess": "Available",
+      "electricity": "Available",
+      "accessRoad": "Tarmac road access",
+      "landTitle": "Freehold title"
+    },
+
+    "amenities1": [
+      "Water Access",
+      "Electricity",
+      "Road Access"
+    ],
+    "amenities2": [
+      "Strategic Location",
+      "Near Nairobi",
+      "Commercial Potential"
+    ],
+    "amenities3": [
+      "Flat Terrain",
+      "Infrastructure Ready",
+      "Great for Industrial Projects"
+    ],
+    "AmenitiesList": ["Investment Opportunity"],
+    "agent": {
+      "firstName": "Alice",
+      "lastName": "Mwangi",
+      "fullName": "Alice Mwangi",
+      "type": "Land Consultant",
+      "img": "author.jpg",
+      "designation": "Commercial Property Specialist",
+      "rating": 4,
+      "description": "Specialist in commercial land and development opportunities in Machakos and Nairobi regions.",
+      "social": ["FaTwitter", "FaFacebook", "FaLinkedIn"]
+    },
+
+    "gallery": {
+      "img1": "14.jpg",
+      "img2": "15.jpg",
+      "img3": "16.jpg"
+    },
+    "propertyTypes": ["Commercial Land", "Industrial Land"]
+  },
+
+
+
+  {
+    "id": "4",
+    "carousel": [
+      { "img": "35.jpg" },
+      { "img": "31.jpg" },
+      { "img": "32.jpg" },
+      { "img": "33.jpg" }
+    ],
+    "title": "20-Acre Mixed-Use Land in Naivasha",
+    "productImg": "img5.jpg",
+    "price": 12000000, 
+    "priceRange": ["High-End"],
+    "discount": 6,
+    "country": "Kenya",
+    "district": "Naivasha",
+    "properties": 1,
+    "featured": true,
+    "new": true,
+    "rent": false,
+    "photo": ["land", "mixed-use", "acreage"],
+    "video": ["land", "tour"],
+    "bedBath": ["Acreage", "buying", "developing"],
+    "ratingCount": 5,
+    "rating": 4.7,
+    "saleCount": 6,
+    "category": ["buying", "development", "mixed-use"],
+   "tag": [
+      "Mixed-Use Land",
+      "Development Land",
+      "Prime Location",
+      "Kenya",
+      "Naivasha",
+      "Real Estate"
+    ],
+    "date": "July 15, 2023",
+    "comments": 55,
+    "location": "Naivasha, Nakuru County, Kenya",
+    "description": {
+      "title": "Land Description",
+      "fullDescription": "This 20-acre mixed-use plot in Naivasha offers opportunities for commercial, residential, or agricultural development. Located near the Nairobi-Nakuru Highway, this land is perfect for real estate projects or farming. The proximity to Lake Naivasha and tourism spots makes it ideal for both investment and leisure purposes.",
+      "shortDescription": "A 20-acre plot in Naivasha, suitable for commercial, residential, or agricultural use. Prime location near the Nairobi-Nakuru Highway."
+    },
+    "propertyDetails": {
+      "propertyId": "KEN60",
+      "area": 20, 
+      "propertyStatus": "For Sale",
+  
+      "createdYear": null 
+    },
+    "factsAndFeatures": {
+      "plotSize": "20 acres",
+      "waterAccess": "Nearby borehole",
+      "electricity": "Available",
+      "accessRoad": "Gravel road access",
+      "landTitle": "Freehold title"
+    },
+    "amenities1": [
+      "Water Access",
+      "Electricity",
+      "Fertile Soil"
+    ],
+    "amenities2": [
+      "Near Lake Naivasha",
+      "Tourist Attractions",
+      "Major Road Access"
+    ],
+    "amenities3": [
+      "Ideal for Farming",
+      "Great for Residential Development",
+      "Potential for Tourism Projects"
+    ],
+    "AmenitiesList": ["Investment Opportunity"],
+    "agent": {
+      "firstName": "Victor",
+      "lastName": "Mutua",
+      "fullName": "Victor Mutua",
+      "type": "Land Agent",
+      "img": "author.jpg",
+      "designation": "Mixed-Use Property Expert",
+      "rating": 4.7,
+      "description": "Specializing in mixed-use properties and development projects across Kenya.",
+      "social": ["FaFacebook", "FaLinkedIn", "FaInstagram"]
+    },
+
+    "gallery": {
+      "img1": "14.jpg",
+      "img2": "15.jpg",
+      "img3": "16.jpg"
+    },
+    "propertyTypes": ["Mixed-Use Land", "Agricultural Land"]
+  },
+
+
+
+
+
+
+  {
+    "id": "5",
+    "carousel": [
+      { "img": "35.jpg" },
+      { "img": "31.jpg" },
+      { "img": "32.jpg" },
+      { "img": "33.jpg" }
+    ],
+    "title": "30-Acre Industrial Land in Mlolongo",
+    "productImg": "img6.jpg",
+    "price": 35000000, 
+    "priceRange": ["High-End"],
+    "discount": 3,
+    "country": "Kenya",
+    "district": "Mlolongo",
+    "properties": 1,
+    "featured": true,
+    "new": true,
+    "rent": false,
+    "photo": ["land", "industrial", "acreage"],
+    "video": ["land", "tour"],
+    "bedBath": ["Acreage", "buying", "industrial"],
+    "ratingCount": 4.3,
+    "rating": 4.8,
+    "saleCount": 12,
+    "category": ["buying", "industrial", "development"],
+ 
+    "tag": [
+      "Industrial Land",
+      "Development Land",
+      "Prime Location",
+      "Kenya",
+      "Mlolongo",
+      "Real Estate"
+    ],
+    "date": "September 2, 2023",
+    "comments": 40,
+    "location": "Mlolongo, Machakos County, Kenya",
+    "description": {
+      "title": "Land Description",
+      "fullDescription": "Strategically located in the Mlolongo area, this 30-acre parcel is ideal for industrial development, warehouses, and factories. Close to the main highway and airport, it offers excellent accessibility and is perfect for investors looking to expand industrial operations. The flat terrain and developed infrastructure make it a top choice for large-scale industries.",
+      "shortDescription": "30-acre industrial land in Mlolongo, perfect for setting up factories, warehouses, or logistics centers. Excellent highway access."
+    },
+    "propertyDetails": {
+      "propertyId": "KEN90",
+      "area": 30, 
+      "propertyStatus": "For Sale",
+      
+      "createdYear": null
+    },
+    "factsAndFeatures": {
+      "plotSize": "30 acres",
+      "waterAccess": "Available",
+      "electricity": "Available",
+      "accessRoad": "Tarmac road access",
+      "landTitle": "Freehold title"
+    },
+
+    "amenities1": [
+      "Water Access",
+      "Electricity",
+      "Flat Terrain"
+    ],
+    "amenities2": [
+      "Near Main Highway",
+      "Close to Airport",
+      "Developed Infrastructure"
+    ],
+    "amenities3": [
+      "Ideal for Large-Scale Industries",
+      "Top Choice for Warehousing",
+      "Investment Potential"
+    ],
+    "AmenitiesList": ["Industrial Growth Opportunity"],
+    "agent": {
+      "firstName": "John",
+      "lastName": "Kamau",
+      "fullName": "John Kamau",
+      "type": "Industrial Land Agent",
+      "img": "author.jpg",
+      "designation": "Industrial Property Consultant",
+      "rating": 4.8,
+      "description": "Specialist in industrial land and large-scale property development.",
+      "social": ["FaFacebook", "FaLinkedIn", "FaInstagram"]
+    },
+
+    "gallery": {
+      "img1": "14.jpg",
+      "img2": "15.jpg",
+      "img3": "16.jpg"
+    },
+   "propertyTypes": ["Industrial Land", "Development Land"]
+  },
+
+
+
+  
+  {
+    "id": "6",
+    "carousel": [
+      { "img": "35.jpg" },
+      { "img": "31.jpg" },
+      { "img": "32.jpg" },
+      { "img": "33.jpg" }
+    ],
+    "title": "15-Acre Residential Plot in Karen, Nairobi",
+    "productImg": "img7.jpg",
+    "price": 25000000, 
+    "priceRange": ["Luxury"],
+    "discount": 4,
+    "country": "Kenya",
+    "district": "Karen, Nairobi",
+    "properties": 1,
+    "featured": true,
+    "new": true,
+    "rent": false,
+    "photo": ["land", "residential", "acreage"],
+    "video": ["land", "tour"],
+    "bedBath": ["Acreage", "buying", "residential"],
+    "ratingCount": 4.5,
+    "rating": 5,
+    "saleCount": 3,
+    "category": ["buying", "residential", "luxury"],
+    "tag": [
+      "Residential Land",
+      "Luxury Land",
+      "Prime Location",
+      "Kenya",
+      "Karen",
+      "Real Estate"
+    ],
+    "date": "August 12, 2023",
+    "comments": 50,
+    "location": "Karen, Nairobi County, Kenya",
+    "description": {
+      "title": "Land Description",
+      "fullDescription": "A rare opportunity to own a prime 15-acre residential plot in Karen, Nairobi. This land is perfect for building high-end homes or gated communities. Located in one of Nairobi's most prestigious neighborhoods, it offers serenity, security, and proximity to major amenities like schools, malls, and hospitals.",
+      "shortDescription": "15-acre residential plot in the upscale Karen neighborhood. Ideal for luxury homes or gated communities, with excellent amenities nearby."
+    },
+    "propertyDetails": {
+      "propertyId": "KEN75",
+      "area": 15, 
+      "propertyStatus": "For Sale",
+   
+      "createdYear": null 
+    },
+    "factsAndFeatures": {
+      "plotSize": "15 acres",
+      "waterAccess": "Connected to city water supply",
+      "electricity": "Available",
+      "accessRoad": "Tarmac road access",
+      "landTitle": "Freehold title"
+    },
+
+    "amenities1": [
+      "Water Access",
+      "Electricity",
+      "Serene Environment"
+    ],
+    "amenities2": [
+      "Near Malls and Schools",
+      "High-End Neighborhood",
+      "Security"
+    ],
+    "amenities3": [
+      "Suitable for Gated Community",
+      "Prime for Luxury Development",
+      "Prestigious Location"
+    ],
+    "AmenitiesList": ["Investment Opportunity"],
+    "agent": {
+      "firstName": "Emily",
+      "lastName": "Wanjiru",
+      "fullName": "Emily Wanjiru",
+      "type": "Land Consultant",
+      "img": "agent_emily.jpg",
+      "designation": "Residential Land Specialist",
+      "rating": 4.9,
+      "description": "Expert in luxury residential land and high-end real estate in Nairobi.",
+      "social": ["FaFacebook", "FaLinkedIn", "FaInstagram"]
+    },
+
+    "gallery": {
+      "img1": "14.jpg",
+      "img2": "15.jpg",
+      "img3": "16.jpg"
+    },
+    "propertyTypes": ["Residential Land", "Luxury Property"]
+  },
+
+
+  {
+    "id": "7",
+    "carousel": [
+      { "img": "35.jpg" },
+      { "img": "31.jpg" },
+      { "img": "32.jpg" },
+      { "img": "33.jpg" }
+    ],
+    "title": "50-Acre Agricultural Land in Eldoret",
+    "productImg": "img3.jpg",
+    "price": 225,
+    "priceRange": ["Low Budget", "Medium"],
+    "discount": 5,
+    "country": false,
+    "district": "Mission District Area",
+    "properties": 2,
+    "featured": true,
+    "new": true,
+    "rent": false,
+    "photo": ["buying", "women", "women"],
+    "video": ["buying", "women"],
+    "bedBath": ["Single", "renting", "selling"],
+    "ratingCount": 5,
+    "rating": 5,
+    "saleCount": 30,
+    "category": ["buying", "renting", "selling"],
+    "tag": [
+      "Agricultural Land",
+      "Farming Land",
+      "Prime Location",
+      "Kenya",
+      "Eldoret",
+      "Real Estate"
+    ],
+    "date": "August 20, 2023",
+    "comments": 60,
+    "location": "Eldoret, Uasin Gishu County, Kenya",
+    "description": {
+      "title": "Land Description",
+      "fullDescription": "This 50-acre parcel in Eldoret is perfect for large-scale farming. The fertile soil and adequate rainfall make it ideal for crop cultivation or dairy farming. With good road access and proximity to Eldoret town, it offers a prime investment opportunity for agricultural development.",
+      "shortDescription": "50-acre agricultural land in Eldoret, ideal for farming. Fertile soil and close to major transport routes."
+    },
+    "propertyDetails": {
+      "propertyId": "KEN100",
+      "area": 50, 
+      "propertyStatus": "For Sale",
+      
+      "createdYear": null
+    },
+    "factsAndFeatures": {
+      "plotSize": "50 acres",
+      "waterAccess": "Nearby river",
+      "electricity": "Available",
+      "accessRoad": "All-weather road",
+      "landTitle": "Freehold title"
+    },
+
+    "amenities1": [
+      "Water Access",
+      "Electricity",
+      "Flat Terrain"
+    ],
+    "amenities2": [
+      "Near Main Highway",
+      "Close to Airport",
+      "Developed Infrastructure"
+    ],
+    "amenities3": [
+      "Ideal for Large-Scale Industries",
+      "Top Choice for Warehousing",
+      "Investment Potential"
+    ],
+  
+ "AmenitiesList": ["Prime Farming Land"],
+    "agent": {
+      "firstName": "David",
+      "lastName": "Ochieng",
+      "fullName": "David Ochieng",
+      "type": "Agricultural Land Consultant",
+      "img": "author.jpg",
+      "designation": "Farming Land Specialist",
+      "rating": 4.9,
+      "description": "Expert in agricultural properties and farming investments.",
+      "social": ["FaFacebook", "FaLinkedIn", "FaInstagram"]
+    },
+
+    "gallery": {
+      "img1": "14.jpg",
+      "img2": "15.jpg",
+      "img3": "16.jpg"
+    },
+   "propertyTypes": ["Agricultural Land", "Farming Land"]
+  },
+
+
+
+
+  {
+    "id": "9",
+    "carousel": [
+      { "img": "35.jpg" },
+      { "img": "31.jpg" },
+      { "img": "32.jpg" },
+      { "img": "33.jpg" }
+    ],
+    "title": "10-Acre Beachfront Plot in Diani",
+    "productImg": "img10.jpg",
+    "price": 75000000, 
+    "priceRange": ["Luxury"],
+    "discount": 7,
+    "country": "Kenya",
+    "district": "Diani",
+    "properties": 1,
+    "featured": true,
+    "new": true,
+    "rent": false,
+    "photo": ["land", "beachfront", "acreage"],
+    "video": ["land", "tour"],
+    "bedBath": ["Acreage", "buying", "luxury"],
+    "ratingCount": 4.9,
+    "rating": 5,
+    "saleCount": 5,
+    "category": ["buying", "beachfront", "luxury"],
+   "tag": [
+      "Beachfront Land",
+      "Luxury Land",
+      "Prime Location",
+      "Kenya",
+      "Diani",
+      "Real Estate"
+    ],
+    "date": "September 10, 2023",
+    "comments": 45,
+    "location": "Diani, Kwale County, Kenya",
+    "description": {
+      "title": "Land Description",
+      "fullDescription": "This exquisite 10-acre beachfront plot is located in the serene Diani area. It offers white sandy beaches and crystal-clear ocean views, making it perfect for luxury resort development or high-end residential villas. With its prime location and easy access to Diani town, this is a once-in-a-lifetime investment opportunity.",
+      "shortDescription": "10-acre beachfront plot in Diani, ideal for luxury resorts or high-end residential villas. Prime location with ocean views."
+    },
+    "propertyDetails": {
+      "propertyId": "KEN120",
+      "area": 10, 
+      "propertyStatus": "For Sale",
+    
+      "createdYear": null 
+    },
+    "factsAndFeatures": {
+      "plotSize": "10 acres",
+      "waterAccess": "Beachfront",
+      "electricity": "Available",
+      "accessRoad": "Tarmac road",
+      "landTitle": "Freehold title"
+    },
+    "amenities1": [
+      "Beachfront",
+      "Water Access",
+      "Electricity"
+    ],
+    "amenities2": [
+      "White Sandy Beaches",
+      "Prime for Resort Development",
+      "Near Diani Town"
+    ],
+    "amenities3": [
+      "Luxury Residential Potential",
+      "Great Ocean Views",
+      "Serene Environment"
+    ],
+    "AmenitiesList": ["Prime Beachfront Property"],
+    "agent": {
+      "firstName": "Grace",
+      "lastName": "Mutiso",
+      "fullName": "Grace Mutiso",
+      "type": "Luxury Property Consultant",
+      "img": "img10.jpg",
+      "designation": "Beachfront and Luxury Specialist",
+      "rating": 5,
+      "description": "Specializing in luxury beachfront properties and high-end real estate.",
+      "social": ["FaFacebook", "FaLinkedIn", "FaInstagram"]
+    },
+
+    "gallery": {
+      "img1": "14.jpg",
+      "img2": "15.jpg",
+      "img3": "16.jpg"
+    },
+    "propertyTypes": ["House", "Single Family"]
+  }
+]

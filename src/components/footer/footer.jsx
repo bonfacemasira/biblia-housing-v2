@@ -35,8 +35,8 @@ const Footer = function () {
                     </div>
                   </div>
                   <p>
-                    Lorem Ipsum is simply dummy text of the and typesetting
-                    industry. Lorem Ipsum is dummy text of the printing.
+                  BIBLIA HOUSING COOPERATIVE SOCIETY LTD
+                  Kamirembe Place, Ring Road, Kilimani Area Opposite Shan Shui Hotel
                   </p>
                   <div className="footer-address">
                     <ul>
@@ -56,7 +56,7 @@ const Footer = function () {
                         </div>
                         <div className="footer-address-info">
                           <p>
-                            <Link href="tel:+0123-456789">+0123-456789</Link>
+                            <Link href="tel:+254-716195054">+254 716195054/+254 787719919</Link>
                           </p>
                         </div>
                       </li>
@@ -67,7 +67,7 @@ const Footer = function () {
                         <div className="footer-address-info">
                           <p>
                             <Link href="mailto:example@example.com">
-                              example@example.com
+                            info@bibliahousing.com 
                             </Link>
                           </p>
                         </div>
