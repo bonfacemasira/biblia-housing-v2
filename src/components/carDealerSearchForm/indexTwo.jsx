@@ -74,8 +74,8 @@ function CarDealerSearchFormTwo() {
                               <option>London</option>
                               <option>Los Angeles</option>
                               <option>New York</option>
-                              <option>New Jersey</option>
-                            </Form.Select> */}
+                              <option>New Jersey</option> */}
+                            </Form.Select>
                           </Col>
                           <Col
                             xs={12}
