@@ -112,10 +112,10 @@ const Footer = function () {
                         <Link href="/blog">Blog</Link>
                       </li>
                       <li>
-                        <Link href="/shop">All Products</Link>
+                        <Link href="#">All Properties</Link>
                       </li>
                       <li>
-                        <Link href="/locations">Locations Map</Link>
+                        <Link href="#">Locations Map</Link>
                       </li>
                       <li>
                         <Link href="/faq">FAQ</Link>
@@ -132,12 +132,12 @@ const Footer = function () {
                   <h4 className="footer-title">Services</h4>
                   <div className="footer-menu">
                     <ul>
-                      <li>
+                      {/* <li>
                         <Link href="/order-tracking">Order tracking</Link>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <Link href="/wishlist">Wish List</Link>
-                      </li>
+                      </li> */}
                       <li>
                         <Link href="/login">Login</Link>
                       </li>
@@ -165,12 +165,12 @@ const Footer = function () {
                       <li>
                         <Link href="/my-account">My account</Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link href="/wishlist">Wish List</Link>
                       </li>
                       <li>
                         <Link href="/order-tracking">Order tracking</Link>
-                      </li>
+                      </li> */}
                       <li>
                         <Link href="/faq">FAQ</Link>
                       </li>

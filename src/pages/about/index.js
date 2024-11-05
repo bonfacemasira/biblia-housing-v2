@@ -96,7 +96,7 @@ function AboutUs() {
 
 
         <div className="ltn__team-area pt-115 pb-90">
-          <Container>
+          {/* <Container>
             <Row>
               <Col lg={12}>
                 <TitleSection
@@ -122,7 +122,7 @@ function AboutUs() {
             </Row>
 
 
-          </Container>
+          </Container> */}
         </div>
 
 
@@ -162,7 +162,7 @@ function AboutUs() {
 
         {/* <!-- BLOG AREA START (blog-3) -->  */}
         <div className="ltn__blog-area pb-70">
-          <Container>
+          {/* <Container>
             <Row>
               <Col lg={12}>
                 <TitleSection
@@ -186,7 +186,7 @@ function AboutUs() {
                 );
               })}
             </Slider>
-          </Container>
+          </Container> */}
         </div>
         {/* <!-- BLOG AREA END --> */}
 

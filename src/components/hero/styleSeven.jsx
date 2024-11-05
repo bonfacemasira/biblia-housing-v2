@@ -66,11 +66,11 @@ function HeroSectionStyleSeven({ navMenuClass }) {
                                   </span>
                                   <Form.Select className="nice-select">
                                     <option>Choose Area</option>
-                                    <option value="1">Chicago</option>
+                                    {/* <option value="1">Chicago</option>
                                     <option value="2">London</option>
                                     <option value="3">Los Angeles</option>
                                     <option value="4">New York</option>
-                                    <option value="5">New Jersey</option>
+                                    <option value="5">New Jersey</option> */}
                                   </Form.Select>
                                 </Col>
                                 <Col
@@ -82,10 +82,10 @@ function HeroSectionStyleSeven({ navMenuClass }) {
                                   </span>
                                   <Form.Select className="nice-select">
                                     <option>Property Status</option>
-                                    <option value="1">Open house</option>
+                                    {/* <option value="1">Open house</option>
                                     <option value="2">Rent</option>
                                     <option value="3">Sale</option>
-                                    <option value="4">Sold</option>
+                                    <option value="4">Sold</option> */}
                                   </Form.Select>
                                 </Col>
                                 <Col
@@ -97,12 +97,12 @@ function HeroSectionStyleSeven({ navMenuClass }) {
                                   </span>
                                   <Form.Select className="nice-select">
                                     <option>Property Type</option>
-                                    <option value="1">Apartment</option>
+                                    {/* <option value="1">Apartment</option>
                                     <option value="2">Co-op</option>
                                     <option value="3">Condo</option>
                                     <option value="4">
                                       Single Family Home
-                                    </option>
+                                    </option> */}
                                   </Form.Select>
                                 </Col>
                                 <Col

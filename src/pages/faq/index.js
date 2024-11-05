@@ -163,7 +163,7 @@ function Faq() {
                     </div>
                     <h3>
                       <FaPhoneAlt />
-                      +0123-456-789
+                      +254 787719919
                     </h3>
                   </div>
                 </div>
