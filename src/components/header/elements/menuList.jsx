@@ -21,20 +21,20 @@ const MenuList = ({ addListing }) => {
       </li>
       <li className="menu-icon">
         <Link href="/about">
-          About <FaPlus />
+          About
         </Link>
-        <ul>
+        {/* <ul>
           <li>
             <Link href="/about">About</Link>
           </li>
-          {/* <li>
+          <li>
             <Link href="/history">History</Link>
-          </li> */}
+          </li>
 
-          {/* <li>
+          <li>
             <Link href="/team">Team</Link>
-          </li> */}
-        </ul>
+          </li>
+        </ul> */}
       </li>
       <li className="menu-icon">
         <Link href="/properties">Properties</Link>
