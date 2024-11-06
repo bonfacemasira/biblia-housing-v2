@@ -52,8 +52,8 @@ function Report() {
                 >
                   Download PDF
                 </Button>
-                <div ref={statementRef}>
-                  <Row className="text-center my-4">
+                <div ref={statementRef} style={{margin: "0 14px"}}>
+                  <Row className="text-center my-4 px-8">
                     <Col>
                       <div className="site-logo-wrap">
                         <div className="site-logo">
@@ -70,6 +70,7 @@ function Report() {
                           flexDirection: "column",
                           lineHeight: "1px",
                           alignItems: "end",
+                          padding: "0 15px"
                         }}
                       >
                         <h3>BIBLIA HOUSING</h3>
@@ -80,7 +81,7 @@ function Report() {
                       </div>
                     </Col>
                   </Row>
-                  <div>
+                  <div style={{ padding: "0 15px"}}>
                     <h3
                       style={{ borderBottom: "2px solid black" }}
                       className=" text-center text-primary py-2 "
@@ -96,9 +97,10 @@ function Report() {
                         alignItems: "center",
                         justifyContent: "space-between",
                         lineHeight: "1px",
+                        padding: "0 15px"
                       }}
                     >
-                      <div>
+                      <div style={{padding: "0 15px"}}>
                         <p>
                           <strong>Account Number </strong>{" "}
                           {report.accountNumber}
@@ -126,7 +128,7 @@ function Report() {
                   </Row>
 
                   {/* Transaction Table */}
-                  <Row className="mb-4">
+                  <Row className="mb-4" style={{padding: "0 15px"}}>
                     <Col>
                       <div
                         className="w-100 px-3 py-1 text-white"
@@ -170,14 +172,14 @@ function Report() {
 
                   <div
                     className="w-100 px-3 py-1 text-white"
-                    style={{ backgroundColor: "#d3b489 " }}
+                    style={{ backgroundColor: "#d3b489 ", padding: "0, 15px" }}
                   >
                     <strong>
                       Account No 100-00-IND02280 PATRICK CHERUIYOT TUM
                     </strong>
                   </div>
 
-                  <Row>
+                  <Row style={{padding: "0 15px"}}>
                     <strong colspan="2">Account Type SHARE_CAPITAL</strong>
                     <Col>
                       <Table bordered hover responsive>
@@ -224,14 +226,14 @@ function Report() {
 
                   <div
                     className="w-100 px-3 py-1 text-white"
-                    style={{ backgroundColor: "#d3b489 " }}
+                    style={{ backgroundColor: "#d3b489 ", padding: "0 15px" }}
                   >
                     <strong>
                       Account No 100-00-IND02280 PATRICK CHERUIYOT TUM
                     </strong>
                   </div>
 
-                  <Row>
+                  <Row style={{padding: "0 15px"}}>
                     <strong colspan="2">Account Type SHARE_CAPITAL</strong>
                     <Col>
                       <Table bordered hover responsive>
@@ -278,14 +280,14 @@ function Report() {
 
                   <div
                     className="w-100 px-3 py-1 text-white"
-                    style={{ backgroundColor: "#d3b489 " }}
+                    style={{ backgroundColor: "#d3b489 ", padding: "0 15px" }}
                   >
                     <strong>
                       Account No PRJ:00012-IND02280 PATRICK CHERUIYOT TUM
                     </strong>
                   </div>
 
-                  <Row>
+                  <Row style={{padding: "0 15px"}}>
                     <strong colspan="2">
                       Account Type PREMGARDENS_UTAWALA
                     </strong>
@@ -334,14 +336,14 @@ function Report() {
 
                   <div
                     className="w-100 px-3 py-1 text-white"
-                    style={{ backgroundColor: "#d3b489 " }}
+                    style={{ backgroundColor: "#d3b489 " , padding: "0 15px"}}
                   >
                     <strong>
                       Account No PRJ:00012IND022801 PATRICK CHERUIYOT TUM
                     </strong>
                   </div>
 
-                  <Row>
+                  <Row style={{padding: "0 15px"}}>
                     <strong colspan="2">
                       Account Type PREMGARDENS_UTAWALA
                     </strong>
@@ -390,11 +392,11 @@ function Report() {
 
                   <div
                     className="w-100 px-3 py-1 text-white"
-                    style={{ backgroundColor: "#000 " }}
+                    style={{ backgroundColor: "#000 ", padding: "0 15px" }}
                   >
                     <strong>Member Projects</strong>
                   </div>
-                  <Row>
+                  <Row style={{padding: "0 15px"}}>
                     <Col>
                       <Table bordered hover responsive>
                         <thead>
