@@ -71,7 +71,7 @@ const RelatedProduct = ({
               <li
                 className={`sale-badge ${productData.rent ? "bg-green" : ""}`}
               >
-                {badgeText}
+                {/* {badgeText} */} LAND PROPERTY
               </li>
             </ul>
           </div>
@@ -79,14 +79,14 @@ const RelatedProduct = ({
             <Link href={`/${baseUrl}/${slug}`}>{productData.title}</Link>
           </h2>
           <div className="product-img-location">
-            <ul>
+            {/* <ul>
               <li>
                 <Link href={`/${baseUrl}/${slug}`}>
                   <i className="flaticon-pin"></i>
                   {productData.locantion}
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </div>
           {/* <ul className="ltn__plot-brief">
             <li>
@@ -102,9 +102,13 @@ const RelatedProduct = ({
               <span className="ms-1">square Ft</span>
             </li>
           </ul> */}
+
+
+
+          
           <div className="product-hover-action">
             <ul>
-              <li>
+              {/* <li>
                 <OverlayTrigger
                   placement="right"
                   delay={{ show: 250, hide: 400 }}
@@ -114,8 +118,8 @@ const RelatedProduct = ({
                     <i className="flaticon-expand"></i>
                   </button>
                 </OverlayTrigger>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <OverlayTrigger
                   placement="right"
                   delay={{ show: 250, hide: 400 }}
@@ -131,8 +135,8 @@ const RelatedProduct = ({
                     <i className="flaticon-heart-1"></i>
                   </button>
                 </OverlayTrigger>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <OverlayTrigger
                   placement="right"
                   delay={{ show: 250, hide: 400 }}
@@ -142,7 +146,7 @@ const RelatedProduct = ({
                     <i className="flaticon-add"></i>
                   </button>
                 </OverlayTrigger>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

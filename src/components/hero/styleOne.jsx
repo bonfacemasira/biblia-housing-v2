@@ -96,28 +96,14 @@ function HeroSectionStyleOne() {
                             </div>
                             <div className="btn-wrapper animated">
                               <Link
-                                href="/about"
-                                className="theme-btn-1 btn btn-effect-1"
+                                href="#"
+                                className="theme-btn-1 btn btn-effect-1 text-black "
+                                style={{}}
                               >
                                 {item.buttonText}
                               </Link>
 
-                              {item.videoButton ? (
-                                <button
-                                  onClick={() => setOpen(true)}
-                                  className="ltn__video-play-btn bg-white"
-                                >
-                                  {/* <i className="icon-play  ltn__secondary-color"></i> */}
-                                  <FaPlay className="icon-play  ltn__secondary-color" />
-                                </button>
-                              ) : (
-                                <Link
-                                href="/about"
-                                  className="btn btn-transparent btn-effect-3"
-                                >
-                                  {item.learnMoreButtonText}
-                                </Link>
-                              )}
+                             
                             </div>
                           </div>
                         </div>

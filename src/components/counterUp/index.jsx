@@ -32,16 +32,16 @@ function CounterUp() {
                     onChangeVisibility={onVisibilityChange}
                     options={options}
                   >
-                    <CountUp
+                    {/* <CountUp
                       className="count-text"
                       start={0}
                       end={loading ? 25 : 0}
                       suffix="+"
                       duration={5}
-                    />
+                    /> */}
                   </VisibilityObserver>
                 </h1>
-                <h6>Total Area Sq</h6>
+                {/* <h6>Total Area Sq</h6> */}
               </div>
             </Col>
             <Col xs={12} sm={6} md={3} className="align-self-center">
@@ -54,16 +54,16 @@ function CounterUp() {
                     onChangeVisibility={onVisibilityChange}
                     options={options}
                   >
-                    <CountUp
+                    {/* <CountUp
                       className="count-text"
                       start={0}
                       end={loading ? 25 : 0}
                       suffix="K+"
                       duration={5}
-                    />
+                    /> */}
                   </VisibilityObserver>
                 </h1>
-                <h6>Apartments Sold</h6>
+                {/* <h6>Apartments Sold</h6> */}
               </div>
             </Col>
             <Col xs={12} sm={6} md={3} className="align-self-center">
@@ -76,16 +76,16 @@ function CounterUp() {
                     onChangeVisibility={onVisibilityChange}
                     options={options}
                   >
-                    <CountUp
+                    {/* <CountUp
                       className="count-text"
                       start={0}
                       end={loading ? 25 : 0}
                       suffix="+"
                       duration={5}
-                    />
+                    /> */}
                   </VisibilityObserver>
                 </h1>
-                <h6>Total Constructions</h6>
+                {/* <h6>Total Constructions</h6> */}
               </div>
             </Col>
             <Col xs={12} sm={6} md={3} className="align-self-center">
@@ -98,16 +98,16 @@ function CounterUp() {
                     onChangeVisibility={onVisibilityChange}
                     options={options}
                   >
-                    <CountUp
+                    {/* <CountUp
                       className="count-text"
                       start={0}
                       end={loading ? 25 : 0}
                       suffix="+"
                       duration={5}
-                    />
+                    /> */}
                   </VisibilityObserver>
                 </h1>
-                <h6>Apartio Rooms</h6>
+                {/* <h6>Apartio Rooms</h6> */}
               </div>
             </Col>
           </Row>

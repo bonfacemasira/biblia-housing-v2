@@ -80,7 +80,7 @@ const ProductList = ({
             <Link href={`/${baseUrl}/${slug}`}>{productData.title}</Link>
           </h2>
 
-          <div className="product-img-location">
+          {/* <div className="product-img-location">
             <ul>
               <li>
                 <Link href={`/${baseUrl}/${slug}`}>
@@ -89,7 +89,7 @@ const ProductList = ({
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* <ul className="ltn__plot-brief">
             <li>
@@ -118,7 +118,13 @@ const ProductList = ({
             </div>
           </div>
 
-          <div className="product-hover-action">
+
+
+
+
+
+
+          {/* <div className="product-hover-action">
             <ul>
               <li>
               <OverlayTrigger
@@ -167,7 +173,7 @@ const ProductList = ({
                 </OverlayTrigger>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
 

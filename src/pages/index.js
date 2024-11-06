@@ -222,9 +222,9 @@ function HomePage(props) {
                           baseUrl="shop"
                           discountedPrice={discountedPrice}
                           productPrice={productPrice}
-                          cartItem={cartItem}
-                          wishlistItem={wishlistItem}
-                          compareItem={compareItem}
+                          // cartItem={cartItem}
+                          // wishlistItem={wishlistItem}
+                          // compareItem={compareItem}
                         />
                       );
                     })}

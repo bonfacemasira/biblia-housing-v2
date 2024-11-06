@@ -69,7 +69,11 @@ const ProductItem = ({
               </li>
             </ul>
           </div>
-          <div className="product-img-location-gallery">
+
+
+
+
+          {/* <div className="product-img-location-gallery">
             <div className="product-img-location">
               <ul>
                 <li>
@@ -102,7 +106,10 @@ const ProductItem = ({
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
+
+
+
         </div>
         <div className="product-info">
           <div className="product-price">
@@ -143,24 +150,24 @@ const ProductItem = ({
         </div>
         <div className="product-info-bottom">
           <div className="real-estate-agent">
-            <div className="agent-img">
+            {/* <div className="agent-img">
               <Link href="/team-details">
                 <img
                   src={`/img/blog/${productData.agent.img}`}
                   alt={`${productData.agent.fullName}`}
                 />
               </Link>
-            </div>
-            <div className="agent-brief">
+            </div> */}
+            {/* <div className="agent-brief">
               <h6>
                 <Link href="/team-details">{productData.agent.firstName}</Link>
               </h6>
               <small>{productData.agent.type}</small>
-            </div>
+            </div> */}
           </div>
           <div className="product-hover-action">
             <ul>
-              <li>
+              {/* <li>
               <OverlayTrigger
                   placement="right"
                   delay={{ show: 250, hide: 400 }}
@@ -172,8 +179,8 @@ const ProductItem = ({
 
 
                 </OverlayTrigger>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <OverlayTrigger
                   placement="right"
                   delay={{ show: 250, hide: 400 }}
@@ -189,8 +196,8 @@ const ProductItem = ({
                     <i className="flaticon-heart-1"></i>
                   </button>
                 </OverlayTrigger>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <OverlayTrigger
                   placement="right"
                   delay={{ show: 250, hide: 400 }}
@@ -200,7 +207,7 @@ const ProductItem = ({
                     <i className="flaticon-add"></i>
                   </button>
                 </OverlayTrigger>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
