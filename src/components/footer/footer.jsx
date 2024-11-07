@@ -56,7 +56,9 @@ const Footer = function () {
                         </div>
                         <div className="footer-address-info">
                           <p>
-                            <Link href="tel:+254-716195054">+254 716195054/+254 787719919</Link>
+                            {/* <Link href="tel:+254-716195054">+254 716195054/+254 787719919</Link> */}
+                            
+                            <Link href="tel:+254-716195054">0716195054</Link>
                           </p>
                         </div>
                       </li>
@@ -175,7 +177,7 @@ const Footer = function () {
                         <Link href="/faq">FAQ</Link>
                       </li>
                       <li>
-                        <Link href="/contact">Contact us</Link>
+                        <Link href="https://bibliahousing.com/">Contact us</Link>
                       </li>
                     </ul>
                   </div>

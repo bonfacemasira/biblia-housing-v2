@@ -121,7 +121,8 @@ const MenuList = ({ addListing }) => {
         </ul>
       </li> */}
       <li>
-        <Link href="/contact">Contact</Link>
+        
+        <Link href="https://bibliahousing.com/" target="_blank">Contact</Link>
       </li>
 
       {addListing ? (
