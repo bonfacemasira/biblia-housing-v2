@@ -9,7 +9,7 @@ const VideoBanner = () => {
      
       <div
         className="ltn__video-bg-img bg-overlay-black-30 bg-image bg-fixed ltn__animation-pulse1"
-        style={{ backgroundImage: `url("../img/img11.jpg")` }}
+        style={{ backgroundImage: `url("../img/Land Project  Photos-202.jpg")` }}
       >
        
       </div>
