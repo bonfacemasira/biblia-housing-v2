@@ -163,7 +163,7 @@ function Faq() {
                     </div>
                     <h3>
                       <FaPhoneAlt />
-                      +254 787719919
+                      0716 195 054
                     </h3>
                   </div>
                 </div>
@@ -187,7 +187,7 @@ function Faq() {
                   {/* <!-- Banner Widget --> */}
                   <div className="widget ltn__banner-widget">
                     <Link href="/shop">
-                      <img src="/img/img1.jpg" alt="Banner Image" />
+                      <img src="/img/Land Project Photos 203.jpg" alt="Banner Image" />
                     </Link>
                   </div>
                 </aside>

@@ -245,7 +245,11 @@ function HomePage(props) {
         {/* <!-- TESTIMONIAL AREA START (testimonial-7) -->  */}
         <div
           className="ltn__testimonial-area bg-image-top pt-115 pb-70"
-          style={{ backgroundImage: `url("../img/bg/20.jpg")` }}
+          style={{ 
+            backgroundImage: `url("../img/Land Project  Photos-201.jpg")`,
+            backgroundPosition: "center"
+
+           }}
         >
           <Container>
             <Row>
