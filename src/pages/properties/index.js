@@ -161,7 +161,7 @@ function ProjectsGrid() {
                     <div className="ltn__product-tab-content-inner ltn__product-grid-view">
                       <Row>
                         {currentItems.map((product, key) => {
-                          const slug = productSlug(product.title);
+                          const slug =`/${product.title}`
 
                           const discountedPrice = getDiscountPrice(
                             product.price,
@@ -236,6 +236,10 @@ function ProjectsGrid() {
                   </Tab.Pane>
                 </Tab.Content>
               </Tab.Container>
+
+
+
+              
 
               <div className="ltn__pagination-area text-center">
                 <ReactPaginate
