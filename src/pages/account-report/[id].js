@@ -16,9 +16,6 @@ function Report() {
 
   if (!report) return <p>Report not found.</p>;
 
-
-
-
   const handleDownloadPDF = () => {
     if (typeof window !== "undefined") {
       import("html2pdf.js").then((html2pdf) => {
@@ -52,7 +49,7 @@ function Report() {
                 >
                   Download PDF
                 </Button>
-                <div ref={statementRef} style={{margin: "0 14px"}}>
+                <div ref={statementRef} style={{ margin: "0 14px" }}>
                   <Row className="text-center my-4 px-8">
                     <Col>
                       <div className="site-logo-wrap">
@@ -70,7 +67,7 @@ function Report() {
                           flexDirection: "column",
                           lineHeight: "1px",
                           alignItems: "end",
-                          padding: "0 15px"
+                          padding: "0 15px",
                         }}
                       >
                         <h3>BIBLIA HOUSING</h3>
@@ -81,7 +78,7 @@ function Report() {
                       </div>
                     </Col>
                   </Row>
-                  <div style={{ padding: "0 15px"}}>
+                  <div style={{ padding: "0 15px" }}>
                     <h3
                       style={{ borderBottom: "2px solid black" }}
                       className=" text-center text-primary py-2 "
@@ -97,10 +94,10 @@ function Report() {
                         alignItems: "center",
                         justifyContent: "space-between",
                         lineHeight: "1px",
-                        padding: "0 15px"
+                        padding: "0 15px",
                       }}
                     >
-                      <div style={{padding: "0 15px"}}>
+                      <div style={{ padding: "0 15px" }}>
                         <p>
                           <strong>Account Number </strong>{" "}
                           {report.accountNumber}
@@ -128,7 +125,7 @@ function Report() {
                   </Row>
 
                   {/* Transaction Table */}
-                  <Row className="mb-4" style={{padding: "0 15px"}}>
+                  <Row className="mb-4" style={{ padding: "0 15px" }}>
                     <Col>
                       <div
                         className="w-100 px-3 py-1 text-white"
@@ -179,7 +176,7 @@ function Report() {
                     </strong>
                   </div>
 
-                  <Row style={{padding: "0 15px"}}>
+                  <Row style={{ padding: "0 15px" }}>
                     <strong colspan="2">Account Type SHARE_CAPITAL</strong>
                     <Col>
                       <Table bordered hover responsive>
@@ -233,7 +230,7 @@ function Report() {
                     </strong>
                   </div>
 
-                  <Row style={{padding: "0 15px"}}>
+                  <Row style={{ padding: "0 15px" }}>
                     <strong colspan="2">Account Type SHARE_CAPITAL</strong>
                     <Col>
                       <Table bordered hover responsive>
@@ -287,7 +284,7 @@ function Report() {
                     </strong>
                   </div>
 
-                  <Row style={{padding: "0 15px"}}>
+                  <Row style={{ padding: "0 15px" }}>
                     <strong colspan="2">
                       Account Type PREMGARDENS_UTAWALA
                     </strong>
@@ -336,14 +333,14 @@ function Report() {
 
                   <div
                     className="w-100 px-3 py-1 text-white"
-                    style={{ backgroundColor: "#d3b489 " , padding: "0 15px"}}
+                    style={{ backgroundColor: "#d3b489 ", padding: "0 15px" }}
                   >
                     <strong>
                       Account No PRJ:00012IND022801 PATRICK CHERUIYOT TUM
                     </strong>
                   </div>
 
-                  <Row style={{padding: "0 15px"}}>
+                  <Row style={{ padding: "0 15px" }}>
                     <strong colspan="2">
                       Account Type PREMGARDENS_UTAWALA
                     </strong>
@@ -396,7 +393,7 @@ function Report() {
                   >
                     <strong>Member Projects</strong>
                   </div>
-                  <Row style={{padding: "0 15px"}}>
+                  <Row style={{ padding: "0 15px" }}>
                     <Col>
                       <Table bordered hover responsive>
                         <thead>

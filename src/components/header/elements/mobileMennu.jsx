@@ -63,47 +63,47 @@ const MobileMenu = function ({ offCanVastoggleBtn, closeSideBar }) {
           <div className="ltn__utilize-menu-head">
             <div className="site-logo">
               <Link href="/">
-                <img src="/img/logo.png" alt="Logo" />
+                <img src="/img/biblia-sacco-logo.jpg" alt="Logo" />
               </Link>
             </div>
             <button onClick={closeSideBar} className="ltn__utilize-close">
               ×
             </button>
           </div>
-          <div className="ltn__utilize-menu-search-form">
+          {/* <div className="ltn__utilize-menu-search-form">
             <form action="#">
               <input type="text" placeholder="Search..." />
               <button>
                 <FaSearch />
               </button>
             </form>
-          </div>
+          </div> */}
           <div className="ltn__utilize-menu">
             <ul>
               <li>
-                <Link href="#">Home</Link>
-                <span
+                <Link href="/">Home</Link>
+                {/* <span
                   className="menu-expand"
                   onClick={onClickHandler}
                   aria-hidden="true"
-                ></span>
-                <ul className="sub-menu">
+                ></span> */}
+                {/* <ul className="sub-menu">
                   <li>
                     <Link href="/home">Home Style 01</Link>
                   </li>
                   <li>
                     <Link href="/home/page-two">Home Style 02</Link>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li>
-                <Link href="#">About</Link>
-                <span
+                <Link href="/about">About</Link>
+                {/* <span
                   className="menu-expand"
                   onClick={onClickHandler}
                   aria-hidden="true"
-                ></span>
-                <ul className="sub-menu">
+                ></span> */}
+                {/* <ul className="sub-menu">
                   <li>
                     <Link href="/about">About</Link>
                   </li>
@@ -128,16 +128,16 @@ const MobileMenu = function ({ offCanVastoggleBtn, closeSideBar }) {
                   <li>
                     <Link href="/locations">Google Map Locations</Link>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li>
-                <Link href="#">Properties</Link>
+                <Link href="/properties">Properties</Link>
                 {/* <span
                   className="menu-expand"
                   onClick={onClickHandler}
                   aria-hidden="true"
-                ></span> */}
-                {/* <ul className="sub-menu">
+                ></span>
+                <ul className="sub-menu">
                   <li>
                     <Link href="/properties">Property</Link>
                   </li>
@@ -155,7 +155,7 @@ const MobileMenu = function ({ offCanVastoggleBtn, closeSideBar }) {
                       Property right sidebar
                     </Link>
                   </li>
-                  
+
                   <li>
                     <Link href="/cart">Cart</Link>
                   </li>
@@ -179,7 +179,7 @@ const MobileMenu = function ({ offCanVastoggleBtn, closeSideBar }) {
                   </li>
                 </ul> */}
               </li>
-              <li>
+              {/* <li>
                 <Link href="#">News</Link>
                 <span
                   className="menu-expand"
@@ -200,8 +200,8 @@ const MobileMenu = function ({ offCanVastoggleBtn, closeSideBar }) {
                     <Link href="/blog/right-sidebar">News Right sidebar</Link>
                   </li>
                 </ul>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link href="#">Pages</Link>
                 <span
                   className="menu-expand"
@@ -215,7 +215,6 @@ const MobileMenu = function ({ offCanVastoggleBtn, closeSideBar }) {
                   <li>
                     <Link href="/service">Services</Link>
                   </li>
-
                   <li>
                     <Link href="/portfolio">Portfolio</Link>
                   </li>
@@ -249,7 +248,7 @@ const MobileMenu = function ({ offCanVastoggleBtn, closeSideBar }) {
                     <Link href="/coming-soon">Coming Soon</Link>
                   </li>
                 </ul>
-              </li>
+              </li> */}
               <li>
                 <Link href="/contact">Contact</Link>
               </li>
@@ -271,32 +270,6 @@ const MobileMenu = function ({ offCanVastoggleBtn, closeSideBar }) {
                     <FaRegUser />
                   </span>
                   My Account
-                </Link>
-              </li>
-              <li>
-                <Link href="/wishlist" title="Wishlist">
-                  <span className="utilize-btn-icon">
-                    <FaRegHeart />
-                    {cartItems.length > 0 ? (
-                      <sup>{cartItems.length}</sup>
-                    ) : (
-                      <sup>0</sup>
-                    )}
-                  </span>
-                  Wishlist
-                </Link>
-              </li>
-              <li>
-                <Link href="/cart" title="Shoping Cart">
-                  <span className="utilize-btn-icon">
-                    <FaShoppingCart />
-                    {cartItems.length > 0 ? (
-                      <sup>{cartItems.length}</sup>
-                    ) : (
-                      <sup>0</sup>
-                    )}
-                  </span>
-                  Shoping Cart
                 </Link>
               </li>
             </ul>
