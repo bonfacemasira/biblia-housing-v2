@@ -3,8 +3,9 @@ import slugify from "slugify";
 export const getProducts = (products, category, type, limit) => {
   const finalProducts = category
     ? products.filter(
-      (product) => product.category.filter((single) => single === category)[0]
-    )
+        (product) =>
+          product?.category?.filter((single) => single === category)[0]
+      )
     : products;
 
   if (type && type === "featured") {
@@ -17,12 +18,10 @@ export const getProducts = (products, category, type, limit) => {
     return coreFeatures.slice(0, limit ? limit : coreFeatures.length);
   }
 
-
   if (type && type === "carousel") {
     const carousel = finalProducts.filter((single) => single.carousel);
     return carousel.slice(0, limit ? limit : carousel.length);
   }
-
 
   if (type && type === "deal") {
     const dealProducts = finalProducts.filter((single) => single.dealEnd);
@@ -83,17 +82,10 @@ export const getDiscountPrice = (price, discount) => {
 
 // get product cart quantity
 export const getProductCartQuantity = (cartItems, product, color, size) => {
-  let productInCart = cartItems.filter(
-    (single) =>
-      single.id === product.id
-  )[0];
+  let productInCart = cartItems.filter((single) => single.id === product.id)[0];
   if (cartItems.length >= 1 && productInCart) {
     if (product.variation) {
-      return cartItems.filter(
-        (single) =>
-          single.id === product.id
-
-      )[0].quantity;
+      return cartItems.filter((single) => single.id === product.id)[0].quantity;
     } else {
       return cartItems.filter((single) => product.id === single.id)[0].quantity;
     }
@@ -114,7 +106,7 @@ export const getSortedProducts = (products, sortType, sortValue) => {
     if (sortType === "category") {
       return products.filter(
         (product) =>
-          product.category.filter((single) => single === sortValue)[0]
+          product?.category?.filter((single) => single === sortValue)[0]
       );
     }
     if (sortType === "tag") {
@@ -283,7 +275,6 @@ export const getIndividualAminitiesList = (products) => {
   return individualAminitiesList;
 };
 
-
 // get individual priceRange
 export const priceRange = (products) => {
   let priceRange = [];
@@ -323,7 +314,6 @@ export const priceRange = (products) => {
   });
   return individualPriceRange;
 };
-
 
 // get individual bedBath
 export const bedBath = (products) => {
@@ -406,18 +396,15 @@ export const cartItemStock = (item, color, size) => {
   }
 };
 
-
 export function flatDeep(arr, d = 1) {
   return d > 0
     ? arr.reduce(
-      (acc, val) =>
-        acc.concat(Array.isArray(val) ? flatDeep(val, d - 1) : val),
-      []
-    )
+        (acc, val) =>
+          acc.concat(Array.isArray(val) ? flatDeep(val, d - 1) : val),
+        []
+      )
     : arr.slice();
 }
-
-
 
 export const productSlug = (text) => {
   return slugify(text, {
