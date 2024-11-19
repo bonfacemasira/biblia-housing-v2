@@ -34,10 +34,13 @@ const Footer = function () {
                       />
                     </div>
                   </div>
+                  <div className=" lh-1">
                   <p>
                   BIBLIA HOUSING COOPERATIVE SOCIETY LTD
-                  Kamirembe Place, Ring Road, Kilimani Area Opposite Shan Shui Hotel
                   </p>
+                  <p> Kamirembe Place, Ring Road, Adjacent to Eastlands Hotel, Kilimani </p>
+                  <p>P.O. Box 7041-00300 Nairobi, Kenya</p>
+                  </div>
                   <div className="footer-address">
                     <ul>
                       <li>
@@ -46,7 +49,7 @@ const Footer = function () {
                         </div>
                         <div className="footer-address-info">
                           <p>
-                            <p>Block I, Kamirembe Place, Nairobi</p>
+                            <p>Kamirembe Place 1st flr, Ring Road Kilimani, Nairobi</p>
                           </p>
                         </div>
                       </li>
