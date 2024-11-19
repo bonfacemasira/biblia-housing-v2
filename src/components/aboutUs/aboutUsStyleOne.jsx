@@ -35,7 +35,7 @@ function AboutUsStyleOne({ sectionSpace }) {
               <div className="about-us-info">
                 <h1 className="mb-4">The Leading Marketplace for Premium Land Sales</h1>
                 <p className="text-muted">
-                  Explore a wide range of premium land deals in prime locations. Whether you're
+                  Explore a wide range of premium land deals in prime locations. Whether you&#39;re
                   looking for agricultural, residential, or commercial land, our platform offers
                   detailed listings and expert guidance.
                 </p>
@@ -141,7 +141,7 @@ function AboutUsStyleOne({ sectionSpace }) {
               <h2 className="section-title mb-4">Membership Drive</h2>
               <div className="p-4 shadow-sm rounded bg-white">
                 <p>
-                  Spread the word about the Society's deals and earn incentives:
+                  Spread the word about the Society&#39;s deals and earn incentives:
                 </p>
                 <ul>
                   <li>
