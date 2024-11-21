@@ -21,7 +21,7 @@ const ProductList = ({
 }) => {
   let badgeText = "";
 
-  if (productData.rent) {
+  if (productData?.rent) {
     badgeText = "For Rent";
   } else {
     badgeText = "For Sale";
@@ -50,8 +50,8 @@ const ProductList = ({
         <div className="product-img">
           <Link href={`/${baseUrl}/${slug}`}>
             <img
-              src={`/img/product-3/${productData.productImg}`}
-              alt={`${productData.title}`}
+              src={`/img/product-3/${productData?.productImg}`}
+              alt={`${productData?.title}`}
             />
           </Link>
         </div>
@@ -61,7 +61,7 @@ const ProductList = ({
             <div className="product-badge">
               <ul>
                 <li
-                  className={`sale-badge ${productData.rent ? "bg-green" : ""}`}
+                  className={`sale-badge ${productData?.rent ? "bg-green" : ""}`}
                 >
                   {badgeText}
                 </li>
@@ -70,14 +70,14 @@ const ProductList = ({
 
             <div className="product-price">
               <span>
-                {`Kshs -- ${productData.price}`}
+                {`Kshs -- ${productData?.price}`}
                 <label>/Month</label>
               </span>
             </div>
           </div>
 
           <h2 className="product-title">
-            <Link href={`/${baseUrl}/${slug}`}>{productData.title}</Link>
+            <Link href={`/${baseUrl}/${slug}`}>{productData?.title}</Link>
           </h2>
 
           {/* <div className="product-img-location">
@@ -112,7 +112,7 @@ const ProductList = ({
               <Link href={`/${baseUrl}/${slug}`}>
                 <img
                   src={`/img/blog/author.jpg`}
-                  alt={`${productData.title}`}
+                  alt={`${productData?.title}`}
                 />
               </Link>
             </div>

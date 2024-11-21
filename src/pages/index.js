@@ -23,6 +23,7 @@ import testimonialData from "@/data/testimonial";
 import BlogItem from "@/components/blog";
 import blogData from "@/data/blog";
 import featuresData from "@/data/service";
+import PropertySearchForm from "@/components/propertySearchForm";
 
 function HomePage(props) {
   const { products } = useSelector((state) => state.product);
@@ -153,7 +154,9 @@ function HomePage(props) {
       <LayoutOne topbar={true}>
         <HeroSectionStyleOne hero={Herodata} />
 
-        <CarDealerSearchForm navMenuClass="d-none" customClasses="" />
+        {/* <CarDealerSearchForm navMenuClass="d-none" customClasses="" /> */}
+
+        <PropertySearchForm navMenuClass="d-none" customClasses="" />
         {/* <!-- CAR DEALER FORM AREA END -->
 
       <!-- ABOUT US AREA START --> */}

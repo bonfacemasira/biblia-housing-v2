@@ -8,6 +8,9 @@
       { "img": "/img/house4.jpg" }
     ],
     "title": "Premier Gardens Phase 2",
+    "county": "Machakos",
+    "status": "Available",
+    "type": "Land",
     "productImg": "BHS .jpg",
    "price": 2100000,
    "priceRange": ["Affordable", "Premium"],
@@ -115,6 +118,9 @@
       { "img": "house.jpg" }
     ],
     "title": "Royal Gardens Malili",
+    "county": "Makueni",
+    "status": "Available",
+    "type": "Land",
     "productImg": "BHS CURRENT PROJECTS - PORTAL3.jpg",
     "price": 650000,
     "priceRange": ["High-End"],
@@ -210,6 +216,9 @@
       { "img": "33.jpg" }
     ],
     "title": "Oasis Malaa 1",
+    "county": "Machakos",
+    "status": "Available",
+    "type": "Land",
     "productImg": "BHS CURRENT PROJECTS - PORTAL4.jpg",
     "price": 550000, 
     "priceRange": ["High-End"],
